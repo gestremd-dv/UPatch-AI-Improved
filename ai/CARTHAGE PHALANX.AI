@@ -1,0 +1,155 @@
+// CARTHAGE PHALANX.AI
+//
+// Strategy: Iron Age phalanx attack /w siege support
+// 
+// 73 ballistas, 109 phalanx, 48 camel riders (including 4 retrains)
+// 50 villagers; 14 farms
+//
+// Revision History:
+// --------------------------------------------------------------------------------------------------
+// Revision 1 [UPatch HD 1.2, 05/13/2023]: Complete rework of AI to support 250 population limit;  
+// Removed scout and slinger retrains
+// --------------------------------------------------------------------------------------------------
+//
+// Rework by gestremd; Original by Ensemble Studios
+
+
+// Stone Age
+// --------------------------------------------------------------------
+B109      Town_Center1         1      -1
+U83       Man                  7      109   
+B12       Barracks1            1      -1    
+U83       Man                  7      109     
+C101    Tool_Age               1      109  
+
+// Tool Age
+// --------------------------------------------------------------------
+U83       Man                  2      109
+B84       Market1              1      -1
+T83       Man                  2      109      1 
+B87       Range1               1      -1  
+U83       Man                  2      109
+B50       Farm                 2      -1 
+T83       Man                  2      109      1 
+B50       Farm                 2      -1 
+T83       Man                  2      109      1 
+B50       Farm                 2      -1 
+U83       Man                  2      109
+C102    Bronze_Age             1      109
+R107    Wood_Working           1      84 
+
+// Bronze Age
+// --------------------------------------------------------------------
+B101      Stable1              1      -1 
+R28     Wheel                  1      84
+B0        Academy              1      -1 
+T83       Man                  2      109      1
+T338      Soldier-Camel        2      101      2
+B49       Siege_Workshop       1      -1
+U93       Soldier-Phal1        2      0 
+R40     Leather_Armor_-_Soldie 1      103 
+U83       Man                  1      109
+T338      Soldier-Camel        2      101      2
+U93       Soldier-Phal1        2      0 
+T83       Man                  2      109      1
+U93       Soldier-Phal1        2      0 
+U83       Man                  1      109
+R43     Scale_Armor_-_Soldiers 1      103
+B50       Farm                 2      -1
+U93       Soldier-Phal1        2      0 
+T83       Man                  2      109      1
+B50       Farm                 2      -1
+U83       Man                  2      109
+U93       Soldier-Phal1        2      0 
+U83       Man                  1      109
+B50       Farm                 2      -1
+U93       Soldier-Phal1        2      0 
+T83       Man                  2      109      1
+R46     Tool_Working           1      103
+B82       Government_Center    1      -1
+R81     Domestication          1      84
+U93       Soldier-Phal1        2      0 
+U83       Man                  1      109
+C103    Iron_Age               1      109
+R32     Artisanship            1      84 
+R51     Metal_Working          1      103 
+
+// Iron Age
+// --------------------------------------------------------------------
+B109      Town_Center1         1      -1
+R73     Phalanx                1      0 
+T83       Man                  2      109      1
+B49       Siege_Workshop       1      -1
+U83       Man                  1      109
+R47     Bronze_Shield          1      103 
+B0        Academy              1      -1 
+T83       Man                  2      109      1
+U11       Soldier-Balista      2      49
+T83       Man                  2      109      1
+R106    Ballistics             1      82 
+U338      Soldier-Camel        3      101
+R42     Leather_Armor_Mounted  1      103
+U83       Man                  1      109 
+U93       Soldier-Phal1        2      0 
+U83       Man                  2      109
+R113    Aristocracy            1      82    
+B50       Farm                 2      -1 
+R117    Iron_Shield            1      103 
+U11       Soldier-Balista      2      49
+U338      Soldier-Camel        3      101
+U93       Soldier-Phal1        2      0 
+R37     Alchemy                1      82    
+U93       Soldier-Phal1        2      0 
+R110    Craftmanship           1      84
+R73     Phalanx                1      0 
+U11       Soldier-Balista      2      49
+U93       Soldier-Phal1        2      0 
+B109      Town_Center1         1      -1
+U93       Soldier-Phal1        2      0 
+R27     Helepolis              1      49 
+R122    Tower_Shield           1      103
+R79     Centurion              1      0 
+B276      Wonder               1      -1   
+
+// Post-Iron Age
+// Contains extra upgrades & build items for a late Iron Age game
+// --------------------------------------------------------------------
+R46     Tool_Working           1      103 
+R16     Watch_Tower            1      68 
+B0        Academy              1      -1 
+R31     Plow                   1      84 
+R35     Engineering            1      82   
+B49       Siege_Workshop       1      -1
+B87       Range1               1      -1  
+R12     Sentry_Tower           1      68
+U93       Soldier-Phal1        5      0 
+B0        Academy              1      -1   
+U338      Soldier-Camel        5      101
+U11       Soldier-Balista      5      49
+U93       Soldier-Phal1        5      0 
+B49       Siege_Workshop       1      -1
+U338      Soldier-Camel        3      101
+B79       Watch_Tower          2      -1 
+U338      Soldier-Camel        3      101
+U93       Soldier-Phal1        5      0 
+U11       Soldier-Balista      5      49
+R51     Metal_Working          1      103  
+B101      Stable1              1      -1   
+U338      Soldier-Camel        5      101
+U93       Soldier-Phal1        5      0 
+R52     Metalurgy              1      103 
+B79       Watch_Tower          2      -1 
+U11       Soldier-Balista      10     49 
+U93       Soldier-Phal1        15     0  
+U11       Soldier-Balista      10     49
+U93       Soldier-Phal1        15     0 
+U338      Soldier-Camel        12     101
+U11       Soldier-Balista      12     49 
+U93       Soldier-Phal1        15     0 
+B49       Siege_Workshop       1      -1
+U338      Soldier-Camel        10     101
+B79       Watch_Tower          2      -1 
+U93       Soldier-Phal1        20     0 
+U11       Soldier-Balista      25     49
+
+//END

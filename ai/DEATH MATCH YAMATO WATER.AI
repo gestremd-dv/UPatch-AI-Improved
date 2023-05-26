@@ -1,0 +1,140 @@
+// DEATH MATCH YAMATO WATER.AI
+//
+// Trains Priests, Cavalry, Horse Archers, Triremes and Juggernaughts
+// 35 Villagers; 25 after retrains; 5 Transports
+// 
+// 20 Soldiers deployed in ~15 minutes
+//
+// by gestremd 
+
+// Stone Age
+//  ---------------------------------------------
+B109      Town_Center1         1      -1           
+T83       Man                  5      109      1       
+B12       Barracks1            1      -1   
+C101    Tool_Age               1      109   
+B45       Dock                 1      -1   
+
+// Tool Age
+//  ---------------------------------------------
+R16     Watch_Tower            1      68
+U17       Light_Transport      2      45 
+B101      Stable               1      -1 
+R107    Woodworking            1      84 
+T83       Man                  5      109      1       
+R46     Toolworking            1      103 
+B84       Market1              1      -1 
+R81     Domestication          1      84
+B87       Range1               1      -1 
+R41     Leather_Armor_Archers  1      103   
+R109    Stone_Mining           1      84 
+R42     Leather_Armor_Cavalry  1      103 
+C102    Bronze_Age             1      109 
+B101      Stable               1      -1 
+B45       Dock                 1      -1   
+B101      Stable               1      -1
+U19       Scout_Ship           3      45
+
+// Bronze Age
+//  ---------------------------------------------
+R12     Sentry_Tower           1      68 
+R4      Fishing_Ship           1      45
+B104      Temple               1      -1
+R5      War_Galley             1      45
+R44     Scale_Armor_Archers    1      103 
+R28     Wheel                  1      84
+R45     Scale-Armor-Cav        1      103
+R32     Artisanship            1      84
+B82       Government_Center    1      -1
+C103    Iron_Age               1      109
+R34     Nobility               1      82 
+R51     Metalworking           1      103
+B45       Dock                 1      -1   
+R112    Architecture           1      82 
+R24     Polytheism             1      104
+
+// Iron Age
+//  ---------------------------------------------
+B109      Town_Center1         2      -1 
+R7      Trireme                1      45
+B104      Temple               1      -1
+B101      Stable               1      -1
+R71     Heavy_Cavalry          1      101
+B45       Dock                 1      -1   
+U37       Soldier-Cavalry1     3      101 
+R9      Trireme_with_Catapult  1      45 
+R52     Metallurgy             1      103 
+B109      Town_Center1         2      -1 
+R106    Ballistics             1      82 
+B0        Academy              1      -1
+B101      Stable               1      -1
+B45       Dock                 1      -1   
+B87       Range1               1      -1 
+U39       Soldier-Cav3-Arc     3      87
+R110    Craftmanship           1      84 
+U37       Soldier-Cavalry1     2      101 
+R49     Chain_Mail_Archers     1      103 
+B87       Range1               1      -1 
+R38     Heavy_Horse_Archer     1      87   
+R78     Cataphract             1      101 
+T83       Man                  5      109      1 
+U39       Soldier-Cav3-Arc     3      87
+B87       Range1               1      -1 
+R18     Afterlife              1      104
+R37     Alchemy                1      82
+R35     Engineering            1      82
+R25     Juggernaught           1      45
+U39       Soldier-Cav3-Arc     2      87
+B101      Stable               1      -1
+B87       Range1               1      -1 
+R50     Chain_Mail_Cavalry     1      103  
+B101      Stable               1      -1
+U39       Soldier-Cav3-Arc     3      87
+U37       Soldier-Cavalry1     3      101 
+B87       Range1               1      -1 
+U19       Scout_Ship           2      45
+U39       Soldier-Cav3-Arc     2      87
+U37       Soldier-Cavalry1     2      101 
+U125      Priest               5      104 
+U250      Catapult_Trireme     5      45 
+B50       Farm                 2      -1 
+U37       Soldier-Cavalry1     3      101 
+U39       Soldier-Cav3-Arc     3      87
+U19       Scout_Ship           3      45
+U83       Man                  5      109
+U37       Soldier-Cavalry1     2      101
+R8      Heavy_Transport        1      45
+U17       Light_Transport      3      45 
+U125      Priest               5      104 
+U19       Scout_Ship           2      45
+U250      Catapult_Trireme     5      45 
+U83       Man                  5      109
+U37       Soldier-Cavalry1     5      101 
+B109      Town_Center1         1      -1 
+U39       Soldier-Cav3-Arc     3      87
+U83       Man                  5      109
+U19       Scout_Ship           2      45 
+U37       Soldier-Cavalry1     5      101 
+U39       Soldier-Cav3-Arc     3      87
+U250      Catapult_Trireme     5      45 
+U83       Man                  5      109 
+U37       Soldier-Cavalry1     5      101 
+U39       Soldier-Cav3-Arc     3      87
+U19       Scout_Ship           3      45
+U37       Soldier-Cavalry1     5      101
+U250      Catapult_Trireme     5      45 
+B79       Watch_Tower          10     -1
+U19       Scout_Ship           5      45
+U39       Soldier-Cav3-Arc     5      87
+B79       Watch_Tower          10     -1
+B50       Farm                 2      -1 
+U37       Soldier-Cavalry1     20     101
+U19       Scout_Ship           30     45
+U250      Catapult_Trireme     30     45 
+U39       Soldier-Cav3-Arc     20     87
+U37       Soldier-Cavalry1     45     101
+U19       Scout_Ship           45     45
+U250      Catapult_Trireme     45     45 
+U39       Soldier-Cav3-Arc     45     87
+
+//END

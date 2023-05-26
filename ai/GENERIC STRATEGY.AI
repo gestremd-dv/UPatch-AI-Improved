@@ -1,0 +1,186 @@
+// Generic Strategy.ai
+// A generic Random Map strategy for the AI
+//
+// Trains 50 villagers init; 25 after retrain
+//
+// Revision 1: 05/26/23: This AI file is outdated and has since been updated/reworked
+// for other civilizations. Please refer to any other RM strat file for a better, updated
+// strategy.
+//
+// by gestremd
+
+B109      Town_Center1         1      -1
+U83       Man                  7      109   
+B12       Barracks1            1      -1    
+U83       Man                  7      109   
+
+// Villagers: 14
+// Total: 14
+// Retrains: 0
+// Retrain total: 0
+// ----------------------
+// Soldiers: 0
+// Total: 0
+// ----------------------
+// Max pop: 14
+
+
+
+
+
+C101    Tool_Age               1      109  
+B84       Market1              1      -1
+T83       Man                  2      109      1 
+T73       Soldier-Inf1         2      12       1 
+B87       Range1               1      -1  
+U83       Man                  1      109
+T347      Soldier-Slinger      2      12       1
+B101      Stable1              1      -1 
+T83       Man                  2      109      1 
+T299      Soldier-Scout        2      101      1
+B50       Farm                 2      -1 
+U83       Man                  1      109
+T4        Soldier-Archer1      2      87       1
+R40     Leather_Armor_-_Soldie 1      103 
+B50       Farm                 2      -1 
+T83       Man                  2      109      1 
+T73       Soldier-Inf1         2      12       1 
+B50       Farm                 2      -1 
+U83       Man                  1      109
+R63     Axe                    1      12
+T83       Man                  2      109      1 
+R46     Tool_Working           1      103 
+U83       Man                  1      109
+R16     Watch_Tower            1      68 
+T83       Man                  2      109      1
+B79       Watch_Tower          1      -1
+
+
+// Villagers: 14
+// Total: 28
+// Retrains: 10
+// Retrain total: 10
+// ----------------------
+// Soldiers: 10
+// Total: 10
+// ----------------------
+// Max pop: 38
+
+
+
+
+
+C102    Bronze_Age             1      109 
+B0        Academy              1      -1 
+T75       Soldier-Inf3         2      12       2
+T83       Man                  2      109      1
+B49       Siege_Workshop       1      -1
+T93       Soldier-Phal1        2      0        2
+U83       Man                  1      109
+R65     Broadsword             1      12
+T35       Soldier-Catapult1    2      49       2
+B104      Temple1              1      -1
+T83       Man                  2      109      1
+T37       Soldier-Cavalry1     2      101      2
+U125      Priest               2      104
+R28     Wheel                  1      84
+B82       Government_Center    1      -1
+T41       Soldier-Chariot2     2      87       2
+B109      Town_Center1         1      -1
+U83       Man                  1      109
+R43     Scale_Armor_-_Soldiers 1      103 
+B50       Farm                 2      -1
+T40       Soldier-Chariot1     2      101      2
+R107    Wood_Working           1      84 
+T83       Man                  2      109      1
+B50       Farm                 2      -1
+T338      Soldier-Camel        2      101      2
+U83       Man                  1      109
+B50       Farm                 2      -1
+T83       Man                  2      109      1
+R32     Artisanship            1      84 
+U83       Man                  1      109
+R22     Astrology              1      104     
+R51     Metalworking           1      103 
+U83       Man                  2      109      1
+R24     Polytheism             1      104
+R12     Sentry_Tower           1      68   
+R47     Bronze_Shield          1      103
+B79       Watch_Tower          1      -1
+
+// Villagers: 14
+// Total: 42
+// Retrains: 10
+// Retrain total: 20
+// ----------------------
+// Soldiers: 14
+// Total: 24
+// ----------------------
+// Max pop: 66
+
+
+
+
+
+C103    Iron_Age               1      109 
+B109      Town_Center1         1      -1
+R110    Craftmanship           1      84
+T83       Man                  2      109      1
+R21     Mysticism              1      104 
+U75       Soldier-Inf3         2      12
+U83       Man                  1      109
+R66     Long_Sword             1      12 
+T83       Man                  2      109      1
+U37       Soldier-Cavalry1     2      101
+U125      Priest               2      104
+R48     Chain_Mail_-_Soldiers  1      103
+T83       Man                  1      109      1
+R109    Stone_Mining           1      84  
+U40       Soldier-Chariot1     2      101
+U83       Man                  1      109 
+R18     Afterlife              1      104
+R106    Ballistics             1      82 
+R54     Heavy_Catapult         1      49    
+U39       Soldier-Cavalry3_Arc 2      87 
+U83       Man                  1      109
+R37     Alchemy                1      82    
+B50       Farm                 2      -1 
+U35       Soldier-Catapult1    2      49
+R35     Engineering            1      82   
+U125      Priest               2      104
+R15     Guard_Tower            1      68
+U93       Soldier-Phal1        2      0
+R81     Domestication          1      84
+R113    Aristocracy            1      82
+R19     Monotheism             1      104  
+U93       Soldier-Phal1        2      0
+R52     Metalurgy              1      103
+R31     Plow                   1      84 
+R80     Irrigation             1      84  
+U11       Soldier-Balista      2      49 
+U125      Priest               2      104 
+R112    Architecture           1      82 
+R117    Iron_Shield            1      103  
+R111    Siege_Craft            1      84 
+U25       Soldier-El_Archer    2      87 
+R36     Massive_Catapult       1      49 
+B109      Town_Center1         1      -1
+R122    Tower_Shield           1      103
+R2      Catapult_Tower         1      68 
+U46       Soldier-Elephant     2      101 
+R20     Fanaticism             1      104 
+B79       Watch_Tower          1      -1    
+B276      Wonder               2      -1  
+
+
+
+// Villagers: 8
+// Total: 50
+// Retrains: 5
+// Retrain total: 25
+// ----------------------
+// Soldiers: 20
+// Total: 44
+// ----------------------
+// Max pop: 94
+

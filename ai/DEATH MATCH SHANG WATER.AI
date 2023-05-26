@@ -1,0 +1,136 @@
+// DEATH MATCH SHANG WATER.AI
+//
+// Trains Priests, Chariots, Ballistas, War Galleys and Fire Galleys
+// 35 Villagers; 25 after retrains; 5 Transports
+// 
+// 20 Soldiers deployed in ~15 minutes
+//
+// by gestremd
+
+// Stone Age
+//  ---------------------------------------------
+B109      Town_Center1         1      -1           
+T83       Man                  5      109      1       
+B12       Barracks1            1      -1   
+C101    Tool_Age               1      109 
+B45       Dock                 1      -1   
+
+// Tool Age
+//  ---------------------------------------------
+R16     Watch_Tower            1      68
+U17       Light_Transport      2      45 
+B101      Stable               1      -1 
+R107    Woodworking            1      84 
+T83       Man                  5      109      1        
+R46     Toolworking            1      103 
+B84       Market1              1      -1 
+R81     Domestication          1      84
+B87       Range1               1      -1  
+R109    Stone_Mining           1      84 
+R42     Leather_Armor_Cavalry  1      103 
+C102    Bronze_Age             1      109 
+B101      Stable               1      -1 
+B45       Dock                 1      -1 
+B101      Stable               1      -1
+U19       Scout_Ship           3      45
+
+// Bronze Age
+//  ---------------------------------------------
+R4      Fishing_Ship           1      45
+R12     Sentry_Tower           1      68 
+R5      War_Galley             1      45
+B104      Temple               1      -1
+R28     Wheel                  1      84
+R45     Scale-Armor-Cav        1      103
+R32     Artisanship            1      84
+B82       Government_Center    1      -1
+C103    Iron_Age               1      109
+R34     Nobility               1      82
+R22     Astrology              1      104
+R51     Metalworking           1      103
+B45       Dock                 1      -1
+R112    Architecture           1      82 
+R21     Mysticism              1      104
+R24     Polytheism             1      104
+
+// Iron Age
+//  ---------------------------------------------
+B109      Town_Center1         2      -1 
+B104      Temple               1      -1
+U125      Priest               2      104 
+B101      Stable               1      -1
+B45       Dock                 1      -1
+R126    Scythe_Chariot         1      101
+B109      Town_Center1         2      -1 
+B104      Temple               1      -1
+B49       Siege_Workshop       1      -1
+R110    Craftmanship           1      84 
+B49       Siege_Workshop       1      -1
+R27     Helepolis              1      49
+R106    Ballistics             1      82 
+B104      Temple               1      -1 
+T83       Man                  5      109      1 
+B49       Siege_Workshop       1      -1
+U125      Priest               3      104 
+R18     Afterlife              1      104
+B101      Stable               1      -1
+B45       Dock                 1      -1
+B49       Siege_Workshop       1      -1
+U11       Soldier-Balista      3      49 
+R19     Monotheism             1      104
+R50     Chain_Mail_Cavalry     1      103  
+U360      Fire_Galley          3      45 
+B49       Siege_Workshop       1      -1
+R52     Metallurgy             1      103  
+B101      Stable               1      -1
+U40       Soldier-Chariot1     3      101 
+U11       Soldier-Balista      2      49
+U360      Fire_Galley          2      45 
+B104      Temple               1      -1
+U40       Soldier-Chariot1     2      101 
+U125      Priest               5      104 
+U360      Fire_Galley          3      45 
+B50       Farm                 2      -1 
+B104      Temple               1      -1
+U360      Fire_Galley          2      45
+U19       Scout_Ship           2      45
+R15     Guard_Tower            1      68
+U11       Soldier-Balista      3      49
+R20     Fanaticism             1      104
+U83       Man                  5      109
+U19       Scout_Ship           4      45
+U125      Priest               5      104 
+R8      Heavy_Transport        1      45 
+U17       Light_Transport      3      45 
+U11       Soldier-Balista      2      49
+U83       Man                  5      109
+U40       Soldier-Chariot1     5      101 
+B109      Town_Center1         1      -1 
+U83       Man                  5      109
+U11       Soldier-Balista      2      49 
+U40       Soldier-Chariot1     5      101 
+U19       Scout_Ship           3      45
+U83       Man                  5      109 
+U360      Fire_Galley          5      45 
+U19       Scout_Ship           3      45
+R23     Jihad                  1      104
+U11       Soldier-Balista      3      49
+R119    Medicine               1      104
+U125      Priest               5      104 
+B79       Watch_Tower          5     -1
+U11       Soldier-Balista      5      49 
+U360      Fire_Galley          5      45
+B79       Watch_Tower          5     -1
+U40       Soldier-Chariot1     10     101 
+U19       Scout_Ship           5      45
+B50       Farm                 2      -1 
+U11       Soldier-Balista      25     49 
+U19       Scout_Ship           30     45
+U360      Fire_Galley          30     45
+U40       Soldier-Chariot1     25     101 
+U11       Soldier-Balista      45     49 
+U125      Priest               45     104 
+U360      Fire_Galley          45     45
+U40       Soldier-Chariot1     45     101 
+
+//END

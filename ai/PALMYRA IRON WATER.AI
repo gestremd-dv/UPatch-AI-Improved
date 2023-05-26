@@ -1,0 +1,141 @@
+// MINOA IRON WATER.AI
+//
+// Strategy: Iron Age warship attack
+// 
+// 59 warships, 55 catapult triremes, 69 composite bowmen, 39 ballistas
+// 50 villagers; 14 farms; 8 fishing ships; 2 transports
+//
+// Revision History:
+// --------------------------------------------------------------------------------------------------
+// Revision 1 [UPatch HD 1.2, 05/22/2023]: Complete rework of AI to support 250 population limit;  
+// Same strategy as Bronze Water but with more catapult triremes, less triremes, replaced catapults
+// with ballistas; Dumped camels and moved to Bronze Water strategy as retrains; Made improved & 
+// composite bow upgrades critical
+// --------------------------------------------------------------------------------------------------
+//
+// Rework by gestremd; Original by Ensemble Studios
+
+// Stone Age
+// --------------------------------------------------------------------
+B109      Town_Center1         1      -1
+U83       Man                  7      109   
+B12       Barracks1            1      -1    
+U83       Man                  7      109     
+B45       Dock_1               1      -1  
+T13       Boat-Fishing1        2      45       2
+C101    Tool_Age               1      109 
+
+// Tool Age
+// --------------------------------------------------------------------
+B45       Dock_1               1      -1  
+U83       Man                  2      109
+B84       Market1              1      -1
+T83       Man                  2      109      1 
+U13       Boat-Fishing1        2      45
+B87       Range1               1      -1  
+B50       Farm                 2      -1 
+T83       Man                  2      109      1 
+B50       Farm                 2      -1 
+T83       Man                  2      109      1 
+B50       Farm                 2      -1 
+U83       Man                  2      109
+C102    Bronze_Age             1      109
+B45       Dock_1               1      -1  
+R107    Wood_Working           1      84 
+
+// Bronze Age
+// --------------------------------------------------------------------
+B87       Range1               1      -1 
+T83       Man                  2      109      1
+U83       Man                  1      109
+U19       Boat-War1            2      45 
+U5        Soldier-Archer2      2      87  
+R41     Leather_Armor_-_Archer 1      103 
+T83       Man                  2      109      1
+U19       Boat-War1            2      45 
+U83       Man                  1      109
+R5      Medium_War_Ship        1      45
+U5        Soldier-Archer2      2      87  
+T13       Boat-Fishing1        2      45       2
+B50       Farm                 2      -1
+U19       Boat-War1            2      45 
+R28     Wheel                  1      84
+T83       Man                  2      109      1
+B50       Farm                 2      -1
+U17       Boat-Transport1      1      45
+R44     Scale_Armor_-_Archers  1      103 
+U19       Boat-War1            2      45   
+U83       Man                  2      109
+R81     Domestication          1      84
+U83       Man                  2      109
+U5        Soldier-Archer2      2      87  
+B50       Farm                 2      -1
+T83       Man                  2      109      1
+B82       Government_Center    1      -1
+U83       Man                  2      109
+C103    Iron_Age               1      109
+R32     Artisanship            1      84 
+
+// Iron Age
+// --------------------------------------------------------------------
+B109      Town_Center1         1      -1
+R7      Trireme                1      45 
+U5        Soldier-Archer2      2      87  
+B45       Dock_1               1      -1  
+T83       Man                  2      109      1
+B49       Siege_Workshop       1      -1  
+U83       Man                  1      109 
+U35       Soldier-Catapult1    2      49  
+B87       Range1               1      -1  
+R49     Chain_Mail_-_Archers   1      103  
+U360      Fire-Galley          2      45
+T83       Man                  2      109      1
+R37     Alchemy                1      82  
+T83       Man                  2      109      1
+U5        Soldier-Archer2      2      87  
+R106    Ballistics             1      82 
+U83       Man                  1      109 
+T13       Boat-Fishing1        2      45       2
+U35       Soldier-Catapult1    2      49    
+U17       Boat-Transport1      1      45
+R110    Craftmanship           1      84
+R27     Helepolis              1      49  
+U19       Boat-War1            2      45
+U83       Man                  2      109
+U19       Boat-War1            2      45
+U5        Soldier-Archer2      2      87  
+U19       Boat-War1            2      45
+B87       Range1               1      -1   
+U360      Fire-Galley          2      45   
+B50       Farm                 2      -1 
+U19       Boat-War1            2      45
+B109      Town_Center1         1      -1
+ 
+// Post-Iron Age
+// Contains extra upgrades & build items for a late Iron Age game
+// --------------------------------------------------------------------
+U5        Soldier-Archer2      5      87  
+B49       Siege_Workshop       1      -1   
+R8      Heavy_Transport        1      45   
+U19       Boat-War1            2      45 
+U5        Soldier-Archer2      2      87  
+B45       Dock_1               1      -1  
+U360      Fire-Galley          5      45
+U35       Soldier-Catapult1    5      49      
+R31     Plow                   1      84
+U5        Soldier-Archer2      5      87      
+U19       Boat-War1            5      45   
+U5        Soldier-Archer2      15     87    
+U19       Boat-War1            5      45
+U35       Soldier-Catapult1    15     49   
+U360      Fire-Galley          15     45 
+B87       Range1               1      -1  
+U360      Fire-Galley          10     45
+U5        Soldier-Archer2      15     87  
+U19       Boat-War1            14     45
+U35       Soldier-Catapult1    15     49  
+U360      Fire-Galley          15     45 
+U5        Soldier-Archer2      15     87
+U19       Boat-War1            10     45  
+
+//END

@@ -1,0 +1,160 @@
+// DEATH MATCH ROME WATER.AI
+//
+// Trains Swordsmen, Ballistas, Catapults, Priests, Triremes and Juggernaughts
+// 35 Villagers; 25 after retrains; 5 Transports
+// 
+// 20 Soldiers deployed in ~15 minutes
+//
+// by gestremd
+
+// Stone Age
+//  ---------------------------------------------
+B109      Town_Center1         1      -1           
+T83       Man                  5      109      1       
+B12       Barracks1            1      -1   
+C101    Tool_Age               1      109 
+B12       Barracks1            1      -1 
+B45       Dock                 1      -1      
+
+// Tool Age
+//  ---------------------------------------------
+R16     Watch_Tower            1      68
+U17       Light_Transport      2      45 
+B101      Stable               1      -1 
+R107    Woodworking            1      84 
+T83       Man                  5      109      1      
+R46     Toolworking            1      103 
+B84       Market1              1      -1 
+R81     Domestication          1      84
+R40     Leather_Armor_Infantry 1      103      
+B87       Range1               1      -1  
+R109    Stone_Mining           1      84 
+C102    Bronze_Age             1      109 
+B12       Barracks1            1      -1 
+B45       Dock                 1      -1 
+B12       Barracks1            1      -1
+U19       Scout_Ship           3      45
+
+// Bronze Age
+//  ---------------------------------------------
+R4      Fishing_Ship           1      45
+R12     Sentry_Tower           1      68 
+R5      War_Galley             1      45
+R43     Scale_Armor_Infantry   1      103 
+B104      Temple               1      -1
+R28     Wheel                  1      84
+R32     Artisanship            1      84
+B82       Government_Center    1      -1
+C103    Iron_Age               1      109
+R34     Nobility               1      82
+R65     Broad_Sword            1      12
+R51     Metalworking           1      103
+R112    Architecture           1      82 
+U75       Infantry3            5      12
+R21     Mysticism              1      104
+B45       Dock                 1      -1  
+R121    Logistics              1      82  
+R47     Bronze_Shield          1      103
+R24     Polytheism             1      104
+
+// Iron Age
+//  ---------------------------------------------
+R7      Trireme                1      45
+B109      Town_Center1         2      -1 
+R66     Long_Sword             1      12
+B12       Barracks1            1      -1
+B49       Siege_Workshop       1      -1
+B104      Temple               1      -1
+B12       Barracks1            1      -1
+B109      Town_Center1         2      -1 
+U75       Infantry3            5      12
+R9      Trireme_with_Catapult  1      45
+B45       Dock                 1      -1
+R48     Chain_Mail_Infantry    1      103
+B12       Barracks1            1      -1
+U250      Catapult_Trireme     2      45
+R54     Catapult               1      49
+R110    Craftmanship           1      84 
+B104      Temple               1      -1
+R106    Ballistics             1      82 
+B45       Dock                 1      -1
+U250      Catapult_Trireme     2      45
+B12       Barracks1            1      -1
+U75       Infantry3            5      12 
+R35     Engineering            1      82
+R25     Juggernaught           1      45
+U250      Catapult_Trireme     3      45
+T83       Man                  5      109      1 
+R19     Monotheism             1      104
+R113    Aristocracy            1      82
+U75       Infantry3            5      12 
+R52     Metallurgy             1      103 
+B101      Stable               1      -1
+U250      Catapult_Trireme     3      45
+B104      Temple               1      -1
+U11       Soldier-Balista      3      49 
+U75       Infantry3            5      12 
+U125      Priest               2      104 
+U19       Scout_Ship           2      45
+R27     Helepolis              1      49 
+B49       Siege_Workshop       1      -1 
+B104      Temple               1      -1
+U75       Infantry3            5      12 
+B49       Siege_Workshop       1      -1
+R111    Siegecraft             1      84 
+U125      Priest               3      104 
+R36     Heavy_Catapult         1      49
+R117    Iron_Shield            1      103 
+B104      Temple               1      -1
+U75       Infantry3            5      12
+U11       Soldier-Balista      2      49  
+B49       Siege_Workshop       1      -1
+U19       Scout_Ship           3      45
+B104      Temple               2      -1
+B49       Siege_Workshop       1      -1
+R20     Fanaticism             1      104
+R77     Legion                 1      12
+U75       Infantry3            5      12 
+R122    Tower_Shield           1      103 
+U83       Man                  5      109
+U35       Soldier-Catapult1    5      49 
+B49       Siege_Workshop       1      -1
+U125      Priest               5      104 
+B50       Farm                 2      -1 
+U83       Man                  5      109 
+R8      Heavy_Transport        1      45
+U17       Light_Transport      3      45 
+U11       Soldier-Balista      5      49  
+B109      Town_Center1         1      -1 
+U75       Infantry3            5      12 
+U19       Scout_Ship           3      45
+U83       Man                  5      109
+B49       Siege_Workshop       1      -1
+U35       Soldier-Catapult1    5      49 
+U250      Catapult_Trireme     5      45
+U83       Man                  5      109
+U125      Priest               5      104 
+U75       Infantry3            5      12 
+U11       Soldier-Balista      5      49 
+U19       Scout_Ship           4      45
+R23     Jihad                  1      104
+B79       Watch_Tower          5      -1
+R119    Medicine               1      104
+U35       Soldier-Catapult1    5      49 
+U19       Scout_Ship           5      45
+B79       Watch_Tower          5      -1
+U125      Priest               5      104 
+U11       Soldier-Balista      5      49
+U250      Catapult_Trireme     5      45
+B79       Watch_Tower          5      -1
+B50       Farm                 2      -1 
+U75       Infantry3            70     12 
+U19       Scout_Ship           30     45
+U250      Catapult_Trireme     30     45
+U11       Soldier-Balista      36     49 
+U75       Infantry3            72     12 
+U19       Scout_Ship           36     45
+U250      Catapult_Trireme     36     45
+U35       Soldier-Catapult1    36     49 
+
+//END

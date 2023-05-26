@@ -1,0 +1,160 @@
+// DEATH MATCH PHOENICIA.AI
+//
+// Trains Elephant Archers, Priests, Phalanx, War Elephants and Swordsmen
+// 35 Villagers; 25 after retrains
+// 
+// 20 Soldiers deployed in ~15 minutes
+//
+// by gestremd
+
+// Stone Age
+//  ---------------------------------------------
+B109      Town_Center1         1      -1           
+T83       Man                  5      109      1       
+B12       Barracks1            1      -1   
+C101    Tool_Age               1      109 
+B12       Barracks1            1      -1      
+
+// Tool Age
+//  ---------------------------------------------
+R16     Watch_Tower            1      68
+B101      Stable               1      -1 
+R107    Woodworking            1      84 
+T83       Man                  5      109      1       
+R46     Toolworking            1      103 
+B84       Market1              1      -1 
+R81     Domestication          1      84
+R40     Leather_Armor_Infantry 1      103      
+B87       Range1               1      -1 
+R41     Leather_Armor_Archers  1      103   
+R109    Stone_Mining           1      84 
+R42     Leather_Armor_Cavalry  1      103 
+C102    Bronze_Age             1      109 
+B101      Stable               1      -1 
+B87       Range1               1      -1 
+B101      Stable               1      -1
+
+
+// Bronze Age
+//  ---------------------------------------------
+R12     Sentry_Tower           1      68 
+R43     Scale_Armor_Infantry   1      103 
+B104      Temple               1      -1
+R44     Scale_Armor_Archers    1      103 
+B101      Stable               1      -1
+R28     Wheel                  1      84
+R45     Scale-Armor-Cav        1      103
+R32     Artisanship            1      84
+B82       Government_Center    1      -1
+C103    Iron_Age               1      109
+R34     Nobility               1      82
+R22     Astrology              1      104
+R51     Metalworking           1      103
+R21     Mysticism              1      104
+R47     Bronze_Shield          1      103  
+R121    Logistics              1      82  
+R65     Broad_Sword            1      12
+R24     Polytheism             1      104
+
+// Iron Age
+//  ---------------------------------------------
+B109      Town_Center1         2      -1 
+R66     Long_Sword             1      12
+B12       Barracks1            1      -1
+R117    Iron_Shield            1      103 
+B0        Academy              1      -1
+R73     Phalanx                1      0  
+B104      Temple               1      -1
+U46       Soldier-Elephant     2      101
+B101      Stable               1      -1
+B109      Town_Center1         2      -1 
+R125    Armored_Elephant       1      101 
+R106    Ballistics             1      82
+R110    Craftmanship           1      84 
+U46       Soldier-Elephant     3      101
+B87       Range1               1      -1 
+T83       Man                  5      109      1
+B87       Range1               1      -1 
+U25       Soldier-Ele-Archer   3      87 
+B101      Stable               1      -1
+U46       Soldier-Elephant     2      101
+B104      Temple               1      -1
+R18     Afterlife              1      104
+R19     Monotheism             1      104
+B0        Academy              1      -1
+U46       Soldier-Elephant     3      101
+R35     Engineering            1      82 
+R37     Alchemy                1      82
+B87       Range1               2      -1
+U46       Soldier-Elephant     2      101
+B104      Temple               1      -1
+U25       Soldier-Ele-Archer   2      87 
+U125      Priest               5      104 
+B101      Stable               1      -1
+U46       Soldier-Elephant     2      101
+U125      Priest               5      104 
+R15     Guard_Tower            1      68
+B104      Temple               1      -1
+B0        Academy              1      -1
+U25       Soldier-Ele-Archer   3      87 
+B101      Stable               1      -1
+B104      Temple               1      -1
+U25       Soldier-Ele-Archer   2      87
+U46       Soldier-Elephant     3      101
+U75       Soldier-Inf3         5      12
+U25       Soldier-Ele-Archer   3      87
+U46       Soldier-Elephant     3      101
+B104      Temple               2      -1
+R113    Aristocracy            1      82
+B0        Academy              1      -1
+R20     Fanaticism             1      104
+R77     Legion                 1      12
+R79     Centurion              1      0
+U46       Soldier-Elephant     2      101
+R122    Tower_Shield           1      103 
+U83       Man                  5      109
+U93       Soldier-Phal1        5      0 
+U75       Soldier-Inf3         5      12
+U25       Soldier-Ele-Archer   3      87
+U46       Soldier-Elephant     3      101
+U125      Priest               5      104 
+U83       Man                  5      109
+U25       Soldier-Ele-Archer   5      87  
+U46       Soldier-Elephant     2      101
+B109      Town_Center1         1      -1 
+U125      Priest               5      104 
+U75       Soldier-Inf3         5      12
+B50       Farm                 2      -1 
+U46       Soldier-Elephant     2      101
+U83       Man                  5      109
+U25       Soldier-Ele-Archer   5      87 
+U93       Soldier-Phal1        5      0 
+U46       Soldier-Elephant     3      101
+U75       Soldier-Inf3         5      12
+U25       Soldier-Ele-Archer   4      87
+U83       Man                  5      109
+U46       Soldier-Elephant     3      101
+U125      Priest               5      104 
+U25       Soldier-Ele-Archer   5      87 
+U93       Soldier-Phal1        5      0 
+U75       Soldier-Inf3         5      12
+U46       Soldier-Elephant     5      101
+R23     Jihad                  1      104
+R119    Medicine               1      104
+U25       Soldier-Ele-Archer   5      87 
+U75       Soldier-Inf3         5      12
+B79       Watch_Tower          10     -1 
+U25       Soldier-Ele-Archer   5      87 
+B79       Watch_Tower          10     -1
+U46       Soldier-Elephant     5      101
+B50       Farm                 2      -1 
+U25       Soldier-Ele-Archer   20     87
+U46       Soldier-Elephant     35     101
+U125      Priest               20     104 
+U93       Soldier-Phal1        10     0 
+U25       Soldier-Ele-Archer   45     87
+U46       Soldier-Elephant     45     101
+U125      Priest               45     104 
+U93       Soldier-Phal1        45     0 
+
+//END

@@ -1,0 +1,152 @@
+// PHOENICIA ELEPHANTS.AI
+//
+// Strategy: Iron Age archer attack /w priest support
+// 
+// 96 elephant archers, 72 war elephants, 53 priests
+// Retrains: 6 camels, 4 slingers
+// 50 villagers; 14 farms
+//
+// Revision History:
+// --------------------------------------------------------------------------------------------------
+// Revision 1 [06/13/1998]: X-Pack changes; added armored elephant; replaced chariots with camels;
+// replaced clubmen with slingers; added shields; eliminated catapults & chainmail; replaced siege workshop 
+// w/gov center; added ballistics
+//
+// Revision 2 [06/25/1998]: removed farms; removed post-wonder items
+//
+// Revision 3 [UPatch HD 1.2, 05/25/2023]: Complete rework of AI to support 250 population limit; 
+// --------------------------------------------------------------------------------------------------
+//
+// Rework by gestremd; Original by Ensemble Studios
+
+
+// Stone Age
+// --------------------------------------------------------------------
+B109      Town_Center1         1      -1
+U83       Man                  7      109   
+B12       Barracks1            1      -1    
+U83       Man                  7      109     
+C101    Tool_Age               1      109  
+
+// Tool Age
+// --------------------------------------------------------------------
+U83       Man                  2      109
+B84       Market1              1      -1
+T83       Man                  2      109      1 
+B87       Range1               1      -1  
+U83       Man                  2      109
+B50       Farm                 2      -1 
+T347      Soldier-Slinger      2      12       0
+T83       Man                  2      109      1 
+B50       Farm                 2      -1 
+T83       Man                  2      109      1 
+B50       Farm                 2      -1 
+U83       Man                  1      109
+C102    Bronze_Age             1      109 
+R107    Wood_Working           1      84 
+
+// Bronze Age
+// --------------------------------------------------------------------
+B101      Stable1              1      -1 
+T83       Man                  2      109      1
+R108    Gold_Mining            1      84     
+B87       Range1               1      -1 
+T338      Soldier-Camel        2      101      1
+R41     Leather_Armor_-_Archer 1      103 
+U83       Man                  1      109
+B104      Temple1              1      -1
+T338      Soldier-Camel        2      101      1
+T83       Man                  2      109      1
+T347      Soldier-Slinger      2      12       1
+U125      Priest               2      104
+B50       Farm                 2      -1
+T83       Man                  2      109      1
+B50       Farm                 2      -1
+U83       Man                  2      109
+R44     Scale_Armor_-_Archers  1      103 
+T338      Soldier-Camel        2      101      1
+R81     Domestication          1      84
+U83       Man                  1      109
+B50       Farm                 2      -1
+T83       Man                  2      109      1
+B82       Government_Center    1      -1
+R28     Wheel                  1      84
+C103    Iron_Age               1      109
+R42     Leather_Armor_Mounted  1      103
+R21     Mysticism              1      104 
+R32     Artisanship            1      84 
+R24     Polytheism             1      104
+
+// Iron Age
+// --------------------------------------------------------------------
+B109      Town_Center1         1      -1
+T83       Man                  2      109      1
+U46       Soldier-Elephant     2      101
+U83       Man                  1      109
+B87       Range1               1      -1 
+R106    Ballistics             1      82
+T83       Man                  2      109      1
+U25       Soldier-El_Archer    2      87
+U125      Priest               2      104
+T83       Man                  2      109      1
+C125    Armored_Elephants      1      101
+R45     Scale_Armor_-_Cavalry  1      103 
+R110    Craftmanship           1      84  
+U46       Soldier-Elephant     2      101
+U83       Man                  2      109 
+R18     Afterlife              1      104 
+U25       Soldier-El_Archer    2      87
+U83       Man                  2      109
+R22     Astrology              1      104
+R37     Alchemy                1      82    
+B50       Farm                 2      -1 
+U46       Soldier-Elephant     2      101
+U125      Priest               2      104
+U25       Soldier-El_Archer    2      87
+U83       Man                  2      109
+R19     Monotheism             1      104 
+U25       Soldier-El_Archer    2      87
+U46       Soldier-Elephant     2      101
+U125      Priest               2      104 
+U25       Soldier-El_Archer    2      87
+B109      Town_Center1         1      -1
+R20     Fanaticism             1      104 
+U25       Soldier-El_Archer    2      87
+
+// Post-Iron Age
+// Contains extra upgrades & build items for a late Iron Age game
+// --------------------------------------------------------------------
+U25       Soldier-El_Archer    5      87
+R16     Watch_Tower            1      68 
+B104      Temple1              1      -1 
+R31     Plow                   1      84 
+U125      Priest               5      104
+U25       Soldier-El_Archer    5      87 
+U46       Soldier-Elephant     5      101
+B87       Range1               1      -1  
+R12     Sentry_Tower           1      68
+U25       Soldier-El_Archer    5      87
+B101      Stable1              1      -1   
+U125      Priest               5      104
+U25       Soldier-El_Archer    5      87
+U46       Soldier-Elephant     6      101
+U25       Soldier-El_Archer    5      87
+B104      Temple1              1      -1 
+U46       Soldier-Elephant     6      101 
+U25       Soldier-El_Archer    6      87
+B101      Stable1              1      -1   
+U125      Priest               5      104
+U25       Soldier-El_Archer    8      87
+U46       Soldier-Elephant     10     101
+U125      Priest               10     104
+U25       Soldier-El_Archer    15     87 
+U46       Soldier-Elephant     10     104
+U25       Soldier-El_Archer    15     87
+U125      Priest               10     104
+U46       Soldier-Elephant     12     101
+U125      Priest               10     104
+B87       Range1               1      -1  
+U25       Soldier-El_Archer    15     87
+U46       Soldier-Elephant     15     101
+
+//END

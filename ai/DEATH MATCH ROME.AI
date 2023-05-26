@@ -1,0 +1,162 @@
+// DEATH MATCH ROME.AI
+//
+// Trains Swordsmen, Ballistas, Catapults, Chariots, Priests and Phalanx
+// 35 Villagers; 25 after retrains
+// 
+// 20 Soldiers deployed in ~15 minutes
+//
+// by gestremd
+
+// Stone Age
+//  ---------------------------------------------
+B109      Town_Center1         1      -1           
+T83       Man                  5      109      1       
+B12       Barracks1            1      -1   
+C101    Tool_Age               1      109 
+B12       Barracks1            1      -1      
+
+// Tool Age
+//  ---------------------------------------------
+R16     Watch_Tower            1      68
+B101      Stable               1      -1 
+R107    Woodworking            1      84 
+T83       Man                  5      109      1      
+R46     Toolworking            1      103 
+B84       Market1              1      -1 
+R81     Domestication          1      84
+R40     Leather_Armor_Infantry 1      103      
+B87       Range1               1      -1  
+R109    Stone_Mining           1      84 
+R42     Leather_Armor_Cavalry  1      103 
+C102    Bronze_Age             1      109 
+B12       Barracks1            1      -1 
+B101      Stable               1      -1
+B12       Barracks1            1      -1
+
+// Bronze Age
+//  ---------------------------------------------
+R12     Sentry_Tower           1      68 
+R43     Scale_Armor_Infantry   1      103 
+B104      Temple               1      -1
+R28     Wheel                  1      84
+R45     Scale-Armor-Cav        1      103
+R32     Artisanship            1      84
+B82       Government_Center    1      -1
+C103    Iron_Age               1      109
+R34     Nobility               1      82
+R65     Broad_Sword            1      12
+R51     Metalworking           1      103
+R112    Architecture           1      82 
+U75       Infantry3            5      12
+R21     Mysticism              1      104
+R121    Logistics              1      82  
+R47     Bronze_Shield          1      103
+R24     Polytheism             1      104
+
+// Iron Age
+//  ---------------------------------------------
+B109      Town_Center1         2      -1 
+R66     Long_Sword             1      12
+B12       Barracks1            1      -1
+B49       Siege_Workshop       1      -1
+R35     Engineering            1      82
+B104      Temple               1      -1
+B12       Barracks1            1      -1
+B109      Town_Center1         2      -1 
+R126    Scythe_Chariot         1      101
+U75       Infantry3            5      12
+B0        Academy              1      -1
+R73     Phalanx                1      0  
+R48     Chain_Mail_Infantry    1      103
+B12       Barracks1            1      -1
+U93       Soldier-Phal1        2      0
+R54     Catapult               1      49
+B0        Academy              1      -1
+R110    Craftmanship           1      84 
+B104      Temple               1      -1
+R106    Ballistics             1      82 
+U93       Soldier-Phal1        2      0
+B12       Barracks1            1      -1
+U75       Infantry3            5      12 
+U93       Soldier-Phal1        3      0
+T83       Man                  5      109      1
+R19     Monotheism             1      104
+R113    Aristocracy            1      82
+B0        Academy              1      -1
+U75       Infantry3            5      12 
+R52     Metallurgy             1      103 
+B101      Stable               1      -1
+U93       Soldier-Phal1        3      0
+B104      Temple               1      -1
+U11       Soldier-Balista      3      49 
+U75       Infantry3            5      12 
+U125      Priest               2      104 
+R50     Chain_Mail_Cavalry     1      103 
+B0        Academy              1      -1
+R79     Centurion              1      0
+R27     Helepolis              1      49 
+B49       Siege_Workshop       1      -1 
+B104      Temple               1      -1
+U75       Infantry3            5      12 
+B49       Siege_Workshop       1      -1
+R111    Siegecraft             1      84 
+U125      Priest               3      104 
+R36     Heavy_Catapult         1      49
+R117    Iron_Shield            1      103 
+B104      Temple               1      -1
+U75       Infantry3            5      12
+U11       Soldier-Balista      2      49  
+B49       Siege_Workshop       1      -1
+U40       Soldier-Chariot1     3      101
+B104      Temple               2      -1
+B49       Siege_Workshop       1      -1
+R20     Fanaticism             1      104
+R77     Legion                 1      12
+U75       Infantry3            5      12 
+R122    Tower_Shield           1      103 
+U83       Man                  5      109
+U35       Soldier-Catapult1    5      49 
+B49       Siege_Workshop       1      -1
+U40       Soldier-Chariot1     3      101
+U125      Priest               5      104 
+B50       Farm                 2      -1 
+U83       Man                  5      109 
+U11       Soldier-Balista      5      49  
+B109      Town_Center1         1      -1 
+U75       Infantry3            5      12 
+B79       Watch_Tower          5      -1
+U40       Soldier-Chariot1     3      101
+U83       Man                  5      109
+B49       Siege_Workshop       1      -1
+U35       Soldier-Catapult1    5      49 
+U93       Soldier-Phal1        5      0
+U40       Soldier-Chariot1     3      101
+U83       Man                  5      109
+U125      Priest               5      104 
+U75       Infantry3            5      12 
+U11       Soldier-Balista      5      49 
+U40       Soldier-Chariot1     3      101
+R23     Jihad                  1      104
+B79       Watch_Tower          5      -1
+R119    Medicine               1      104
+U35       Soldier-Catapult1    5      49 
+U40       Soldier-Chariot1     3      101
+B79       Watch_Tower          5      -1
+U125      Priest               5      104 
+U11       Soldier-Balista      5      49
+U93       Soldier-Phal1        5      0
+U40       Soldier-Chariot1     7      101
+B79       Watch_Tower          10     -1
+B50       Farm                 2      -1 
+U75       Infantry3            80     12 
+U11       Soldier-Balista      15     49
+U40       Soldier-Chariot1     15     101
+U93       Soldier-Phal1        10     0
+U35       Soldier-Catapult1    15     49
+U75       Infantry3            72     12 
+U11       Soldier-Balista      36     49
+U40       Soldier-Chariot1     36     101
+U93       Soldier-Phal1        36     0
+U35       Soldier-Catapult1    36     49
+
+//END

@@ -1,0 +1,128 @@
+// DEATH MATCH MINOA WATER.AI
+//
+// Trains Foot Archers, Ballistas, Triremes and Juggernaughts
+// 35 Villagers; 25 after retrains; 5 Transports
+// 
+// 20 Soldiers deployed in ~15 minutes
+//
+// by gestremd
+
+// Stone Age
+//  ---------------------------------------------
+B109      Town_Center1         1      -1           
+T83       Man                  5      109      1       
+B45       Dock                 1      -1 
+C101    Tool_Age               1      109 
+B12       Barracks1            1      -1       
+
+// Tool Age
+//  ---------------------------------------------
+R16     Watch_Tower            1      68
+U17       Light_Transport      2      45 
+B101      Stable               1      -1 
+R107    Woodworking            1      84 
+T83       Man                  5      109      1      
+B84       Market1              1      -1 
+R81     Domestication          1      84 
+B87       Range1               1      -1   
+R109    Stone_Mining           1      84 
+R41     Leather-Armor-Archers  1      103 
+C102    Bronze_Age             1      109 
+B87       Range1               1      -1 
+B45       Dock                 1      -1 
+B87       Range1               1      -1 
+U19       Scout_Ship           3      12
+
+// Bronze Age
+//  ---------------------------------------------
+R4      Fishing_Ship           1      45
+R12     Sentry_Tower           1      68 
+R5      War_Galley             1      45
+B49       Siege_Workshop       1      -1
+R28     Wheel                  1      84
+R44     Scale-Armor-Archers    1      103
+R32     Artisanship            1      84
+B82       Government_Center    1      -1
+C103    Iron_Age               1      109
+R56     Improved-Bow           1      87
+B45       Dock                 1      -1 
+R112    Architecture           1      82 
+
+// Iron Age
+//  ---------------------------------------------
+R57     Composite-Bow          1      87
+R7      Trireme                1      45
+B109      Town_Center1         2      -1 
+B87       Range1               1      -1 
+U5        Soldier-Archer2      3      87
+B87       Range1               1      -1 
+U19       Scout_Ship           2      12
+B45       Dock                 1      -1 
+B49       Siege_Workshop       1      -1 
+B109      Town_Center1         2      -1 
+U11       Soldier-Balista      2      49
+U5        Soldier-Archer2      2      87
+B49       Siege_Workshop       1      -1  
+U19       Scout_Ship           5      12
+R9      Trireme_with_Catapult  1      45 
+B87       Range1               1      -1 
+U11       Soldier-Balista      3      49 
+B45       Dock                 1      -1 
+R110    Craftmanship           1      84 
+U5        Soldier-Archer2      3      87
+B87       Range1               1      -1 
+U5        Soldier-Archer2      2      87
+R106    Ballistics             1      82 
+T83       Man                  5      109      1 
+U19       Scout_Ship           5      12
+B87       Range1               1      -1 
+U11       Soldier-Balista      2      49 
+R35     Engineering            1      82 
+R25     Juggernaught           1      45
+U5        Soldier-Archer2      3      87
+B49       Siege_Workshop       1      -1
+U19       Scout_Ship           5      12
+B0        Academy              1      -1
+R27     Helepolis              1      49
+R37     Alchemy                1      82
+U11       Soldier-Balista      5      49
+B0        Academy              1      -1
+B50       Farm                 2      -1 
+U250      Catapult_Trireme     2      0 
+U5        Soldier-Archer2      2      87
+B49       Siege_Workshop       1      -1
+R8      Heavy_Transport        1      45
+U17       Light_Transport      3      45 
+U83       Man                  5      109
+U250      Catapult_Trireme     3      0 
+U11       Soldier-Balista      3      49 
+U5        Soldier-Archer2      5      87   
+U11       Soldier-Balista      5      49
+U83       Man                  5      109
+U250      Catapult_Trireme     5      0  
+U5        Soldier-Archer2      5      87
+R49     Chain-Armor-Archers    1      103 
+U83       Man                  5      109
+U250      Catapult_Trireme     5      0 
+B49       Siege_Workshop       2      -1
+U5        Soldier-Archer2      3      87
+U11       Soldier-Balista      5      49 
+U5        Soldier-Archer2      5      87
+U83       Man                  5      109
+B109      Town_Center1         1      -1 
+U5        Soldier-Archer2      5      87
+U5        Soldier-Archer2      2      0
+U11       Soldier-Balista      5      49 
+B79       Watch_Tower          5      -1
+U250      Catapult_Trireme     5      0 
+B79       Watch_Tower          5      -1
+B50       Farm                 2      -1 
+U5        Soldier-Archer2      45     87
+U250      Catapult_Trireme     30     0 
+U19       Scout_Ship           30     12
+U5        Soldier-Archer2      45     87
+U250      Catapult_Trireme     45     0 
+U19       Scout_Ship           45     12
+U11       Soldier-Balista      45     49 
+
+//END

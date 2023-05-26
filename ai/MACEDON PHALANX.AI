@@ -1,0 +1,147 @@
+// MACEDON PHALANX.AI
+//
+// Strategy: Bronze Age phalanx attack /w siege support
+//
+// 118 phalanx, 61 ballistas, 52 catapults
+// Retrains: 2 slingers
+// 50 villagers; 14 farms
+//
+// Revision History:
+// --------------------------------------------------------------------------------------------------
+// Revision 1 [UPatch HD 1.1]: Fixed missing/redundant objects, fixed positions & wrong values
+//
+// Revision 2 [UPatch HD 1.2, 05/22/2023]: Complete rework of AI to support 250 population limit; 
+// Reduced slinger retrains to 2; 
+// --------------------------------------------------------------------------------------------------
+//
+// Rework by gestremd; Original by Ensemble Studios
+
+// Stone Age
+// --------------------------------------------------------------------
+B109      Town_Center1         1      -1
+U83       Man                  7      109   
+B12       Barracks1            1      -1    
+U83       Man                  7      109     
+C101    Tool_Age               1      109  
+
+// Tool Age
+// --------------------------------------------------------------------
+U83       Man                  2      109
+B84       Market1              1      -1
+T83       Man                  2      109      1 
+B101      Stable1              1      -1   
+U83       Man                  2      109
+B50       Farm                 2      -1 
+T347      Soldier-Slinger      2      12       0 
+T83       Man                  2      109      1 
+B50       Farm                 2      -1 
+T83       Man                  2      109      1 
+B50       Farm                 2      -1 
+U83       Man                  2      109
+C102    Bronze_Age             1      109
+R108    Gold_Mining            1      84   
+
+
+// Bronze Age
+// --------------------------------------------------------------------
+T83       Man                  2      109      1
+B87       Range1               1      -1 
+R40     Leather_Armor_-_Soldie 1      103
+B0        Academy              1      -1 
+U83       Man                  2      109
+B82       Government_Center    1      -1
+T83       Man                  2      109      1
+U93       Soldier-Phal1        2      0  
+B50       Farm                 2      -1
+U93       Soldier-Phal1        2      0  
+T83       Man                  2      109      1
+B50       Farm                 2      -1
+U93       Soldier-Phal1        2      0  
+R28     Wheel                  1      84
+U83       Man                  2      109
+R81     Domestication          1      84
+U93       Soldier-Phal1        2      0  
+U83       Man                  1      109
+R43     Scale_Armor_-_Soldiers 1      103
+B50       Farm                 2      -1
+U93       Soldier-Phal1        2      0  
+T83       Man                  2      109      1
+U93       Soldier-Phal1        2      0  
+C103    Iron_Age               1      109
+R46     Tool_Working           1      103
+
+
+// Iron Age
+// --------------------------------------------------------------------
+B109      Town_Center1         1      -1 
+C73     Phalanx                1      0   
+R107    Wood_Working           1      84  
+T83       Man                  2      109      1
+R47     Bronze_Shield          1      103  
+B49       Siege_Workshop       1      -1
+U83       Man                  1      109
+R113    Aristocracy            1      82 
+R54     Heavy_Catapult         1      49
+U93       Soldier-Phal1        2      0
+R37     Alchemy                1      82    
+B0        Academy              1      -1 
+T83       Man                  2      109      1
+R32     Artisanship            1      84 
+U93       Soldier-Phal1        2      0 
+T83       Man                  2      109      1
+R48     Chain_Mail_-_Soldiers  1      103
+U93       Soldier-Phal1        2      0
+U35       Soldier-Catapult1    2      49 
+R16     Watch_Tower            1      68 
+R106    Ballistics             1      82  
+R51     Metal_Working          1      103
+U93       Soldier-Phal1        2      0
+U83       Man                  2      109
+B49       Siege_Workshop       1      -1 
+U93       Soldier-Phal1        2      0 
+U11       Soldier-Balista      2      49 
+U93       Soldier-Phal1        2      0
+R12     Sentry_Tower           1      68 
+U93       Soldier-Phal1        2      0
+U83       Man                  2      109
+R117    Iron_Shield            1      103
+U93       Soldier-Phal1        2      0 
+B50       Farm                 2      -1 
+U11       Soldier-Balista      2      49 
+B101      Stable1              1      -1 
+U93       Soldier-Phal1        2      0
+B109      Town_Center1         1      -1
+R79     Centurion              1      0   
+
+// Post-Iron Age
+// Contains extra upgrades & build items for a late Iron Age game
+// --------------------------------------------------------------------
+R52     Metalurgy              1      103 
+U93       Soldier-Phal1        2      0
+U35       Soldier-Catapult1    5      49   
+U93       Soldier-Phal1        5      0 
+B49       Siege_Workshop       1      -1 
+R122    Tower_Shield           1      103
+U11       Soldier-Balista      2      49 
+B0        Academy              1      -1 
+U93       Soldier-Phal1        4      0
+U35       Soldier-Catapult1    10     49 
+R31     Plow                   1      84   
+U11       Soldier-Balista      5      49  
+B0        Academy              1      -1 
+U93       Soldier-Phal1        12     0 
+U35       Soldier-Catapult1    10     49 
+B49       Siege_Workshop       1      -1 
+U93       Soldier-Phal1        10     0 
+U11       Soldier-Balista      10     49 
+B0        Academy              1      -1 
+U93       Soldier-Phal1        10     0
+U11       Soldier-Balista      10     49 
+U93       Soldier-Phal1        15     0 
+U11       Soldier-Balista      10     49 
+U93       Soldier-Phal1        15     0 
+U11       Soldier-Balista      20     49 
+U93       Soldier-Phal1        15     0 
+U35       Soldier-Catapult1    25     49  
+
+//END

@@ -1,0 +1,150 @@
+// DEATH MATCH EGYPT WATER.AI
+//
+// Trains Priests, Chariots, Elephant Archers, Triremes and Juggernaughts
+// 35 Villagers; 25 after retrains; 5 Transports
+// 
+// 20 Soldiers deployed in ~15 minutes
+//
+// by gestremd
+
+// Stone Age
+//  ---------------------------------------------
+B109      Town_Center1         1      -1           
+T83       Man                  5      109      1       
+B12       Barracks1            1      -1   
+C101    Tool_Age               1      109   
+B45       Dock                 1      -1   
+
+// Tool Age
+//  ---------------------------------------------
+R16     Watch_Tower            1      68
+U17       Light_Transport      2      45 
+B101      Stable               1      -1 
+R107    Woodworking            1      84 
+T83       Man                  5      109      1       
+R46     Toolworking            1      103 
+B84       Market1              1      -1 
+B87       Range1               1      -1 
+R81     Domestication          1      84
+R41     Leather_Armor_Archers  1      103   
+R109    Stone_Mining           1      84 
+R42     Leather_Armor_Cavalry  1      103 
+C102    Bronze_Age             1      109 
+B101      Stable               1      -1 
+B87       Range1               1      -1 
+B45       Dock                 1      -1   
+U19       Scout_Ship           3      45
+
+// Bronze Age
+//  ---------------------------------------------
+R12     Sentry_Tower           1      68 
+R4      Fishing_Ship           1      45
+B104      Temple               1      -1
+R44     Scale_Armor_Archers    1      103 
+R28     Wheel                  1      84
+R5      War_Galley             1      45
+R45     Scale-Armor-Cav        1      103
+R32     Artisanship            1      84
+B82       Government_Center    1      -1
+C103    Iron_Age               1      109
+R34     Nobility               1      82
+R22     Astrology              1      104
+R51     Metalworking           1      103
+B45       Dock                 1      -1  
+R112    Architecture           1      82 
+R21     Mysticism              1      104
+R24     Polytheism             1      104
+
+// Iron Age
+//  ---------------------------------------------
+B109      Town_Center1         2      -1 
+R7      Trireme                1      45
+B104      Temple               1      -1
+U125      Priest               2      104 
+B101      Stable               1      -1
+B109      Town_Center1         2      -1 
+B45       Dock                 1      -1  
+B104      Temple               1      -1
+R126    Scythe_Chariot         1      101
+B87       Range1               1      -1 
+R110    Craftmanship           1      84 
+B101      Stable               1      -1
+B104      Temple               1      -1
+R106    Ballistics             1      82 
+T83       Man                  5      109      1 
+U125      Priest               3      104 
+B87       Range1               1      -1 
+R18     Afterlife              1      104
+B45       Dock                 1      -1  
+R9      Trireme_with_Catapult  1      45 
+U250      Catapult_Trireme     2      45 
+B101      Stable               1      -1
+R19     Monotheism             1      104
+B87       Range1               1      -1 
+U250      Catapult_Trireme     3      45 
+U40       Soldier-Chariot1     3      101 
+R52     Metallurgy             1      103 
+B101      Stable               1      -1
+U40       Soldier-Chariot1     3      101 
+R50     Chain_Mail_Cavalry     1      103
+R37     Alchemy                1      82
+U19       Scout_Ship           2      45
+B87       Range1               1      -1 
+U40       Soldier-Chariot1     2      101 
+U250      Catapult_Trireme     2      45 
+B104      Temple               1      -1
+R49     Chain-Mail-Archer      1      103
+U40       Soldier-Chariot1     2      101 
+R35     Engineering            1      82 
+R25     Juggernaught           1      45
+U125      Priest               5      104 
+B104      Temple               1      -1
+U40       Soldier-Chariot1     3      101 
+B104      Temple               1      -1
+U250      Catapult_Trireme     3      45 
+U40       Soldier-Chariot1     2      101
+U25       Soldier-Ele-Archer   3      87
+B104      Temple               2      -1
+R15     Guard_Tower            1      68
+U19       Scout_Ship           3      45
+R20     Fanaticism             1      104
+U83       Man                  5      109
+U25       Soldier-Ele-Archer   3      87
+U125      Priest               5      104 
+U19       Scout_Ship           2      45
+B50       Farm                 2      -1 
+U83       Man                  5      109
+R8      Heavy_Transport        1      45
+U17       Light_Transport      3      45 
+U40       Soldier-Chariot1     5      101 
+B109      Town_Center1         1      -1 
+U125      Priest               5      104 
+U25       Soldier-Ele-Archer   3      87
+U83       Man                  5      109
+U19       Scout_Ship           5      45 
+U25       Soldier-Ele-Archer   3      87
+U83       Man                  5      109
+U125      Priest               5      104 
+R2      Ballista_Tower         1      68
+R23     Jihad                  1      104
+U250      Catapult_Trireme     5      45 
+R119    Medicine               1      104
+U125      Priest               5      104 
+U19       Scout_Ship           5      45 
+B79       Watch_Tower          5      -1
+U25       Soldier-Ele-Archer   8      87
+B79       Watch_Tower          5      -1
+U250      Catapult_Trireme     5      45 
+B50       Farm                 2      -1 
+U25       Soldier-Ele-Archer   15     87
+U19       Scout_Ship           30     45
+U125      Priest               15     104 
+U250      Catapult_Trireme     30     45
+U40       Soldier-Chariot1     15     101
+U25       Soldier-Ele-Archer   36     87
+U19       Scout_Ship           36     45
+U125      Priest               36     104 
+U250      Catapult_Trireme     36     45
+U40       Soldier-Chariot1     36     101
+
+//END

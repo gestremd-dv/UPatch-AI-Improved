@@ -1,0 +1,144 @@
+// DEATH MATCH BABYLON.AI
+//
+// Trains Horse Archers, Priests, Chariots, Catapults and Swordsmen
+// 35 Villagers; 25 after retrains
+// 
+// 20 Soldiers deployed in ~15 minutes
+//
+// by gestremd
+
+// Stone Age
+//  ---------------------------------------------
+B109      Town_Center1         1      -1           
+T83       Man                  5      109      1       
+B12       Barracks1            1      -1   
+C101    Tool_Age               1      109 
+B12       Barracks1            1      -1      
+
+// Tool Age
+//  ---------------------------------------------
+R16     Watch_Tower            1      68
+B101      Stable               1      -1 
+R138    Woodworking            1      84 
+T83       Man                  5      109      1      
+R46     Toolworking            1      103 
+B84       Market1              1      -1 
+R135    Domestication          1      84
+R40     Leather_Armor_Infantry 1      103      
+B87       Range1               1      -1  
+R141    Stone_Mining           1      84 
+R42     Leather_Armor_Cavalry  1      103 
+C102    Bronze_Age             1      109 
+B101      Stable               2      -1 
+
+// Bronze Age
+//  ---------------------------------------------
+R12     Sentry_Tower           1      68 
+R43     Scale_Armor_Infantry   1      103 
+B104      Temple               1      -1 
+C145    Wheel                  1      84
+B101      Stable               1      -1
+R45     Scale-Armor-Cav        1      103
+R139    Artisanship            1      84
+B82       Government_Center    1      -1
+C103    Iron_Age               1      109
+R34     Nobility               1      82
+R22     Astrology              1      104
+R51     Metalworking           1      103
+R112    Architecture           1      82 
+R47     Bronze_Shield          1      103  
+R21     Mysticism              1      104
+R121    Logistics              1      82  
+R65     Broad_Sword            1      12
+R24     Polytheism             1      104
+
+// Iron Age
+//  ---------------------------------------------
+B109      Town_Center1         2      -1 
+R66     Long_Sword             1      12
+B49       Siege_Workshop       1      -1
+R20     Fanaticism             1      104
+B104      Temple               1      -1
+R162    Scythe_Chariot         1      101
+B101      Stable               1      -1
+R140    Craftmanship           1      84 
+B109      Town_Center1         2      -1 
+R106    Ballistics             1      82 
+B104      Temple               1      -1
+T83       Man                  5      109      1
+R50     Chain_Mail_Cavalry     1      103
+R18     Afterlife              1      104
+R54     Catapult               1      49
+B12       Barracks1            1      -1   
+R19     Monotheism             1      104
+R35     Engineering            1      82 
+U40       Soldier-Chariot1     3      101 
+R52     Metallurgy             1      103 
+B101      Stable               1      -1
+R37     Alchemy                1      82
+B104      Temple               1      -1
+U40       Soldier-Chariot1     2      101 
+U125      Priest               5      104 
+R142    Siegecraft             1      84
+R160    Heavy_Catapult         1      49 
+B49       Siege_Workshop       1      -1 
+U125      Priest               5      104 
+B104      Temple               1      -1
+U40       Soldier-Chariot1     3      101 
+B49       Siege_Workshop       1      -1
+B104      Temple               1      -1
+U40       Soldier-Chariot1     2      101
+B12       Barracks1            1      -1   
+U35       Soldier-Catapult1    5      49  
+U75       Soldier-Inf3         5      12
+B49       Siege_Workshop       1      -1
+B104      Temple               2      -1
+R15     Guard_Tower            1      68
+B49       Siege_Workshop       1      -1
+R77     Legion                 1      12
+U83       Man                  5      109
+U35       Soldier-Catapult1    5      49 
+U75       Soldier-Inf3         5      12
+R48     Chain_Mail_Infantry    1      103  
+B49       Siege_Workshop       1      -1
+U125      Priest               5      104 
+U83       Man                  5      109
+U40       Soldier-Chariot1     5      101 
+U35       Soldier-Catapult1    5      49  
+B109      Town_Center1         1      -1 
+U125      Priest               5      104 
+U75       Soldier-Inf3         5      12
+U83       Man                  5      109
+U40       Soldier-Chariot1     5      101 
+B49       Siege_Workshop       2      -1
+U35       Soldier-Catapult1    5      49 
+U75       Soldier-Inf3         5      12
+U83       Man                  5      109
+R2      Ballista_Tower         1      68
+B50       Farm                 2      -1 
+U125      Priest               5      104 
+U40       Soldier-Chariot1     5      101 
+U35       Soldier-Catapult1    5      49 
+U75       Soldier-Inf3         5      12
+U125      Priest               5      104 
+U40       Soldier-Chariot1     5      101 
+U35       Soldier-Catapult1    5      49 
+U75       Soldier-Inf3         10     12
+B79       Watch_Tower          13     -1
+U125      Priest               5      104 
+U40       Soldier-Chariot1     5      101 
+U35       Soldier-Catapult1    5      49
+U75       Soldier-Inf3         10     12
+B79       Watch_Tower          12     -1
+B50       Farm                 2      -1 
+U75       Soldier-Inf3         20     12
+U125      Priest               25     104 
+U40       Soldier-Chariot1     15     101 
+U35       Soldier-Catapult1    15     49
+U75       Soldier-Inf3         15     12
+U125      Priest               45     104 
+U40       Soldier-Chariot1     45     101 
+U35       Soldier-Catapult1    45     49
+U75       Soldier-Inf3         45     12
+
+//END

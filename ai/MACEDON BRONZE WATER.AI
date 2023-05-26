@@ -1,0 +1,155 @@
+// MACEDON BRONZE WATER.AI
+//
+// Strategy: Bronze Age warship attack
+// 
+// 81 warships, 33 catapult triremes, 82 phalanx, 26 catapults
+// 50 villagers; 14 farms; 8 fishing ships; 2 transports
+//
+// Revision History:
+// --------------------------------------------------------------------------------------------------
+// Revision 1 [UPatch HD 1.1]: fixed missing/redundant objects, fixed positions & wrong values;
+/
+// Revision 1 [UPatch HD 1.2, 05/22/2023]: Complete rework of AI to support 250 population limit;  
+// Re-used 'GREEK BRONZE WATER.AI' and reworked it as necessary to suit Macedonians; Dumped ballistas
+// in favor of catapults
+// --------------------------------------------------------------------------------------------------
+//
+// Rework by gestremd; Original by Ensemble Studios
+
+// Stone Age
+// --------------------------------------------------------------------
+B109      Town_Center1         1      -1
+U83       Man                  7      109   
+B12       Barracks1            1      -1    
+U83       Man                  7      109     
+B45       Dock_1               1      -1  
+T13       Boat-Fishing1        2      45       2
+C101    Tool_Age               1      109 
+
+// Tool Age
+// --------------------------------------------------------------------
+B45       Dock_1               1      -1  
+U83       Man                  2      109
+B84       Market1              1      -1
+T83       Man                  2      109      1 
+T13       Boat-Fishing1        2      45       2
+B101      Stable1              1      -1
+B50       Farm                 2      -1 
+T83       Man                  2      109      1 
+B50       Farm                 2      -1 
+T83       Man                  2      109      1 
+B50       Farm                 2      -1 
+U83       Man                  2      109
+C102    Bronze_Age             1      109
+B45       Dock_1               1      -1  
+R107    Wood_Working           1      84 
+
+// Bronze Age
+// --------------------------------------------------------------------
+B87       Range1               1      -1  
+T83       Man                  2      109      1
+B0        Academy              1      -1   
+U19       Boat-War1            2      45
+U83       Man                  1      109
+U19       Boat-War1            2      45
+U93       Soldier-Phal1        2      0  
+R40     Leather_Armor_-_Soldie 1      103  
+T83       Man                  2      109      1
+U19       Boat-War1            2      45
+U83       Man                  1      109
+R5      Medium_War_Ship        1      45
+U93       Soldier-Phal1        2      0  
+T13       Boat-Fishing1        2      45       2
+B50       Farm                 2      -1
+U19       Boat-War1            2      45
+T83       Man                  2      109      1
+B50       Farm                 2      -1
+U17       Boat-Transport1      1      45
+R43     Scale_Armor_-_Soldiers 1      103
+U19       Boat-War1            2      45  
+U83       Man                  2      109
+R81     Domestication          1      84
+U83       Man                  2      109
+U93       Soldier-Phal1        2      0  
+B50       Farm                 2      -1
+T83       Man                  2      109      1
+B82       Government_Center    1      -1
+U83       Man                  2      109
+R28     Wheel                  1      84
+C103    Iron_Age               1      109
+R47     Bronze_Shield          1      103
+R32     Artisanship            1      84 
+
+// Iron Age
+// --------------------------------------------------------------------
+B109      Town_Center1         1      -1
+R7      Trireme                1      45 
+B49       Siege_Workshop       1      -1 
+U93       Soldier-Phal1        2      0  
+B45       Dock_1               1      -1  
+T83       Man                  2      109      1
+B0        Academy              1      -1   
+U83       Man                  1      109
+R48     Chain_Mail_-_Soldiers  1      103  
+R73     Phalanx                1      0 
+U19       Boat-War1            2      45
+T83       Man                  2      109      1
+R37     Alchemy                1      82  
+R54     Heavy_Catapult         1      49
+R9      Trireme_with_Catapult  1      45    
+T83       Man                  2      109      1
+U35       Soldier-Catapult1    2      49  
+R106    Ballistics             1      82 
+R46     Tool_Working           1      103 
+U83       Man                  1      109 
+U93       Soldier-Phal1        2      0  
+T13       Boat-Fishing1        2      45       2
+R113    Aristocracy            1      82
+R51     Metal_Working          1      103  
+U17       Boat-Transport1      1      45
+R117    Iron_Shield            1      103  
+U19       Boat-War1            2      45
+U83       Man                  2      109
+U250      Boat-War4            2      45
+U35       Soldier-Catapult1    2      49  
+U250      Boat-War4            2      45
+B0        Academy              1      -1  
+U19       Boat-War1            2      45   
+B50       Farm                 2      -1 
+U250      Boat-War4            2      45
+U93       Soldier-Phal1        2      0  
+U250      Boat-War4            2      45 
+B109      Town_Center1         1      -1
+U35       Soldier-Catapult1    2      49  
+R122    Tower_Shield           1      103 
+R79     Centurion              1      0  
+ 
+// Post-Iron Age
+// Contains extra upgrades & build items for a late Iron Age game
+// --------------------------------------------------------------------
+R52     Metalurgy              1      103 
+U93       Soldier-Phal1        5      0  
+U250      Boat-War4            5      45
+B0        Academy              1      -1   
+R8      Heavy_Transport        1      45 
+B45       Dock_1               1      -1  
+U19       Boat-War1            5      45
+U35       Soldier-Catapult1    5      49     
+U250      Boat-War4            5      45
+R31     Plow                   1      84
+U93       Soldier-Phal1        5      0      
+U250      Boat-War4            5      45   
+U35       Soldier-Catapult1    15     49    
+U19       Boat-War1            5      45
+U93       Soldier-Phal1        15     0  
+U19       Boat-War1            15     45 
+B0        Academy              1      -1   
+U19       Boat-War1            10     45
+U93       Soldier-Phal1        15     0  
+U19       Boat-War1            15     45
+U93       Soldier-Phal1        15     0
+U19       Boat-War1            15     45 
+U93       Soldier-Phal1        15     0
+U250      Boat-War4            10     45  
+
+//END
