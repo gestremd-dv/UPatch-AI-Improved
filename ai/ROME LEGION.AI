@@ -1,18 +1,22 @@
-// ROME AXEMEN.AI
+// CHOSON SWORDSMEN.AI
 //
-// Strategy: Tool Age axeman attack & Bronze Age swordsmen attack
+// Strategy: Bronze Age Swordsmen attack
 // 
-// 150 swordsmen, 49 catapults, 14 ballistas, 43 priests
-// Retrains: 8 axemen
+// 180 swordsmen, 59 ballistas, 23 priests
 // 50 villagers; 14 farms
 //
 // Revision History:
 // --------------------------------------------------------------------------------------------------
-// Revision 1 [UPatch HD 1.1]: Removed short sword
+// Revision 1 [06/25/1998]: X-Pack changes; made weak catapults into retrains; has iron age siege
+// weapons be ballistas; added more ballistas; added ballistics; added more towers; added ballista-towers;
+// added Logistics & increased number of swordsmen; dropped clubmen
 //
-// Revision 2 [UPatch HD 1.2, 05/14/2023]: Complete rework of AI to support 250 population limit;  
-// Uses same strategy as 'CHOSON AXEMEN.AI' but with tweaks to support Romans: chain mail added, engineering
-// added, removed any illegal upgrades, promoted cats to units (from retrains);
+// Revision 2 [06/30/1998]: dropped farms, storage pits, Legion; added Craftsmanship
+//
+// Revision 3 [UPatch HD 1.1]: Removed short sword and axe
+//
+// Revision 4 [UPatch HD 1.2, 05/21/2023]: Complete rework of AI to support 250 population limit;  
+// Added back Legion; fixed storage pit techs; Dropped catapult retrains; added Helepolis (late Iron)
 // --------------------------------------------------------------------------------------------------
 //
 // Rework by gestremd; Original by Ensemble Studios
@@ -28,22 +32,17 @@ C101    Tool_Age               1      109
 
 // Tool Age
 // --------------------------------------------------------------------
-U83       Man                  2      109
-R63     Axe                    1      12   
+U83       Man                  2      109  
 B84       Market1              1      -1
-T73       Soldier-Inf1         2      12       2 
 T83       Man                  2      109      1 
 B87       Range1               1      -1  
-T73       Soldier-Inf1         2      12       2 
 U83       Man                  2      109
 B50       Farm                 2      -1 
-T73       Soldier-Inf1         2      12       2 
 T83       Man                  2      109      1 
 B50       Farm                 2      -1 
-T83       Man                  2      109      1 
-T73       Soldier-Inf1         2      12       2 
+T83       Man                  2      109      1  
+B50       Farm                 2      -1 
 U83       Man                  2      109
-B50       Farm                 2      -1 
 C102    Bronze_Age             1      109
 R107    Wood_Working           1      84 
 
@@ -52,88 +51,86 @@ R107    Wood_Working           1      84
 B12       Barracks1            1      -1
 T83       Man                  2      109      1
 U75       Soldier-Inf3         2      12 
-R40     Leather_Armor_-_Soldie 1      103  
+R149    Leather_Armor_-_Soldie 1      103
 U83       Man                  1      109
-B104      Temple1              1      -1
-R28     Wheel                  1      84
-U75       Soldier-Inf3         2      12 
+B82       Government_Center    1      -1
+R65     Broad_Sword            1      12
 T83       Man                  2      109      1
-U125      Priest               2      104
 U75       Soldier-Inf3         2      12 
-U83       Man                  1      109
+R121    Logistics              1      82 
+U83       Man                  2      109
+U75       Soldier-Inf3         2      12 
 B50       Farm                 2      -1
-C121    Logistics              1      82 
 U75       Soldier-Inf3         2      12 
 T83       Man                  2      109      1
 B50       Farm                 2      -1
 U83       Man                  2      109
-R43     Scale_Armor_-_Soldiers 1      103 
 U75       Soldier-Inf3         2      12 
+B104      Temple1              1      -1
+R152    Scale_Armor_-_Soldiers 1      103
 U83       Man                  1      109
-R81     Domestication          1      84
 B50       Farm                 2      -1
+U125      Priest               2      104
+R81     Domestication          1      84
 T83       Man                  2      109      1
 U75       Soldier-Inf3         2      12 
-B82       Government_Center    1      -1
-U83       Man                  1      109
-R65     Broad_Sword            1      12
+U83       Man                  2      109
+U75       Soldier-Inf3         2      12 
+R28     Wheel                  1      84 
 C103    Iron_Age               1      109
-R46     Tool_Working           1      103 
-R21     Mysticism              1      104 
 R32     Artisanship            1      84 
-R24     Polytheism             1      104
 
 // Iron Age
 // --------------------------------------------------------------------
+R146    Tool_Working           1      103 
 B109      Town_Center1         1      -1
 T83       Man                  2      109      1
-B49       Siege_Workshop       1      -1
-U83       Man                  1      109
-C66     Long_Sword             1      12  
 B12       Barracks1            1      -1
-T83       Man                  2      109      1
+U83       Man                  2      109
 U75       Soldier-Inf3         2      12
+T83       Man                  2      109      1
 U125      Priest               2      104
-R48     Chain_Mail_-_Soldiers  1      103
-R35     Engineering            1      82 
+U75       Soldier-Inf3         2      12
 B87       Range1               1      -1 
 T83       Man                  2      109      1
-U11       Soldier-Ballista     2      49
-U83       Man                  1      109 
-R20     Fanaticism             1      104 
-R54     Heavy_Catapult         1      49  
-R106    Ballistics             1      82   
-R51     Metal_Working          1      103 
 U75       Soldier-Inf3         2      12
+U83       Man                  2      109 
+U75       Soldier-Inf3         2      12
+R20     Fanaticism             1      104 
+R66     Long_Sword             1      12  
+R147    Metal_Working          1      103
+U75       Soldier-Inf3         2      12
+B49       Siege_Workshop       1      -1
 U83       Man                  2      109
+U75       Soldier-Inf3         2      12
+R106    Ballistics             1      82   
+R22     Astrology              1      104
 U75       Soldier-Inf3         2      12   
 B50       Farm                 2      -1 
-U35       Soldier-Catapult1    2      49
+U11       Soldier-Ballista     2      49
 U125      Priest               2      104
 U75       Soldier-Inf3         2      12
-R110    Craftmanship           1      84
 R19     Monotheism             1      104
-R47     Bronze_Shield          1      103 
+R155    Bronze_Shield          1      103
 U75       Soldier-Inf3         2      12
-U11       Soldier-Ballista     2      49
 U125      Priest               2      104 
 U75       Soldier-Inf3         2      12
 B109      Town_Center1         1      -1
+R18     Afterlife              1      104 
 U75       Soldier-Inf3         2      12
-R52     Metalurgy              1      103
-R27     Helepolis              1      49 
+R148    Metalurgy              1      103
+R77     Legion                 1      12 
+R110    Craftmanship           1      84
 
 // Post-Iron Age
 // Contains extra upgrades & build items for a late Iron Age game
 // --------------------------------------------------------------------
 R16     Watch_Tower            1      68 
-R117    Iron_Shield            1      103 
 B104      Temple1              1      -1 
 R31     Plow                   1      84 
 B12       Barracks1            1      -1    
 R12     Sentry_Tower           1      68
 U75       Soldier-Inf3         5      12
-B101      Stable1              1      -1   
 U125      Priest               5      104
 U75       Soldier-Inf3         5      12
 U11       Soldier-Ballista     5      49
@@ -141,30 +138,31 @@ U75       Soldier-Inf3         5      87
 B49       Siege_Workshop       1      -1
 B79       Watch_Tower          2      -1 
 B104      Temple1              1      -1 
-U75       Soldier-Inf3         6      12 
-R122    Tower_Shield           1      103
-U125      Priest               5      104
 U75       Soldier-Inf3         6      12
+R15     Guard_Tower            1      68   
+U125      Priest               5      104
 U75       Soldier-Inf3         6      12
 U11       Soldier-Ballista     5      49  
-B101      Stable1              1      -1   
+U75       Soldier-Inf3         6      12
+B12       Barracks1            1      -1  
 U75       Soldier-Inf3         5      12
 U125      Priest               5      104
 U75       Soldier-Inf3         5      12
-R77     Legion                 1      12 
-U35       Soldier-Catapult1    10     49 
+B79       Watch_Tower          2      -1 
+R27     Helepolis              1      49 
+U11       Soldier-Ballista     10     49 
 U75       Soldier-Inf3         15     12 
-U125      Priest               10     104
-U35       Soldier-Catapult1    10     49
+U11       Soldier-Ballista     10     49
 U75       Soldier-Inf3         15     12
 B49       Siege_Workshop       1      -1
 U75       Soldier-Inf3         15     12
-U35       Soldier-Catapult1    12     49
+U11       Soldier-Ballista     12     49
 B12       Barracks1            1      -1  
 U75       Soldier-Inf3         16     12
-U125      Priest               10     104
 B49       Siege_Workshop       1      -1
 U75       Soldier-Inf3         20     12
-U35       Soldier-Catapult1    15     49 
+B79       Watch_Tower          2      -1 
+U11       Soldier-Ballista     15     49 
+U75       Soldier-Inf3         20     12
 
 //END

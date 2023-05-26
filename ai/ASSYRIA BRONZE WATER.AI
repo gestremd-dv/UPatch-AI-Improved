@@ -18,6 +18,7 @@
 //
 // Rework by gestremd; Original by Ensemble Studios
 
+
 // Stone Age
 // --------------------------------------------------------------------
 B109      Town_Center1         1      -1
@@ -36,11 +37,9 @@ B84       Market1              1      -1
 T83       Man                  2      109      1 
 T13       Boat-Fishing1        2      45       2
 B87       Range1               1      -1  
-R16     Watch_Tower            1      68 
 B50       Farm                 2      -1 
 T83       Man                  2      109      1 
 B50       Farm                 2      -1 
-B79       Watch_Tower          1      -1
 T83       Man                  2      109      1 
 B50       Farm                 2      -1 
 U83       Man                  2      109
@@ -50,7 +49,7 @@ R107    Wood_Working           1      84
 // Bronze Age
 // --------------------------------------------------------------------
 B45       Dock_1               1      -1  
-R28     Wheel                  1      84
+C28     Wheel                  1      84
 B101      Stable1              1      -1
 T83       Man                  2      109      1
 T41       Soldier-Chariot2     2      87       1
@@ -81,7 +80,6 @@ B82       Government_Center    1      -1
 T41       Soldier-Chariot2     2      87       1
 U83       Man                  2      109
 C103    Iron_Age               1      109
-R12     Sentry_Tower           1      68
 R32     Artisanship            1      84 
 
 // Iron Age
@@ -100,6 +98,7 @@ U11       Soldier-Balista      2      49
 T83       Man                  2      109      1
 U39       Soldier-Cavalry3_Arc 2      87
 U11       Soldier-Balista      2      49
+B79       Watch_Tower          1      -1
 U83       Man                  1      109 
 R7      Trireme                1      45 
 R110    Craftmanship           1      84
@@ -127,6 +126,7 @@ R27     Helepolis              1      49
 // Post-Iron Age
 // Contains extra upgrades & build items for a late Iron Age game
 // --------------------------------------------------------------------
+R12     Sentry_Tower           1      68
 U19       Boat-War1            5      45
 U39       Soldier-Cavalry3_Arc 5      87 
 U360      Fire-Galley          5      45
@@ -136,16 +136,12 @@ R8      Heavy_Transport        1      45
 B87       Range1               1      -1  
 B45       Dock_1               1      -1  
 U39       Soldier-Cavalry3_Arc 5      87   
-B79       Watch_Tower          2      -1 
 U360      Fire-Galley          5      45
 R31     Plow                   1      84   
-R15     Guard_Tower            1      68   
 U360      Fire-Galley          5      45   
 U39       Soldier-Cavalry3_Arc 5      87   
 U19       Boat-War1            5      45
 U39       Soldier-Cavalry3_Arc 10     87
-B79       Watch_Tower          2      -1 
-R2      Catapult_Tower         1      68  
 U19       Boat-War1            10     45
 U39       Soldier-Cavalry3_Arc 15     87 
 U11       Soldier-Balista      15     49 
@@ -155,7 +151,6 @@ U11       Soldier-Balista      10     49
 U19       Boat-War1            15     45
 U39       Soldier-Cavalry3_Arc 10     87
 U11       Soldier-Balista      16     49
-B79       Watch_Tower          2      -1 
 U39       Soldier-Cavalry3_Arc 18     87
 
 //END

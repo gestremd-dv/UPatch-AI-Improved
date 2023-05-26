@@ -1,45 +1,42 @@
 // BABYLON TOWERS.AI
 //
-// Strategy: Turtling tactic /w towers and siege support
+// Iron Age turtling
 //
-// 124 catapults, 96 priests
-// Retrains: 6 chariots
-// 50 villagers; 14 farms; 36 Towers O_O
+// Military: 124 Catapults, 96 Priests
+// Economy : 50-30 Villagers, 14 Farms
+// Defenses: 36 Ballista Towers
+// Retrains: 6 Chariots
+//
+// Version 1: 05/26/2023
 //
 // By gestremd
 
- 
-// Stone Age
-// --------------------------------------------------------------------
+
 B109      Town_Center1         1      -1
 U83       Man                  7      109   
 B12       Barracks1            1      -1    
 U83       Man                  7      109     
-C101    Tool_Age               1      109  
 
-// Tool Age
-// --------------------------------------------------------------------
-C16     Watch_Tower            1      68 
+C101    Tool_Age               1      109  
+R16     Watch_Tower            1      68 
 U83       Man                  2      109
 B79       Watch_Tower          2      -1
 B84       Market1              1      -1
 T83       Man                  2      109      1 
+R138    Wood_Working           1      84  
 B101      Stable1              1      -1   
 U83       Man                  2      109
 B50       Farm                 2      -1 
 T83       Man                  2      109      1 
+R143    Gold_Mining            1      84
 B50       Farm                 2      -1 
 T83       Man                  2      109      1 
 B50       Farm                 2      -1 
 U83       Man                  2      109
-B79       Watch_Tower          2      -1
-C102    Bronze_Age             1      109
-R138    Wood_Working           1      84  
 
-// Bronze Age
-// --------------------------------------------------------------------
-C12     Sentry_Tower           1      68 
+C102    Bronze_Age             1      109
 R141    Stone_Mining           1      84 
+C12     Sentry_Tower           1      68 
 B79       Watch_Tower          2      -1
 T83       Man                  2      109      1
 B87       Range1               1      -1 
@@ -59,18 +56,16 @@ U125      Priest               2      104
 T40       Soldier-Chariot1     2      101      1
 U83       Man                  1      109
 B50       Farm                 2      -1
-R135    Domestication          1      84
 U125      Priest               2      104
 T40       Soldier-Chariot1     2      101      1
 T83       Man                  2      109      1
 B79       Watch_Tower          2      -1
+
 C103    Iron_Age               1      109
+R144    Coinage                1      84
 R21     Mysticism              1      104 
 R139    Artisanship            1      84 
 R24     Polytheism             1      104
-
-// Iron Age
-// --------------------------------------------------------------------
 B109      Town_Center1         1      -1
 T83       Man                  2      109      1
 B49       Siege_Workshop       1      -1
@@ -79,8 +74,8 @@ R54     Catapult               1      49
 B79       Watch_Tower          2      -1 
 T83       Man                  2      109      1
 U125      Priest               2      104
+R135    Domestication          1      84
 T83       Man                  2      109      1
-R142    Siege_Craft            1      84 
 U35       Soldier-Catapult1    2      49
 R20     Fanaticism             1      104 
 C15     Guard_Tower            1      68    
@@ -93,12 +88,12 @@ U125      Priest               2      104
 B104      Temple1              1      -1
 U35       Soldier-Catapult1    2      49
 U125      Priest               2      104
-R140    Craftmanship           1      84
 B49       Siege_Workshop       1      -1 
 U83       Man                  2      109
 R22     Astrology              1      104
 U35       Soldier-Catapult1    2      49
 U125      Priest               2      104
+R140    Craftmanship           1      84
 R37     Alchemy                1      82    
 B79       Watch_Tower          2      -1 
 R19     Monotheism             1      104 
@@ -107,19 +102,16 @@ U35       Soldier-Catapult1    2      49
 U125      Priest               2      104
 U35       Soldier-Catapult1    2      49
 B109      Town_Center1         1      -1
+R142    Siege_Craft            1      84 
 U125      Priest               2      104 
 U35       Soldier-Catapult1    2      49
-C2      Catapult_Tower         1      68 
+R2      Catapult_Tower         1      68 
 R160    Massive_Catapult       1      49
 B79       Watch_Tower          15     -1 
-R143    Gold_Mining            1      84
-B276      Wonder               1      -1  
-
-// Post-Iron Age
-// Contains extra upgrades & build items for a late Iron Age game
-// --------------------------------------------------------------------
 R112    Architecture           1      82 
 U125      Priest               2      104
+B276      Wonder               1      -1  
+
 U35       Soldier-Catapult1    5      49  
 R35     Engineering            1      82 
 U35       Soldier-Catapult1    5      49  

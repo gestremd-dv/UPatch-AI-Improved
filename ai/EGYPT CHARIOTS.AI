@@ -1,147 +1,150 @@
 // EGYPT CHARIOTS.AI
 //
-// Strategy: Bronze Age chariot rush /w priest support
+// Bronze Age attack
 //
-// 84 chariots, 62 chariot archers, 80 priests
-// 50 villagers; 14 farms
+// Military: 84 Scythe Chariots, 79 Chariot Archers, 67 Priests
+// Economy : 50-30 Villagers, 14 Farms
+// Defenses: N/A
+// Retrains: N/A
 //
-// By gestremd
+// Revision History:
+// --------------------------------------------------------------------------------------------------
+// Revision 1 [06/12/1998]: X-Pack changes; added Nobility & Heavy Chariot upgrade; added gov center; 
+// added cav chain armor & moved up scale armor; added various storage pit attack upgrades; traded war 
+// elephants in for archer elephants; added archery upgrades; made chariots be units, not retrains;
+// moved up cav leather armor; added a range
+//
+// Revision 2 [06/25/1998]: removed farms; removed engineering; dumped cats & siege workshops
+//
+// Revision 3 [UPatch HD 1.1]: fixed missing/redundant objects, fixed positions & wrong values
+//
+// Revision 4 [UPatch HD 1.2, 05/26/2023]: Complete rework of AI to support 255 population limit;  
+// Traded elephant archers for bronze/iron chariot archers; Dropped all towers & their upgrades (for 
+// now); Added Irrigation in late Iron 
+// --------------------------------------------------------------------------------------------------
+//
+// Rework by gestremd; Original by Ensemble Studios
 
 
-// Stone Age
-// --------------------------------------------------------------------
 B109      Town_Center1         1      -1
 U83       Man                  7      109   
 B12       Barracks1            1      -1    
-U83       Man                  7      109     
-C101    Tool_Age               1      109  
-
-// Tool Age
-// --------------------------------------------------------------------
+U83       Man                  7      109 
+    
+C101    Tool_Age               1      109 
 U83       Man                  2      109
 B84       Market1              1      -1
 T83       Man                  2      109      1 
 B101      Stable1              1      -1   
+R107    Wood_Working           1      84  
 U83       Man                  2      109
 B50       Farm                 2      -1 
 T83       Man                  2      109      1 
 B50       Farm                 2      -1 
-T83       Man                  2      109      1 
-B50       Farm                 2      -1 
-U83       Man                  2      109
-C102    Bronze_Age             1      109
 R108    Gold_Mining            1      84   
+T83       Man                  2      109      1 
+B50       Farm                 2      -1 
+U83       Man                  2      109
 
-
-// Bronze Age
-// --------------------------------------------------------------------
+C102    Bronze_Age             1      109
 C28     Wheel                  1      84
 T83       Man                  2      109      1
 B87       Range1               1      -1 
 R42     Leather_Armor_Mounted  1      103
-R107    Wood_Working           1      84  
 U83       Man                  2      109
 B104      Temple1              1      -1
 T83       Man                  2      109      1
-B82       Government_Center    1      -1
 U40       Soldier-Chariot1     2      101
-U125      Priest               2      104
+T125      Priest               2      104
 B50       Farm                 2      -1
 U40       Soldier-Chariot1     2      101
+R81     Domestication          1      84
 T83       Man                  2      109      1
 B50       Farm                 2      -1
-U41       Soldier-Chariot2     2      87
+T41       Soldier-Chariot2     2      87
 U83       Man                  2      109
-U125      Priest               2      104
-R81     Domestication          1      84
+T125      Priest               2      104
 U40       Soldier-Chariot1     2      101
+B82       Government_Center    1      -1
 U83       Man                  1      109
 B50       Farm                 2      -1
-U41       Soldier-Chariot2     2      87
+T41       Soldier-Chariot2     2      87
 R45     Scale_Armor_-_Cavalry  1      103
 T83       Man                  2      109      1
 U40       Soldier-Chariot1     2      101
 R34     Nobility               1      82
+
 C103    Iron_Age               1      109
 R41     Leather_Armor_-_Archer 1      103
-R21     Mysticism              1      104 
+R21     Mysticism              1      104
 R46     Tool_Working           1      103
 R32     Artisanship            1      84 
 R24     Polytheism             1      104
-
-// Iron Age
-// --------------------------------------------------------------------
 B109      Town_Center1         1      -1
 T83       Man                  2      109      1
 B87       Range1               1      -1 
 U83       Man                  1      109
-U125      Priest               2      104
+U41       Soldier-Chariot2     2      87
 T83       Man                  2      109      1
+C126    Scythe_Chariot         1      101 
+R20     Fanaticism             1      104 
 B101      Stable1              1      -1  
 T83       Man                  2      109      1
 R50     Chain_Mail_-_Cavalry   1      103 
-R18     Afterlife              1      104
-U41       Soldier-Chariot2     2      87 
-R16     Watch_Tower            1      68 
+U125      Priest               2      104 
+R106    Ballistics             1      82 
 U83       Man                  2      109
 R22     Astrology              1      104
 U40       Soldier-Chariot1     2      101
-R126    Scythe_Chariot         1      101 
 R51     Metal_Working          1      103
-R106    Ballistics             1      82 
-U125      Priest               2      104
+U41       Soldier-Chariot2     2      87
 B104      Temple1              1      -1
-U41       Soldier-Chariot2     2      87 
+R31     Plow                   1      84   
+U125      Priest               2      104 
+U41       Soldier-Chariot2     2      87
 R44     Scale_Armor_-_Archers  1      103 
-U125      Priest               2      104
-R110    Craftmanship           1      84
-R12     Sentry_Tower           1      68 
 U83       Man                  2      109
-R20     Fanaticism             1      104 
+R18     Afterlife              1      104
 U40       Soldier-Chariot1     2      101
 R37     Alchemy                1      82    
-U125      Priest               2      104
+U41       Soldier-Chariot2     2      87
 B50       Farm                 2      -1 
-U41       Soldier-Chariot2     2      87 
-R19     Monotheism             1      104 
-B101      Stable1              1      -1 
-U125      Priest               2      104
-U40       Soldier-Chariot1     2      101
 U125      Priest               2      104 
-B109      Town_Center1         1      -1
-U41       Soldier-Chariot2     2      87 
+B101      Stable1              1      -1 
+U41       Soldier-Chariot2     2      87
+R19     Monotheism             1      104 
+U40       Soldier-Chariot1     2      101
 R49     Chain_Mail_-_Archers   1      103
-
-// Post-Iron Age
-// Contains extra upgrades & build items for a late Iron Age game
-// --------------------------------------------------------------------
-U125      Priest               2      104
+U41       Soldier-Chariot2     2      87 
+B109      Town_Center1         1      -1
+U125      Priest               2      104 
+R110    Craftmanship           1      84
+U41       Soldier-Chariot2     2      87
 R52     Metalurgy              1      103 
-U41       Soldier-Chariot2     5      87   
+U125      Priest               5      104   
 U40       Soldier-Chariot1     5      101 
 B104      Temple1              1      -1
-U125      Priest               2      104
+U41       Soldier-Chariot2     2      87
 B101      Stable1              1      -1 
-U125      Priest               2      104  
-U41       Soldier-Chariot2     5      87  
-R31     Plow                   1      84   
+R80     Irrigation             1      84
+U41       Soldier-Chariot2     2      87  
+U125      Priest               5      104  
 B87       Range1               1      -1 
-U125      Priest               2      104  
+U41       Soldier-Chariot2     2      87  
 U40       Soldier-Chariot1     10     101
-U41       Soldier-Chariot2     10     87 
+U125      Priest               10     104 
 B104      Temple1              1      -1
 U40       Soldier-Chariot1     10     101
 B101      Stable1              1      -1  
-U41       Soldier-Chariot2     10     87 
-U125      Priest               10     104
+U125      Priest               10     104 
+U41       Soldier-Chariot2     10     87
 U40       Soldier-Chariot1     15     101
-U41       Soldier-Chariot2     10     87 
-U125      Priest               15     104
+U125      Priest               10     104 
+U41       Soldier-Chariot2     15     87
 U40       Soldier-Chariot1     15     101
-U125      Priest               10     104  
-U41       Soldier-Chariot2     10     87 
-U125      Priest               21     104
-U41       Soldier-Chariot2     10     87 
+U41       Soldier-Chariot2     10     87  
+U125      Priest               15     104 
+U41       Soldier-Chariot2     20     87
 U40       Soldier-Chariot1     15     101
 
 //END

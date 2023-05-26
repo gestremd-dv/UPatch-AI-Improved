@@ -1,10 +1,11 @@
 // ASSYRIA BOWMEN.AI
 //
-// Strategy: Tool Age archer attack
+// Tool Age attack
 // 
-// 112 horse archers, 65 ballistas, 28 catapults
-// Retrains: 10 bowmen, 6 chariot archers, 4 camels
-// 50 villagers; 14 farms
+// Military: 112 Horse Archers, 65 Helepolis', 28 catapults
+// Economy : 50-30 Villagers, 14 Farms
+// Defenses: N/A
+// Retrains: 8 Bowmen, 4 Chariot Archers, 2 Camel Riders
 //
 // Revision History:
 // --------------------------------------------------------------------------------------------------
@@ -24,31 +25,27 @@
 //
 // Revision 7 [UPatch HD 1.1]: Fixed missing/redundant objects, fixed positions & wrong values
 //
-// Revision 8 [UPatch HD 1.2, 05/13/2023]: Complete rework of AI to support 250 population limit;  
+// Revision 8 [UPatch HD 1.2, 05/26/2023]: Complete rework of AI to support 250 population limit;  
 // Added Chain Mail, Alchemy, Engineering upgrades; Made chariot archers retrains to later focus on
-// Iron Age archers;
+// Iron Age archers; Dropped all towers & their upgrades (for now); 
 // --------------------------------------------------------------------------------------------------
 //
 // Rework by gestremd; Original by Ensemble Studios
 
 
-// Stone Age
-// --------------------------------------------------------------------
 B109      Town_Center1         1      -1
 U83       Man                  8      109   
 B12       Barracks1            1      -1    
 U83       Man                  7      109     
-C101    Tool_Age               1      109  
 
-// Tool Age
-// --------------------------------------------------------------------
+C101    Tool_Age               1      109  
 U83       Man                  2      109
 B87       Range1               1      -1  
 T83       Man                  2      109      1 
 T4        Soldier-Archer1      2      87       2
 B84       Market1              1      -1
 U83       Man                  2      109
-T4        Soldier-Archer1      2      87       2
+R107    Wood_Working           1      84 
 B50       Farm                 2      -1 
 T83       Man                  2      109      1 
 T4        Soldier-Archer1      2      87       2
@@ -58,45 +55,40 @@ T4        Soldier-Archer1      2      87       2
 B50       Farm                 2      -1 
 U83       Man                  2      109
 T4        Soldier-Archer1      2      87       2
-C102    Bronze_Age             1      109
-R107    Wood_Working           1      84 
+R108    Gold_Mining            1      84 
 
-// Bronze Age
-// --------------------------------------------------------------------
+C102    Bronze_Age             1      109
 B87       Range1               1      -1 
+T83       Man                  2      109      1
 R28     Wheel                  1      84
-T83       Man                  2      109      1
-T41       Soldier-Chariot2     2      87       2
 U83       Man                  1      109
-B49       Siege_Workshop       1      -1
 T41       Soldier-Chariot2     2      87       2
-B101      Stable1              1      -1 
+B49       Siege_Workshop       1      -1
 T83       Man                  2      109      1
-T338      Soldier-Camel        2      101      2
+B101      Stable1              1      -1 
+T41       Soldier-Chariot2     2      87       2
+T338      Soldier-Camel        1      101      2
 U83       Man                  1      109
 R41     Leather_Armor_-_Archer 1      103 
-R108    Gold_Mining            1      84 
 B50       Farm                 2      -1
-T41       Soldier-Chariot2     2      87       2
 T83       Man                  2      109      1
 B50       Farm                 2      -1
 U83       Man                  2      109      1
-T338      Soldier-Camel        2      101      2
+T338      Soldier-Camel        1      101      2
 U83       Man                  1      109
 B50       Farm                 2      -1
 R81     Domestication          1      84
 T83       Man                  2      109      1
 B82       Government_Center    1      -1
 U83       Man                  1      109
-C103    Iron_Age               1      109
-R44     Scale_Armor_-_Archers  1      103 
-R32     Artisanship            1      84 
 
-// Iron Age
-// --------------------------------------------------------------------
+C103    Iron_Age               1      109
+R30     Coinage                1      84
+R44     Scale_Armor_-_Archers  1      103 
 B109      Town_Center1         1      -1
 U39       Soldier-Cavalry3_Arc 2      87
 T83       Man                  2      109      1
+R32     Artisanship            1      84 
 B87       Range1               1      -1 
 U83       Man                  1      109
 U11       Soldier-Balista      2      49
@@ -105,56 +97,46 @@ T83       Man                  2      109      1
 U35       Soldier-Catapult1    2      49
 T83       Man                  2      109      1
 U39       Soldier-Cavalry3_Arc 2      87
+R106    Ballistics             1      82 
 U11       Soldier-Balista      2      49
 U83       Man                  1      109 
-R110    Craftmanship           1      84
 B49       Siege_Workshop       1      -1
 R49     Chain_Mail_-_Archers   1      103
 R54     Catapult               1      49
 U39       Soldier-Cavalry3_Arc 2      87
 U35       Soldier-Catapult1    2      49
-R106    Ballistics             1      82 
 U83       Man                  1      109
 U39       Soldier-Cavalry3_Arc 2      87
 U11       Soldier-Balista      2      49
-R37     Alchemy                1      82    
 U39       Soldier-Cavalry3_Arc 2      87
 B50       Farm                 2      -1 
 U35       Soldier-Catapult1    2      49
 U39       Soldier-Cavalry3_Arc 2      87
+R110    Craftmanship           1      84
 U11       Soldier-Balista      2      49
 B109      Town_Center1         1      -1
 U39       Soldier-Cavalry3_Arc 2      87
+R37     Alchemy                1      82    
+B276      Wonder               1      -1   
 U35       Soldier-Catapult1    5      49  
-
-// Post-Iron Age
-// Contains extra upgrades & build items for a late Iron Age game
-// --------------------------------------------------------------------
 U39       Soldier-Cavalry3_Arc 3      87
-R16     Watch_Tower            1      68  
 R27     Helepolis              1      49
 U39       Soldier-Cavalry3_Arc 5      87 
 R35     Engineering            1      82 
 U11       Soldier-Balista      5      49  
 B87       Range1               1      -1  
 U35       Soldier-Catapult1    5      49  
-R12     Sentry_Tower           1      68
 U39       Soldier-Cavalry3_Arc 5      87
 B49       Siege_Workshop       1      -1
-R30     Coinage                1      84 
 U39       Soldier-Cavalry3_Arc 5      87
-B79       Watch_Tower          2      -1 
 U11       Soldier-Balista      5      49  
 U39       Soldier-Cavalry3_Arc 5      87
 R31     Plow                   1      84   
 U11       Soldier-Balista      5      49
-R15     Guard_Tower            1      68   
 U39       Soldier-Cavalry3_Arc 8      87  
 U35       Soldier-Catapult1    10     49
-B79       Watch_Tower          2      -1 
 U39       Soldier-Cavalry3_Arc 10     87
 U11       Soldier-Balista      10     49
-R2      Catapult_Tower         1      68 
 U39       Soldier-Cavalry3_Arc 10     87
 U11       Soldier-Balista      10     49   
 U39       Soldier-Cavalry3_Arc 10     87 
@@ -164,11 +146,7 @@ U39       Soldier-Cavalry3_Arc 10     87
 B87       Range1               1      -1  
 U11       Soldier-Balista      12     49
 U39       Soldier-Cavalry3_Arc 10     87
-R109    Stone_Mining           1      84 
-B79       Watch_Tower          2      -1 
 U39       Soldier-Cavalry3_Arc 15     87
 U35       Soldier-Catapult1    22     49
-R111    Siege_Craft            1      84  
-R36     Massive_Catapult       1      49
 
 //END
