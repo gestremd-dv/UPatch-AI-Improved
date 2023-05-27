@@ -66,6 +66,7 @@ R5      Medium_War_Ship        1      45
 U75       Soldier-Inf3         2      12 
 U83       Man                  1      109
 B50       Farm                 2      -1
+U19       Boat-War1            2      49
 U75       Soldier-Inf3         2      12 
 T83       Man                  2      109      1
 U19       Boat-War1            2      49
@@ -111,7 +112,6 @@ R22     Astrology              1      104
 U75       Soldier-Inf3         2      12   
 B50       Farm                 2      -1 
 R146    Tool_Working           1      103 
-U19       Boat-War1            2      49
 U125      Priest               2      104
 U75       Soldier-Inf3         2      12
 R32     Artisanship            1      84 

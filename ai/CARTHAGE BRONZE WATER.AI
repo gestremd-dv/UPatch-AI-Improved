@@ -60,7 +60,6 @@ U83       Man                  1      109
 B49       Siege_Workshop       1      -1 
 R81     Domestication          1      84
 B101      Stable1              1      -1 
-
 R5      Medium_War_Ship        1      45
 U338      Soldier-Camel        2      101
 B50       Farm                 2      -1
@@ -72,7 +71,6 @@ U17       Boat-Transport1      1      45
 U83       Man                  2      109
 R28     Wheel                  1      84
 U83       Man                  2      109
-U19       Boat-War1            2      45
 U338      Soldier-Camel        2      101
 U19       Boat-War1            2      45
 T83       Man                  2      109      1
@@ -139,7 +137,7 @@ U338      Soldier-Camel        15     101
 U11       Soldier-Balista      10     49 
 U338      Soldier-Camel        15     101
 U11       Soldier-Balista      16     49 
-U19       Boat-War1            14     45
+U19       Boat-War1            16     45
 U338      Soldier-Camel        10     101
 U11       Soldier-Balista      16     49
 U338      Soldier-Camel        11     101

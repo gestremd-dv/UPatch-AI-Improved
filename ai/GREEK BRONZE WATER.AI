@@ -2,7 +2,7 @@
 //
 // Iron Age attack
 //
-// Military: 70 Phalanx, 88 Heavy Catapults, 70 Helepolis'
+// Military: 70 Phalanx, 75 Heavy Catapults, 83 Helepolis'
 // Economy : 50-30 Villagers, 14 Farms
 // Defenses: N/A
 // Retrains: 2 Slingers
@@ -46,19 +46,19 @@ R40     Leather_Armor_-_Soldie 1      103
 B49       Siege_Workshop       1      -1
 U83       Man                  2      109
 T83       Man                  2      109      1
-U35       Soldier-Catapult1    2      49  
+U19       Boat-War1            2      49  
 B0        Academy              1      -1 
 B50       Farm                 2      -1
 U93       Soldier-Phal1        2      0 
 R81     Domestication          1      84
 T83       Man                  2      109      1
 B50       Farm                 2      -1
-U35       Soldier-Catapult1    2      49 
+U19       Boat-War1            2      49 
 U83       Man                  2      109
 U93       Soldier-Phal1        2      0 
 U83       Man                  1      109
 R28     Wheel                  1      84
-U35       Soldier-Catapult1    2      49  
+U19       Boat-War1            2      49  
 B50       Farm                 2      -1
 T83       Man                  2      109      1
 R47     Bronze_Shield          1      103  
@@ -76,11 +76,11 @@ U11       Soldier-Balista      2      49
 U83       Man                  1      109
 R73     Phalanx                1      0   
 T83       Man                  2      109      1
-U35       Soldier-Catapult1    2      49
+U19       Boat-War1            2      49
 T83       Man                  2      109      1
 U11       Soldier-Balista      2      49 
 R48     Chain_Mail_-_Soldiers  1      103
-U35       Soldier-Catapult1    2      49 
+U19       Boat-War1            2      49 
 U83       Man                  2      109
 R113    Aristocracy            1      82 
 U93       Soldier-Phal1        2      0 
@@ -88,20 +88,20 @@ U11       Soldier-Balista      2      49
 B49       Siege_Workshop       1      -1 
 U11       Soldier-Balista      4      49 
 R106    Ballistics             1      82 
-U35       Soldier-Catapult1    2      49
+U19       Boat-War1            2      49
 U83       Man                  2      109
-U35       Soldier-Catapult1    2      49
+U19       Boat-War1            2      49
 U93       Soldier-Phal1        2      0 
-U35       Soldier-Catapult1    5      49
+U19       Boat-War1            5      49
 B50       Farm                 2      -1 
 U11       Soldier-Balista      5      49 
 B49       Siege_Workshop       1      -1
 R32     Artisanship            1      84 
 U93       Soldier-Phal1        2      0 
-U35       Soldier-Catapult1    2      49
+U19       Boat-War1            2      49
 B109      Town_Center1         1      -1
 R37     Alchemy                1      82    
-U35       Soldier-Catapult1    4      49 
+U19       Boat-War1            4      49 
 R110    Craftmanship           1      84
 U93       Soldier-Phal1        5      0 
 B49       Siege_Workshop       1      -1 
@@ -109,26 +109,26 @@ U11       Soldier-Balista      2      49
 R111    Siegecraft             1      84
 R36     Massive_Catapult       1      49 
 B0        Academy              1      -1 
-U35       Soldier-Catapult1    4      49
+U19       Boat-War1            4      49
 R51     Metal_Working          1      103
 U11       Soldier-Balista      5      49  
 B0        Academy              1      -1 
-U35       Soldier-Catapult1    2      49  
+U19       Boat-War1            2      49  
 R35     Engineering            1      82 
 R27     Helepolis              1      49   
 U93       Soldier-Phal1        10     0 
 U11       Soldier-Balista      10     49 
 B49       Siege_Workshop       1      -1 
-U35       Soldier-Catapult1    2      49
+U19       Boat-War1            2      49
 U93       Soldier-Phal1        10     0 
 U11       Soldier-Balista      10     49 
 B0        Academy              1      -1 
-U35       Soldier-Catapult1    10     49
+U11       Soldier-Balista      13     49
 U93       Soldier-Phal1        15     0 
 U11       Soldier-Balista      10     49 
 U93       Soldier-Phal1        10     0 
 U11       Soldier-Balista      18     49 
 U93       Soldier-Phal1        10     0 
-U35       Soldier-Catapult1    45     49  
+U19       Boat-War1            42     49  
 
 //END

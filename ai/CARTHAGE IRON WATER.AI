@@ -5,7 +5,7 @@
 // Military: 70 Fire Galleys, 100 Phalanx, 58 Ballistas
 // Economy : 50-30 Villagers, 10 Farms, 6 Fishing Boats
 // Defenses: N/A
-// Retrains: 2 War Galleys
+// Retrains: 6 War Galleys
 //
 // Revision History:
 // --------------------------------------------------------------------------------------------------
@@ -46,7 +46,7 @@ R40     Leather_Armor_-_Soldie 1      103
 B45       Dock_1               1      -1  
 T83       Man                  2      109      1
 B0        Academy              1      -1
-T19       Boat-War1            1      45       1
+T19       Boat-War1            2      45       1
 U93       Soldier-Phal1        2      0 
 B87       Range1               1      -1 
 U83       Man                  1      109
@@ -62,6 +62,7 @@ U17       Boat-Transport1      1      45
 T83       Man                  2      109      1
 B50       Farm                 2      -1
 U93       Soldier-Phal1        2      0 
+T19       Boat-War1            2      45       1
 U83       Man                  2      109
 B101      Stable1              1      -1  
 R47     Bronze_Shield          1      103
