@@ -18,7 +18,7 @@ B12       Barracks1            1      -1
 U83       Man                  7      109  
    
 C101    Tool_Age               1      109  
-C16     Watch_Tower            1      68 
+R16     Watch_Tower            1      68 
 U83       Man                  2      109
 B79       Watch_Tower          1      -1
 B84       Market1              1      -1
@@ -37,13 +37,12 @@ B79       Watch_Tower          1      -1
 
 C102    Bronze_Age             1      109
 R109    Stone_Mining           1      84 
-C12     Sentry_Tower           1      68 
+R12     Sentry_Tower           1      68 
 B79       Watch_Tower          2      -1
 T83       Man                  2      109      1
 B104      Temple1              1      -1
 U83       Man                  2      109
 T83       Man                  2      109      1
-B82       Government_Center    1      -1
 U125      Priest               2      104
 R28     Wheel                  1      84 
 B79       Watch_Tower          2      -1
@@ -52,6 +51,7 @@ T83       Man                  2      109      1
 U83       Man                  2      109
 U125      Priest               2      104
 U83       Man                  1      109
+B82       Government_Center    1      -1
 B50       Farm                 2      -1
 U125      Priest               2      104
 T83       Man                  2      109      1
@@ -60,9 +60,8 @@ B79       Watch_Tower          2      -1
 C103    Iron_Age               1      109
 R30     Coinage                1      84
 R21     Mysticism              1      104 
-R24     Polytheism             1      104
 B109      Town_Center1         1      -1
-R32     Artisanship            1      84 
+R24     Polytheism             1      104
 T83       Man                  2      109      1
 B49       Siege_Workshop       1      -1
 U83       Man                  1      109  
@@ -74,45 +73,45 @@ T83       Man                  2      109      1
 U11       Soldier-Balista      2      49
 R20     Fanaticism             1      104 
 B104      Temple1              1      -1
-C15     Guard_Tower            1      68    
+R15     Guard_Tower            1      68    
 U83       Man                  2      109
 U11       Soldier-Balista      2      49 
 B79       Watch_Tower          2      -1 
-R18     Afterlife              1      104
 B49       Siege_Workshop       1      -1 
 U125      Priest               2      104
 B104      Temple1              1      -1
-U11       Soldier-Balista      2      49
-U125      Priest               2      104
-R110    Craftmanship           1      84 
-U83       Man                  2      109
 R22     Astrology              1      104
 U11       Soldier-Balista      2      49
+U125      Priest               2      104
+U83       Man                  2      109
+U11       Soldier-Balista      2      49
+R32     Artisanship            1      84 
 U125      Priest               2      104  
-R27     Helepolis              1      49  
 B79       Watch_Tower          2      -1 
-R19     Monotheism             1      104 
 R112    Architecture           1      82 
+R18     Afterlife              1      104
 U11       Soldier-Balista      2      49
 U125      Priest               2      104
 U11       Soldier-Balista      2      49
 B109      Town_Center1         1      -1
 U125      Priest               2      104 
 U11       Soldier-Balista      2      49
-R2      Catapult_Tower         1      68 
 B79       Watch_Tower          10     -1 
 B49       Siege_Workshop       1      -1 
-R111    Siege_Craft            1      84    
 U125      Priest               2      104
 U11       Soldier-Balista      5      49   
 B104      Temple1              1      -1
 B79       Watch_Tower          5      -1
+R2      Catapult_Tower         1      68 
 U125      Priest               2      104
 B12       Barracks1            1      -1 
+R19     Monotheism             1      104 
+R110    Craftmanship           1      84 
 U125      Priest               2      104  
 U11       Soldier-Balista      5      49   
 U125      Priest               2      104  
 U11       Soldier-Balista      5      49
+R27     Helepolis              1      49  
 B79       Watch_Tower          5      -1 
 B104      Temple1              1      -1
 U11       Soldier-Balista      10     49 

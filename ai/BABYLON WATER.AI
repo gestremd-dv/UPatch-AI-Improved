@@ -1,155 +1,142 @@
 // BABYLON WATER.AI
 //
-// Strategy: Bronze/Iron Age warship attack
-// 
-// 70 fire galleys, 54 catapults, 107 chariots
-// Retrains 2 warships
-// 50 villagers; 14 farms; 4 fishing ships
+// Bronze Age attack
 //
-// New strategy devised by gestremd
+// Military: 97 Scythe Chariots, 63 Catapults, 70 Fire Galleys
+// Economy : 50-30 Villagers, 14 Farms
+// Defenses: N/A
+// Retrains: 2 War Galleys
+//
+// Revision History:
+// --------------------------------------------------------------------------------------------------
+// Revision 1 [UPatch HD 1.1]: fixed missing/redundant objects, fixed positions & wrong values; removed 
+// short sword and axe
+// 
+// Revision 2 [UPatch HD 1.2, 05/27/2023]: Complete rework of AI to support 255 population limit; Dropped 
+// all towers & their upgrades (for now); Added fishing boats;
+// --------------------------------------------------------------------------------------------------
+//
+// Rework by gestremd; Original by Ensemble Studios
 
 
-// Stone Age
-// --------------------------------------------------------------------
 B109      Town_Center1         1      -1
 U83       Man                  7      109   
 B12       Barracks1            1      -1    
-U83       Man                  7      109     
+U83       Man                  7      109   
 B45       Dock_1               1      -1  
-U13       Boat-Fishing1        2      45
-C101    Tool_Age               1      109 
+T13       Boat-Fishing1        2      45       2  
 
-// Tool Age
-// --------------------------------------------------------------------
-B45       Dock_1               1      -1  
+C101    Tool_Age               1      109  
+B45       Dock_1               1      -1 
 U83       Man                  2      109
 B84       Market1              1      -1
 T83       Man                  2      109      1 
-U13       Boat-Fishing1        2      45
-B101      Stable1              1      -1 
-R16     Watch_Tower            1      68 
+B101      Stable1              1      -1   
+U83       Man                  2      109
+R138    Wood_Working           1      84  
 B50       Farm                 2      -1 
 T83       Man                  2      109      1 
+T13       Boat-Fishing1        2      45       1  
 B50       Farm                 2      -1 
-B79       Watch_Tower          1      -1
 T83       Man                  2      109      1 
 B50       Farm                 2      -1 
 U83       Man                  2      109
+
 C102    Bronze_Age             1      109
-R138    Wood_Working           1      84 
-
-// Bronze Age
-// --------------------------------------------------------------------
+R42     Leather_Armor_Mounted  1      103
 B45       Dock_1               1      -1 
-R141    Stone_Mining           1      84 
-B87       Range1               1      -1   
 T83       Man                  2      109      1
-R145    Wheel                  1      84
-U40       Soldier-Chariot1     2      101
-T19       Boat-War1            1      45       1
-R42     Leather_Armor_Mounted  1      103 
-U83       Man                  1      109
+C145    Wheel                  1      84 
+B87       Range1               1      -1 
+U83       Man                  2      109
 U40       Soldier-Chariot1     2      101
 T83       Man                  2      109      1
-T19       Boat-War1            1      45       1
+B49       Siege_Workshop       1      -1 
+T19       Boat-War1            2      45       1
+U40       Soldier-Chariot1     2      101
+R143    Gold_Mining            1      84
+B50       Farm                 2      -1
+T13       Boat-Fishing1        2      45       1  
+U40       Soldier-Chariot1     2      101
+T83       Man                  2      109      1
+B50       Farm                 2      -1
+U40       Soldier-Chariot1     2      101
+R135    Domestication          1      84
+U83       Man                  2      109
+T19       Boat-War1            2      45       1
+U40       Soldier-Chariot1     2      101
 U83       Man                  1      109
-R45     Scale_Armor_-_Cavalry  1      103 
-U17       Boat-Transport1      1      45
+B50       Farm                 2      -1
+U40       Soldier-Chariot1     2      101
 B82       Government_Center    1      -1
-R5      Medium_War_Ship        1      45
-B50       Farm                 2      -1
-U40       Soldier-Chariot1     2      101
-U13       Boat-Fishing1        2      45
-R81     Domestication          1      84
-B104      Temple1              1      -1 
-T83       Man                  2      109      1
-B50       Farm                 2      -1
 T83       Man                  2      109      1
 U40       Soldier-Chariot1     2      101
-U83       Man                  1      109
-B50       Farm                 2      -1
-U83       Man                  1      109
+
 C103    Iron_Age               1      109
+R45     Scale_Armor_-_Cavalry  1      103
+R144    Coinage                1      84
+B45       Dock_1               1      -1 
 R46     Tool_Working           1      103
-R12     Sentry_Tower           1      68
-R139    Artisanship            1      84 
-
-// Iron Age
-// --------------------------------------------------------------------
 B109      Town_Center1         1      -1
-U40       Soldier-Chariot1     2      101
-R34     Nobility               1      82  
-B45       Dock_1               1      -1  
 T83       Man                  2      109      1
 B49       Siege_Workshop       1      -1
 U83       Man                  1      109
-R54     Catapult               1      49 
-B87       Range1               1      -1 
+U360      Fire-Galley          2      45
+R34     Nobility               1      82
+T83       Man                  2      109      1
+B101      Stable1              1      -1  
+T83       Man                  2      109      1
 R50     Chain_Mail_-_Cavalry   1      103 
+R20     Fanaticism             1      45 
 U35       Soldier-Catapult1    2      49
-U360      Fire-Galley          2      45
-T83       Man                  2      109      1
-U35       Soldier-Catapult1    2      49
-T83       Man                  1      109      1
+U83       Man                  2      109
+R54     Catapult               1      49   
 U40       Soldier-Chariot1     2      101
+U360      Fire-Galley          2      45
 U35       Soldier-Catapult1    2      49
-U83       Man                  1      109 
-R140    Craftmanship           1      84
+U360      Fire-Galley          2      45
+U83       Man                  2      109
 U40       Soldier-Chariot1     2      101
-U17       Boat-Transport1      1      45
-R106    Ballistics             1      82 
-U35       Soldier-Catapult1    2      49
-R49     Chain_Mail_-_Archers   1      103
-U360      Fire-Galley          2      45
-U83       Man                  1      109
-U360      Fire-Galley          2      45
-U40       Soldier-Chariot1     2      101
-R37     Alchemy                1      82    
-U360      Fire-Galley          2      45
 B50       Farm                 2      -1 
+U40       Soldier-Chariot1     2      101
+U35       Soldier-Catapult1    2      49
 U360      Fire-Galley          2      45
+R37     Alchemy                1      82    
 U40       Soldier-Chariot1     2      101
-B109      Town_Center1         1      -1
 U360      Fire-Galley          2      45 
-U40       Soldier-Chariot1     2      101
+R106    Ballistics             1      82 
+B109      Town_Center1         1      -1
+U35       Soldier-Catapult1    2      49
 R51     Metal_Working          1      103
- 
-
-// Post-Iron Age
-// Contains extra upgrades & build items for a late Iron Age game
-// --------------------------------------------------------------------
-R162    Scythe_Chariot         1      101 
-U360      Fire-Galley          5      45
-U40       Soldier-Chariot1     5      101 
-U360      Fire-Galley          5      45
-R52     Metalurgy              1      103 
-R35     Engineering            1      82 
-U360      Fire-Galley          5      45
+U40       Soldier-Chariot1     2      101
 U35       Soldier-Catapult1    5      49  
-B87       Range1               1      -1 
-R8      Heavy_Transport        1      45 
-B45       Dock_1               1      -1  
-U40       Soldier-Chariot1     5      101   
-B79       Watch_Tower          2      -1 
-U360      Fire-Galley          5      45
-R136    Plow                   1      84   
-R15     Guard_Tower            1      68   
-U360      Fire-Galley          5      45   
-U40       Soldier-Chariot1     5      101   
-U360      Fire-Galley          5      45
-U40       Soldier-Chariot1     10     101
-B79       Watch_Tower          2      -1 
-R2      Catapult_Tower         1      68   
-U360      Fire-Galley          10     45
-U40       Soldier-Chariot1     15     101 
-U35       Soldier-Catapult1    15     49 
+U40       Soldier-Chariot1     5      101 
+B45       Dock_1               1      -1 
+R162    Scythe_Chariot         1      101 
+R136    Plow                   1      84  
+U360      Fire-Galley          2      45
 B49       Siege_Workshop       1      -1
-U40       Soldier-Chariot1     15     101
+U40       Soldier-Chariot1     2      101 
+R35     Engineering            1      82 
+U35       Soldier-Catapult1    5      49   
+R52     Metalurgy              1      103 
+B101      Stable1              1      -1   
+U360      Fire-Galley          2      45  
+U40       Soldier-Chariot1     8      101
 U35       Soldier-Catapult1    10     49 
-U360      Fire-Galley          18     45
-U40       Soldier-Chariot1     10     101
-U35       Soldier-Catapult1    16     49
-B79       Watch_Tower          2      -1 
-U40       Soldier-Chariot1     22     101
+B45       Dock_1               1      -1 
+U40       Soldier-Chariot1     15     101
+U360      Fire-Galley          2      45  
+B49       Siege_Workshop       1      -1 
+U35       Soldier-Catapult1    10     49 
+U360      Fire-Galley          10     45
+U40       Soldier-Chariot1     15     101
+U35       Soldier-Catapult1    10     49
+U360      Fire-Galley          15     45
+U40       Soldier-Chariot1     15     101
+U360      Fire-Galley          10     45  
+U35       Soldier-Catapult1    15     49
+U360      Fire-Galley          15     45
+U40       Soldier-Chariot1     15     101
 
 //END

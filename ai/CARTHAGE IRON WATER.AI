@@ -1,10 +1,11 @@
 // CARTHAGE IRON WATER.AI
 //
-// Strategy: Iron Age warship attack
+// Iron Age attack
 // 
-// 70 fire galleys, 100 hoplites, 58 ballistas
-// Retrains 2 warships
-// 50 villagers; 14 farms; 4 fishing ships
+// Military: 70 Fire Galleys, 100 Phalanx, 58 Ballistas
+// Economy : 50-30 Villagers, 10 Farms, 6 Fishing Boats
+// Defenses: N/A
+// Retrains: 2 War Galleys
 //
 // Revision History:
 // --------------------------------------------------------------------------------------------------
@@ -16,44 +17,38 @@
 //
 // Rework by gestremd; Original by Ensemble Studios
 
-// Stone Age
-// --------------------------------------------------------------------
+
 B109      Town_Center1         1      -1
 U83       Man                  7      109   
 B12       Barracks1            1      -1    
 U83       Man                  7      109     
 B45       Dock_1               1      -1  
 U13       Boat-Fishing1        2      45
-C101    Tool_Age               1      109 
 
-// Tool Age
-// --------------------------------------------------------------------
+C101    Tool_Age               1      109 
 B45       Dock_1               1      -1  
 U83       Man                  2      109
 B84       Market1              1      -1
 T83       Man                  2      109      1 
+R107    Wood_Working           1      84 
 U13       Boat-Fishing1        2      45
 B101      Stable1              1      -1   
-R16     Watch_Tower            1      68 
 B50       Farm                 2      -1 
 T83       Man                  2      109      1 
 B50       Farm                 2      -1 
-B79       Watch_Tower          1      -1
 T83       Man                  2      109      1 
+R108    Gold_Mining            1      84  
 B50       Farm                 2      -1 
 U83       Man                  2      109
-C102    Bronze_Age             1      109
-R107    Wood_Working           1      84 
 
-// Bronze Age
-// --------------------------------------------------------------------
+C102    Bronze_Age             1      109
+R40     Leather_Armor_-_Soldie 1      103
 B45       Dock_1               1      -1  
 T83       Man                  2      109      1
 B0        Academy              1      -1
 T19       Boat-War1            1      45       1
 U93       Soldier-Phal1        2      0 
 B87       Range1               1      -1 
-R40     Leather_Armor_-_Soldie 1      103
 U83       Man                  1      109
 U93       Soldier-Phal1        2      0 
 T83       Man                  2      109      1
@@ -69,23 +64,20 @@ B50       Farm                 2      -1
 U93       Soldier-Phal1        2      0 
 U83       Man                  2      109
 B101      Stable1              1      -1  
+R47     Bronze_Shield          1      103
 B50       Farm                 2      -1
 T83       Man                  2      109      1
 R81     Domestication          1      84
 U83       Man                  1      109
 U93       Soldier-Phal1        2      0 
 U83       Man                  1      109
-C103    Iron_Age               1      109
-R46     Tool_Working           1      103 
-R12     Sentry_Tower           1      68
-R32     Artisanship            1      84 
 
-// Iron Age
-// --------------------------------------------------------------------
+C103    Iron_Age               1      109
 B109      Town_Center1         1      -1
-U93       Soldier-Phal1        2      0 
+R73     Phalanx                1      0 
 B45       Dock_1               1      -1  
 T83       Man                  2      109      1
+U93       Soldier-Phal1        2      0 
 B49       Siege_Workshop       1      -1
 U83       Man                  2      109
 U11       Soldier-Balista      2      49
@@ -100,11 +92,10 @@ U93       Soldier-Phal1        2      0
 U11       Soldier-Balista      2      49
 U17       Boat-Transport1      1      45
 U83       Man                  2      109 
-R110    Craftmanship           1      84
 U93       Soldier-Phal1        2      0 
 R106    Ballistics             1      82 
 U11       Soldier-Balista      2      49
-R51     Metal_Working          1      103 
+R46     Tool_Working           1      103 
 U360      Fire-Galley          2      45
 U83       Man                  2      109
 U360      Fire-Galley          2      45
@@ -113,39 +104,30 @@ R37     Alchemy                1      82
 U360      Fire-Galley          2      45
 B50       Farm                 2      -1 
 U360      Fire-Galley          2      45
+R51     Metal_Working          1      103 
 U93       Soldier-Phal1        2      0 
 B109      Town_Center1         1      -1
-R73     Phalanx                1      0 
+R32     Artisanship            1      84 
 U360      Fire-Galley          2      45 
 U93       Soldier-Phal1        2      0 
-R27     Helepolis              1      49
- 
-
-// Post-Iron Age
-// Contains extra upgrades & build items for a late Iron Age game
-// --------------------------------------------------------------------
 U360      Fire-Galley          5      45
 U93       Soldier-Phal1        5      0  
 U360      Fire-Galley          5      45
 R35     Engineering            1      82 
 B49       Siege_Workshop       1      -1
 U360      Fire-Galley          5      45
-R79     Centurion              1      0 
+R110    Craftmanship           1      84
 U11       Soldier-Balista      5      49  
 B0        Academy              1      -1 
 R8      Heavy_Transport        1      45 
 B45       Dock_1               1      -1  
 U93       Soldier-Phal1        5      0   
-B79       Watch_Tower          2      -1 
 U360      Fire-Galley          5      45
 R31     Plow                   1      84   
-R15     Guard_Tower            1      68   
 U360      Fire-Galley          5      45   
 U93       Soldier-Phal1        5      0   
 U360      Fire-Galley          5      45
 U93       Soldier-Phal1        5      0 
-B79       Watch_Tower          2      -1 
-R2      Catapult_Tower         1      68 
 B0        Academy              1      -1  
 U360      Fire-Galley          10     45
 U93       Soldier-Phal1        10     0 
@@ -156,7 +138,6 @@ U11       Soldier-Balista      10     49
 U360      Fire-Galley          18     45
 U93       Soldier-Phal1        15     0 
 U11       Soldier-Balista      20     49
-B79       Watch_Tower          2      -1 
 U93       Soldier-Phal1        20     0 
 
 //END

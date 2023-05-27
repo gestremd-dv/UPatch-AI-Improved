@@ -1,49 +1,45 @@
 // PALMYRA CATAPULTS.AI (original: 'PALMYRA ELEPHANT.AI')
 //
-// Strategy: Iron Age catapult attack /w cavalry support
+// Iron Age attack
 // 
-// 104 catapults, 78 war elephants, 45 priests
-// Retrains: 6 camels
-// 50 villagers; 14 farms
+// Military: 104 Heavy Catapults, 78 Armored Elephants, 43 Priests
+// Economy : 50-30 Villagers, 14 Farms
+// Defenses: N/A
+// Retrains: 6 Camel Riders
 //
 // Revision History:
 // --------------------------------------------------------------------------------------------------
-// Revision 1 [UPatch HD 1.2, 05/23/2023]: Complete rework of AI to support 250 population limit; 
-// Renamed strategy file from 'MACEDON ELEPHANT' to 'MACEDON SIEGE'; Dumped some siege weapons for phalanx; 
-// Made bronze cavalry into retrains; Added catapult upgrade; Added wheel; Removed Irrigation; Moved 
-// Iron Shield to late Iron Age (low priority for phalanx) as no longer required for Armored Elephant;
+// Revision 1 [UPatch HD 1.2, 05/27/2023]: Complete rework of AI to support 250 population limit; 
+// Renamed strategy file from 'MACEDON ELEPHANT' to 'MACEDON SIEGE'; Dumped some siege weapons for priests; 
+// Made bronze cavalry into retrains; Added catapult upgrade; Added wheel; Removed Irrigation; Removed
+// Iron Shield; Moved Ballistics down (not really needed as there are no towers or archers/ballistas);
+// Dropped all towers & their upgrades (for now);
 // --------------------------------------------------------------------------------------------------
 //
 // Rework by gestremd; Original by Ensemble Studios
 
 
-// Stone Age
-// --------------------------------------------------------------------
 B109      Town_Center1         1      -1
 U83       Man                  7      109   
 B12       Barracks1            1      -1    
 U83       Man                  7      109     
-C101    Tool_Age               1      109  
 
-// Tool Age
-// --------------------------------------------------------------------
+C101    Tool_Age               1      109  
 U83       Man                  2      109
 B84       Market1              1      -1
 T83       Man                  2      109      1 
+R107    Wood_Working           1      84 
 B87       Range1               1      -1 
 U83       Man                  2      109
+B50       Farm                 2      -1 
+T83       Man                  2      109      1 
+B50       Farm                 2      -1 
+T83       Man                  2      109      1 
 R108    Gold_Mining            1      84   
 B50       Farm                 2      -1 
-T83       Man                  2      109      1 
-B50       Farm                 2      -1 
-T83       Man                  2      109      1 
-B50       Farm                 2      -1 
 U83       Man                  2      109
+
 C102    Bronze_Age             1      109
-
-
-// Bronze Age
-// --------------------------------------------------------------------
 T83       Man                  2      109      1
 B101      Stable1              1      -1 
 R42     Leather_Armor_Mounted  1      103
@@ -51,76 +47,62 @@ U83       Man                  2      109
 B104      Temple1              1      -1 
 T338      Soldier-Camel        2      49       1
 T83       Man                  2      109      1
-U125      Priest               2      104 
-B82       Government_Center    1      -1
-R28     Wheel                  1      84
+U125      Priest               1      104 
 B50       Farm                 2      -1
+R81     Domestication          1      84
 T83       Man                  2      109      1
 T338      Soldier-Camel        2      49       1
 B50       Farm                 2      -1
 U83       Man                  2      109
-R81     Domestication          1      84
 U83       Man                  1      109
-U125      Priest               2      104 
+U125      Priest               1      104 
+B82       Government_Center    1      -1
+R28     Wheel                  1      84
 T338      Soldier-Camel        2      49       1
 B50       Farm                 2      -1
-R45     Scale_Armor_-_Cavalry  1      103
 T83       Man                  2      109      1
+
 C103    Iron_Age               1      109
-R22     Astrology              1      104 
-R46     Tool_Working           1      103
-
-
-// Iron Age
-// --------------------------------------------------------------------
 B109      Town_Center1         1      -1
+R30     Coinage                1      84 
+R45     Scale_Armor_-_Cavalry  1      103
 T83       Man                  2      109      1
 B49       Siege_Workshop       1      -1
 U83       Man                  1      109
-C54     Heavy_Catapult         1      49 
-R20     Fanaticism             1      104 
+R54     Heavy_Catapult         1      49 
 B0        Academy              1      -1 
 U35       Soldier-Catapult1    2      49
 T83       Man                  2      109      1
-R107    Wood_Working           1      84 
 B101      Stable1              1      -1  
-R18     Afterlife              1      104 
 U35       Soldier-Catapult1    2      49
 R37     Alchemy                1      82    
 T83       Man                  2      109      1
 U46       Soldier-Elephant     2      101 
-R16     Watch_Tower            1      68 
 U35       Soldier-Catapult1    2      49
-R109    Stone_Mining           1      84 
 U83       Man                  2      109
-R106    Ballistics             1      82 
-C125    Armored_Elephants      1      101
+R20     Fanaticism             1      104 
 U125      Priest               2      104
 B0        Academy              1      -1 
 U35       Soldier-Catapult1    2      49
 U125      Priest               2      104
-R50     Chain_Mail_-_Cavalry   1      103 
 U46       Soldier-Elephant     2      101 
 U35       Soldier-Catapult1    2      49
+R22     Astrology              1      104 
 U83       Man                  2      109
 U46       Soldier-Elephant     2      101 
 U35       Soldier-Catapult1    2      49
 B50       Farm                 2      -1 
+R125    Armored_Elephants      1      101
 B101      Stable1              1      -1 
+R18     Afterlife              1      104 
 U35       Soldier-Catapult1    2      49
 U125      Priest               2      104 
-R111    Siege_Craft            1      84  
-C36     Massive_Catapult       1      49
 B109      Town_Center1         1      -1
 U46       Soldier-Elephant     2      101  
-
-// Post-Iron Age
-// Contains extra upgrades & build items for a late Iron Age game
-// --------------------------------------------------------------------
+R50     Chain_Mail_-_Cavalry   1      103 
 U125      Priest               2      104
 U46       Soldier-Elephant     5      101   
 U35       Soldier-Catapult1    5      49     
-R12     Sentry_Tower           1      68 
 U35       Soldier-Catapult1    15     49 
 U125      Priest               2      104
 B101      Stable1              1      -1    
@@ -128,18 +110,21 @@ U46       Soldier-Elephant     5      101
 B49       Siege_Workshop       1      -1
 U35       Soldier-Catapult1    10     49
 U46       Soldier-Elephant     10     101 
-R15     Guard_Tower            1      68 
+R106    Ballistics             1      82 
 U35       Soldier-Catapult1    10     49
 B101      Stable1              1      -1  
 U46       Soldier-Elephant     10     101 
+R109    Stone_Mining           1      84 
 U125      Priest               10     104
 U35       Soldier-Catapult1    15     49
 U46       Soldier-Elephant     10     101 
+R111    Siege_Craft            1      84  
 U125      Priest               10     104
 U35       Soldier-Catapult1    15     49 
 U46       Soldier-Elephant     10     101 
 U125      Priest               11     104
 U46       Soldier-Elephant     20     101 
 U35       Soldier-Catapult1    20     49
+R36     Massive_Catapult       1      49
 
 //END

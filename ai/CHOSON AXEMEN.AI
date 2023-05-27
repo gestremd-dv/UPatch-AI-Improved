@@ -50,16 +50,16 @@ R108    Gold_Mining            1      84
 B50       Farm                 2      -1 
 
 C102    Bronze_Age             1      109
+R149    Leather_Armor_-_Soldie 1      103
 B12       Barracks1            1      -1
 B49       Siege_Workshop       1      -1  
 T83       Man                  2      109      1
 U75       Soldier-Inf3         2      12 
-R149    Leather_Armor_-_Soldie 1      103
 U83       Man                  1      109
 B104      Temple1              1      -1
 U75       Soldier-Inf3         2      12 
 T83       Man                  2      109      1
-B82       Government_Center    1      -1
+R155    Bronze_Shield          1      103
 R81     Domestication          1      84
 U125      Priest               2      104
 U75       Soldier-Inf3         2      12 
@@ -70,19 +70,20 @@ T83       Man                  2      109      1
 R121    Logistics              1      82  
 B50       Farm                 2      -1
 U83       Man                  2      109
-R152    Scale_Armor_-_Soldiers 1      103
 U75       Soldier-Inf3         2      12 
 U83       Man                  1      109
 R28     Wheel                  1      84
 B50       Farm                 2      -1
+B82       Government_Center    1      -1
 T83       Man                  2      109      1
 U75       Soldier-Inf3         2      12 
 U83       Man                  1      109
 R65     Broad_Sword            1      12
 
 C103    Iron_Age               1      109
+R152    Scale_Armor_-_Soldiers 1      103
+R30     Coinage                1      84
 R21     Mysticism              1      104 
-R32     Artisanship            1      84 
 R24     Polytheism             1      104
 B109      Town_Center1         1      -1
 T83       Man                  2      109      1
@@ -90,7 +91,6 @@ B49       Siege_Workshop       1      -1
 U83       Man                  1      109
 B12       Barracks1            1      -1
 T83       Man                  2      109      1
-R146    Tool_Working           1      103 
 U75       Soldier-Inf3         2      12
 U125      Priest               2      104
 B87       Range1               1      -1 
@@ -105,43 +105,43 @@ U75       Soldier-Inf3         2      12
 U83       Man                  2      109
 R22     Astrology              1      104
 U75       Soldier-Inf3         2      12   
-R31     Plow                   1      84 
 B50       Farm                 2      -1 
-R155    Bronze_Shield          1      103
-R18     Afterlife              1      104 
+R146    Tool_Working           1      103 
 U11       Soldier-Ballista     2      49
 U125      Priest               2      104
+R32     Artisanship            1      84 
 U75       Soldier-Inf3         2      12
-R30     Coinage                1      84
-R19     Monotheism             1      104
 U75       Soldier-Inf3         2      12
 U11       Soldier-Ballista     2      49
 U125      Priest               2      104 
 U75       Soldier-Inf3         2      12
 B109      Town_Center1         1      -1
+R80     Irrigation             1      84 
 U75       Soldier-Inf3         2      12
-R148    Metalurgy              1      103
-R110    Craftmanship           1      84
-R27     Helepolis              1      49 
 B104      Temple1              1      -1 
 B12       Barracks1            1      -1    
 U75       Soldier-Inf3         5      12
+R18     Afterlife              1      104 
 B101      Stable1              1      -1   
 U125      Priest               5      104
-R80     Irrigation             1      84 
 U75       Soldier-Inf3         5      12
+R148    Metalurgy              1      103
 U11       Soldier-Ballista     5      49
 U75       Soldier-Inf3         5      87
 B49       Siege_Workshop       1      -1
+R31     Plow                   1      84 
 B104      Temple1              1      -1 
 U75       Soldier-Inf3         6      12
 U125      Priest               5      104
 U75       Soldier-Inf3         6      12
 U75       Soldier-Inf3         6      12
+R19     Monotheism             1      104
 U11       Soldier-Ballista     5      49  
 B101      Stable1              1      -1   
 U75       Soldier-Inf3         5      12
+R110    Craftmanship           1      84
 U125      Priest               5      104
+R27     Helepolis              1      49 
 U75       Soldier-Inf3         5      12
 U11       Soldier-Ballista     10     49 
 U75       Soldier-Inf3         15     12 

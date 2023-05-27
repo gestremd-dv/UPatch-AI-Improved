@@ -25,7 +25,7 @@ C101    Tool_Age               1      109
 U83       Man                  2      109
 B84       Market1              1      -1
 T83       Man                  2      109      1 
-B87       Range1               1      -1  
+B101      Stable1              1      -1 
 R107    Wood_Working           1      84 
 U83       Man                  2      109
 B50       Farm                 2      -1 
@@ -37,24 +37,24 @@ R108    Gold_Mining            1      84
 U83       Man                  2      109
 
 C102    Bronze_Age             1      109
-B101      Stable1              1      -1 
-B0        Academy              1      -1 
+R40     Leather_Armor_-_Soldie 1      103 
+B87       Range1               1      -1  
 T83       Man                  2      109      1
-T338      Soldier-Camel        2      101      2
+B0        Academy              1      -1 
+T338      Soldier-Camel        2      101      1
 B49       Siege_Workshop       1      -1
 U93       Soldier-Phal1        2      0 
-R40     Leather_Armor_-_Soldie 1      103 
 U83       Man                  1      109
-T338      Soldier-Camel        2      101      2
+T338      Soldier-Camel        2      101      1
 U93       Soldier-Phal1        2      0 
 T83       Man                  2      109      1
 U93       Soldier-Phal1        2      0 
 U83       Man                  1      109
-R43     Scale_Armor_-_Soldiers 1      103
 B50       Farm                 2      -1
 U93       Soldier-Phal1        2      0 
 T83       Man                  2      109      1
 B50       Farm                 2      -1
+R47     Bronze_Shield          1      103 
 U83       Man                  2      109
 R81     Domestication          1      84
 U93       Soldier-Phal1        2      0 
@@ -68,70 +68,69 @@ R28     Wheel                  1      84
 U83       Man                  1      109
 
 C103    Iron_Age               1      109
+R43     Scale_Armor_-_Soldiers 1      103
 R30     Coinage                1      84  
 R32     Artisanship            1      84 
-R46     Tool_Working           1      103
 B109      Town_Center1         1      -1
 C73     Phalanx                1      0 
 T83       Man                  2      109      1
 B49       Siege_Workshop       1      -1
 U83       Man                  1      109
-R51     Metal_Working          1      103 
 B0        Academy              1      -1 
 T83       Man                  2      109      1
-R47     Bronze_Shield          1      103 
+R46     Tool_Working           1      103
 R113    Aristocracy            1      82    
 U11       Soldier-Balista      2      49
 T83       Man                  2      109      1
-R31     Plow                   1      84 
-R106    Ballistics             1      82 
 U338      Soldier-Camel        3      101
+R106    Ballistics             1      82 
 R42     Leather_Armor_Mounted  1      103
 U83       Man                  1      109 
 U93       Soldier-Phal1        2      0 
 U83       Man                  2      109
 B50       Farm                 2      -1 
-R117    Iron_Shield            1      103 
 U11       Soldier-Balista      2      49
 U338      Soldier-Camel        3      101
 U93       Soldier-Phal1        2      0 
-R37     Alchemy                1      82    
 U93       Soldier-Phal1        2      0 
-R110    Craftmanship           1      84
-R79     Centurion              1      0 
 U11       Soldier-Balista      2      49
 U93       Soldier-Phal1        2      0 
 B109      Town_Center1         1      -1
 U93       Soldier-Phal1        2      0 
-R27     Helepolis              1      49 
 B0        Academy              1      -1 
-R122    Tower_Shield           1      103
-R35     Engineering            1      82   
+R51     Metal_Working          1      103 
 B49       Siege_Workshop       1      -1
 B87       Range1               1      -1  
 U93       Soldier-Phal1        5      0 
+R37     Alchemy                1      82    
 B0        Academy              1      -1   
 U338      Soldier-Camel        5      101
+R31     Plow                   1      84 
 U11       Soldier-Balista      5      49
 U93       Soldier-Phal1        5      0 
+R117    Iron_Shield            1      103 
 B49       Siege_Workshop       1      -1
 U338      Soldier-Camel        3      101
 U338      Soldier-Camel        3      101
 U93       Soldier-Phal1        5      0 
 U11       Soldier-Balista      5      49
 B101      Stable1              1      -1   
+R110    Craftmanship           1      84
 U338      Soldier-Camel        5      101
 U93       Soldier-Phal1        5      0 
 U11       Soldier-Balista      10     49 
 U93       Soldier-Phal1        15     0  
 U11       Soldier-Balista      10     49
+R35     Engineering            1      82   
 U93       Soldier-Phal1        15     0 
 U338      Soldier-Camel        12     101
+R79     Centurion              1      0 
 U11       Soldier-Balista      12     49 
 U93       Soldier-Phal1        15     0 
 B49       Siege_Workshop       1      -1
 U338      Soldier-Camel        10     101
 U93       Soldier-Phal1        25     0 
 U11       Soldier-Balista      25     49
+R122    Tower_Shield           1      103
 
 //END

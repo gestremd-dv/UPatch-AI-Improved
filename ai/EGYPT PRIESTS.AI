@@ -30,14 +30,13 @@ U83       Man                  2      109
 R108    Gold_Mining            1      84    
 
 C102    Bronze_Age             1      109
+R42     Leather_Armor_Mounted  1      103
 C28     Wheel                  1      84
 T83       Man                  2      109      1
 B87       Range1               1      -1 
-R42     Leather_Armor_Mounted  1      103
 U83       Man                  2      109
 B104      Temple1              1      -1
 T83       Man                  2      109      1
-B82       Government_Center    1      -1
 U40       Soldier-Chariot1     2      101
 U125      Priest               2      104
 B50       Farm                 2      -1
@@ -49,14 +48,16 @@ U83       Man                  2      109
 U125      Priest               2      104
 U40       Soldier-Chariot1     2      101
 U83       Man                  1      109
-R45     Scale_Armor_-_Cavalry  1      103
+R41     Leather_Armor_-_Archer 1      103
 B50       Farm                 2      -1
+B82       Government_Center    1      -1
 U125      Priest               2      104
 T83       Man                  2      109      1
 U40       Soldier-Chariot1     2      101
 R34     Nobility               1      82
 
 C103    Iron_Age               1      109
+R45     Scale_Armor_-_Cavalry  1      103
 R30     Coinage                1      84 
 R21     Mysticism              1      104 
 B109      Town_Center1         1      -1
@@ -74,7 +75,6 @@ U125      Priest               2      104
 R106    Ballistics             1      82 
 U83       Man                  2      109
 R22     Astrology              1      104
-C126    Scythe_Chariot         1      101 
 U25       Soldier-El_Archer    2      87 
 U125      Priest               2      104
 U40       Soldier-Chariot1     2      101
@@ -86,33 +86,32 @@ U125      Priest               2      104
 R32     Artisanship            1      84 
 U25       Soldier-El_Archer    2      87 
 U83       Man                  2      109
-R41     Leather_Armor_-_Archer 1      103
 R18     Afterlife              1      104 
 U40       Soldier-Chariot1     2      101 
 U125      Priest               2      104
 B50       Farm                 2      -1 
-R51     Metal_Working          1      103
 U25       Soldier-El_Archer    2      87 
 U125      Priest               2      104
 B101      Stable1              1      -1 
-R19     Monotheism             1      104 
+R51     Metal_Working          1      103
 U40       Soldier-Chariot1     2      101
 U125      Priest               2      104
 B109      Town_Center1         1      -1
 U25       Soldier-El_Archer    2      87  
+R126    Scythe_Chariot         1      101 
 U40       Soldier-Chariot1     2      101
 U125      Priest               2      104 
 R52     Metalurgy              1      103 
-R110    Craftmanship           1      84
 U125      Priest               5      104
 U25       Soldier-El_Archer    2      87 
-R44     Scale_Armor_-_Archers  1      103 
 U125      Priest               5      104 
 U25       Soldier-El_Archer    2      87 
+R44     Scale_Armor_-_Archers  1      103 
 B104      Temple1              1      -1
 U40       Soldier-Chariot1     5      101 
 U25       Soldier-El_Archer    2      87 
 U125      Priest               5      104
+R19     Monotheism             1      104 
 B101      Stable1              1      -1 
 U25       Soldier-El_Archer    2      87 
 U40       Soldier-Chariot1     5      101
@@ -120,6 +119,7 @@ U125      Priest               5      104
 R31     Plow                   1      84   
 U40       Soldier-Chariot1     5      101 
 B87       Range1               1      -1 
+R110    Craftmanship           1      84
 U25       Soldier-El_Archer    2      87 
 U40       Soldier-Chariot1     5      101
 U125      Priest               5      104  

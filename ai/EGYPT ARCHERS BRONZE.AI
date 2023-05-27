@@ -36,13 +36,13 @@ B50       Farm                 2      -1
 U83       Man                  2      109
 
 C102    Bronze_Age             1      109
+R41     Leather_Armor_-_Archer 1      103 
 B101      Stable1              1      -1 
 C28     Wheel                  1      84
 B87       Range1               1      -1 
 T83       Man                  2      109      1
 T338      Soldier-Camel        2      101      1
 U41       Soldier-Chariot2     2      87
-R41     Leather_Armor_-_Archer 1      103 
 U83       Man                  1      109
 B104      Temple1              1      -1
 T338      Soldier-Camel        2      101      1
@@ -50,7 +50,7 @@ U41       Soldier-Chariot2     2      87
 T83       Man                  2      109      1
 U41       Soldier-Chariot2     2      87
 U83       Man                  1      109
-R44     Scale_Armor_-_Archers  1      103 
+R42     Leather_Armor_Mounted  1      103
 B50       Farm                 2      -1
 U41       Soldier-Chariot2     2      87
 T83       Man                  2      109      1
@@ -67,11 +67,11 @@ U41       Soldier-Chariot2     2      87
 U83       Man                  1      109
 
 C103    Iron_Age               1      109
-R42     Leather_Armor_Mounted  1      103
+R44     Scale_Armor_-_Archers  1      103 
 B101      Stable1              1      -1 
-R21     Mysticism              1      101 
+R21     Mysticism              1      104 
 R32     Artisanship            1      84 
-R24     Polytheism             1      101
+R24     Polytheism             1      104
 B109      Town_Center1         1      -1
 T83       Man                  2      109      1
 B49       Siege_Workshop       1      -1
@@ -83,42 +83,41 @@ B87       Range1               1      -1
 T83       Man                  2      109      1
 U338      Soldier-Camel        2      101
 U83       Man                  1      109 
-R18     Afterlife              1      101 
+R20     Fanaticism             1      104
 R106    Ballistics             1      82    
 U83       Man                  2      109
-R22     Astrology              1      101
+R22     Astrology              1      104
 U41       Soldier-Chariot2     2      87
-R31     Plow                   1      84 
-R37     Alchemy                1      82    
 U338      Soldier-Camel        2      101
 B50       Farm                 2      -1 
 U338      Soldier-Camel        2      101
 U41       Soldier-Chariot2     2      87
-R19     Monotheism             1      101 
 U41       Soldier-Chariot2     2      87
 B87       Range1               1      -1  
 U338      Soldier-Camel        2      101
 U41       Soldier-Chariot2     2      87
-R20     Fanaticism             1      101 
 B109      Town_Center1         1      -1
+R45     Scale_Armor_-_Cavalry  1      103 
 U338      Soldier-Camel        2      101 
 U41       Soldier-Chariot2     2      87
 B101      Stable1              1      -1 
 R110    Craftmanship           1      84
-R46     Tool_Working           1      103 
-R45     Scale_Armor_-_Cavalry  1      103 
 U41       Soldier-Chariot2     5      87
 U338      Soldier-Camel        5      101
+R37     Alchemy                1      82    
 U125      Priest               5      104
 U338      Soldier-Camel        5      101
 U41       Soldier-Chariot2     5      87
 B87       Range1               1      -1  
-U125      Priest               6      104
-R80     Irrigation             1      84
-B104      Temple1              1      -1 
+R18     Afterlife              1      104 
 R50     Chain_Mail_-_Cavalry   1      103 
 U125      Priest               6      104
+B104      Temple1              1      -1 
+R19     Monotheism             1      104 
+R46     Tool_Working           1      103 
+U125      Priest               6      104
 U338      Soldier-Camel        5      101
+R31     Plow                   1      84 
 U41       Soldier-Chariot2     6      87
 U338      Soldier-Camel        5      101
 R51     Metal_Working          1      103  
@@ -134,10 +133,11 @@ U41       Soldier-Chariot2     15     87
 U338      Soldier-Camel        10     101
 B49       Siege_Workshop       1      -1
 U125      Priest               12     104
-U338      Soldier-Camel        5     101
+U338      Soldier-Camel        5      101
 U41       Soldier-Chariot2     7      87
 U41       Soldier-Chariot2     20     87
 U338      Soldier-Camel        10     101
+R80     Irrigation             1      84
 B49       Siege_Workshop       1      -1
 U125      Priest               10     104
 

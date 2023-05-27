@@ -1,9 +1,11 @@
 // PALMYRA CAMELS.AI (Original: 'PALMYRA COMPOSITE BOW.AI')
 //
-// Strategy: Bronze Age camel rush /w siege support
+// Bronze Age attack
 // 
-// 103 camels, 73 catapults, 55 ballistas
-// 50 villagers; 14 farms
+// Military: 102 Camel Riders, 73 Catapults, 55 Ballistas
+// Economy : 50-30 Villagers, 14 Farms
+// Defenses: N/A
+// Retrains: N/A
 //
 // Revision History:
 // --------------------------------------------------------------------------------------------------
@@ -12,118 +14,104 @@
 // Revision 2 [UPatch HD 1.1]: fixed missing/redundant objects, fixed positions & wrong values; Camels
 // not retrains, non-existent Priests replaced with more Horse Archers
 //
-// Revision 3 [UPatch HD 1.2, 05/24/2023]: Complete rework of AI to support 250 population limit;  
-// Dumped all archers and retrains; Changed old strategy in favour of camel-rush strat (archer strategy
-// now in 'PALMYRA ARCHERS.AI' - originally 'PALMYRA HORSE ARCHERS'; Added ballistas
+// Revision 3 [UPatch HD 1.2, 05/27/2023]: Complete rework of AI to support 250 population limit;  
+// Dumped all archers and non-villager retrains; Changed strat in favour of a new bronze age camel one;
+// Dropped all towers & their upgrades (for now);
 // --------------------------------------------------------------------------------------------------
 //
 // Rework by gestremd; Original by Ensemble Studios
 
 
-// Stone Age
-// --------------------------------------------------------------------
 B109      Town_Center1         1      -1
 U83       Man                  7      109   
 B12       Barracks1            1      -1    
 U83       Man                  7      109     
-C101    Tool_Age               1      109  
 
-// Tool Age
-// --------------------------------------------------------------------
+C101    Tool_Age               1      109  
 U83       Man                  2      109
 B84       Market1              1      -1
 T83       Man                  2      109      1 
+R107    Wood_Working           1      84 
 B87       Range1               1      -1 
 U83       Man                  2      109
 B50       Farm                 2      -1  
 T83       Man                  2      109      1 
 B50       Farm                 2      -1 
 T83       Man                  2      109      1 
+R108    Gold_Mining            1      84   
 B50       Farm                 2      -1 
 U83       Man                  2      109
+
 C102    Bronze_Age             1      109
-R108    Gold_Mining            1      84   
-
-
-// Bronze Age
-// --------------------------------------------------------------------
+R42     Leather_Armor_Mounted  1      103
 T83       Man                  2      109      1
 B101      Stable1              1      -1 
-R42     Leather_Armor_Mounted  1      103
 U83       Man                  2      109
-R28     Wheel                  1      84
-U338      Soldier-Camel        2      101
+U338      Soldier-Camel        1      101
 T83       Man                  2      109      1
-B82       Government_Center    1      -1
 B49       Siege_Workshop       1      -1
 B50       Farm                 2      -1
+R81     Domestication          1      84
 U338      Soldier-Camel        2      101
 T83       Man                  2      109      1
 B50       Farm                 2      -1
 U338      Soldier-Camel        2      101
 U83       Man                  2      109
-R81     Domestication          1      84
 U338      Soldier-Camel        2      101
 U83       Man                  1      109
+R41     Leather_Armor_-_Archer 1      103
 B50       Farm                 2      -1
+R28     Wheel                  1      84
+B82       Government_Center    1      -1
 U338      Soldier-Camel        2      101
-R45     Scale_Armor_-_Cavalry  1      103
 T83       Man                  2      109      1
 U338      Soldier-Camel        2      101
-C103    Iron_Age               1      109
-R46     Tool_Working           1      103
 
-// Iron Age
-// --------------------------------------------------------------------
+C103    Iron_Age               1      109
+R45     Scale_Armor_-_Cavalry  1      103
 B109      Town_Center1         1      -1
 T83       Man                  2      109      1
 B87       Range1               1      -1 
 U83       Man                  1      109
-C54     Heavy_Catapult         1      49 
+R54     Heavy_Catapult         1      49 
 T83       Man                  2      109      1
 U11       Soldier-Balista      2      49
 B101      Stable1              1      -1  
-R37     Alchemy                1      82    
 T83       Man                  2      109      1
-R50     Chain_Mail_-_Cavalry   1      103 
 U35       Soldier-Catapult1    2      49 
-R16     Watch_Tower            1      68 
-R41     Leather_Armor_-_Archer 1      103
 U11       Soldier-Balista      2      49
 U83       Man                  2      109
 U338      Soldier-Camel        2      101
-R51     Metal_Working          1      103
+R50     Chain_Mail_-_Cavalry   1      103 
 B87       Range1               1      -1 
 U35       Soldier-Catapult1    2      49 
-R106    Ballistics             1      82 
-R44     Scale_Armor_-_Archers  1      103 
 U338      Soldier-Camel        2      101
 U11       Soldier-Balista      2      49
 U83       Man                  2      109
 U35       Soldier-Catapult1    2      49 
+R106    Ballistics             1      82 
 B50       Farm                 2      -1 
 U11       Soldier-Balista      2      49
+R46     Tool_Working           1      103
 B101      Stable1              1      -1 
 U11       Soldier-Balista      2      49
 U338      Soldier-Camel        2      101
 U11       Soldier-Balista      2      49 
 B109      Town_Center1         1      -1
-U35       Soldier-Catapult1    2      49 
-B276      Wonder               1      -1  
-
-// Post-Iron Age
-// Contains extra upgrades & build items for a late Iron Age game
-// --------------------------------------------------------------------
+R37     Alchemy                1      82    
+U35       Soldier-Catapult1    2      49  
 U11       Soldier-Balista      2      49
 U338      Soldier-Camel        5      101 
 U35       Soldier-Catapult1    5      49   
-R12     Sentry_Tower           1      68 
 U11       Soldier-Balista      2      49
-R107    Wood_Working           1      84 
-U338      Soldier-Camel        15     101 
+R51     Metal_Working          1      103
+U338      Soldier-Camel        5      101 
 U11       Soldier-Balista      2      49  
+U338      Soldier-Camel        5      101 
 B101      Stable1              1      -1 
+R31     Plow                   1      84 
 U35       Soldier-Catapult1    5      49  
+U338      Soldier-Camel        5      101 
 B49       Siege_Workshop       1      -1
 U11       Soldier-Balista      2      49  
 U338      Soldier-Camel        10     101

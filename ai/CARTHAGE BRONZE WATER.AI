@@ -1,9 +1,11 @@
 // CARTHAGE BRONZE WATER.AI
 //
-// Strategy: Bronze Age warship attack
+// Bronze Age attack
 // 
-// 50 warships, 25 fire galleys, 100 camel riders, 50 ballistas
-// 50 villagers; 14 farms; 4 fishing ships
+// Military: 50 Triremes, 25 Fire Galleys, 100 Camel Riders, 48 Ballistas
+// Economy : 50-30 Villagers, 10 Farms, 6 Fishing Boats
+// Defenses: N/A
+// Retrains: N/A
 //
 // Revision History:
 // --------------------------------------------------------------------------------------------------
@@ -12,49 +14,43 @@
 // Revision 2 [UPatch HD 1.1]: Fixed missing/redundant objects, fixed positions & wrong values
 //
 // Revision 3 [UPatch HD 1.2, 05/16/2023]: Complete rework of AI to support 250 population limit; 
-// Dumped cavalry in favour of camels (utilizing new civ bonus); Removed fishing ship
-//
+// Dumped cavalry in favour of camels (utilizing new civ bonus); Removed fishing ship upgrade;
+// Dropped all towers & their upgrades (for now); 
 // --------------------------------------------------------------------------------------------------
 //
 // Rework by gestremd; Original by Ensemble Studios
 
-// Stone Age
-// --------------------------------------------------------------------
+
 B109      Town_Center1         1      -1
 U83       Man                  7      109   
 B12       Barracks1            1      -1    
 U83       Man                  7      109     
 B45       Dock_1               1      -1  
 T13       Boat-Fishing1        2      45       2
-C101    Tool_Age               1      109 
 
-// Tool Age
-// --------------------------------------------------------------------
+C101    Tool_Age               1      109 
 B45       Dock_1               1      -1  
 U83       Man                  2      109
 B84       Market1              1      -1
 T83       Man                  2      109      1 
+R107    Wood_Working           1      84 
 T13       Boat-Fishing1        2      45       2
 B101      Stable1              1      -1 
-R16     Watch_Tower            1      68 
 B50       Farm                 2      -1 
 T83       Man                  2      109      1 
 B50       Farm                 2      -1 
-B79       Watch_Tower          1      -1
-T83       Man                  2      109      1 
+T83       Man                  2      109      1
+R108    Gold_Mining            1      84   
 B50       Farm                 2      -1 
 U83       Man                  2      109
-C102    Bronze_Age             1      109
-R107    Wood_Working           1      84 
 
-// Bronze Age
-// --------------------------------------------------------------------
+C102    Bronze_Age             1      109
+R42	    Leather_Armor_Mounted  1      103  
 B45       Dock_1               1      -1  
 B87       Range1               1      -1 
 T83       Man                  2      109      1
 U338      Soldier-Camel        2      101
 U19       Boat-War1            2      45
-R42	    Leather_Armor_Mounted  1      103  
 U83       Man                  1      109
 U338      Soldier-Camel        2      101
 U19       Boat-War1            2      45
@@ -64,38 +60,33 @@ U83       Man                  1      109
 B49       Siege_Workshop       1      -1 
 R81     Domestication          1      84
 B101      Stable1              1      -1 
-R45	    Scale_Armor_Mounted    1	  103
+
 R5      Medium_War_Ship        1      45
 U338      Soldier-Camel        2      101
 B50       Farm                 2      -1
 U19       Boat-War1            2      45
 T83       Man                  2      109      1
-B50       Farm                 2      -1
+T13       Boat-Fishing1        2      45       2
 U338      Soldier-Camel        2      101
 U17       Boat-Transport1      1      45
 U83       Man                  2      109
 R28     Wheel                  1      84
-U83       Man                  1      109
+U83       Man                  2      109
 U19       Boat-War1            2      45
 U338      Soldier-Camel        2      101
-B50       Farm                 2      -1
 U19       Boat-War1            2      45
 T83       Man                  2      109      1
 B82       Government_Center    1      -1
 U338      Soldier-Camel        2      101
 U83       Man                  1      109
-C103    Iron_Age               1      109
-R46     Tool_Working           1      103
-R12     Sentry_Tower           1      68
-R32     Artisanship            1      84 
 
-// Iron Age
-// --------------------------------------------------------------------
+C103    Iron_Age               1      109
+R7      Trireme                1      45 
 B109      Town_Center1         1      -1
+R45	    Scale_Armor_Mounted    1	  103
 U338      Soldier-Camel        2      101
 B45       Dock_1               1      -1  
 T83       Man                  2      109      1
-U83       Man                  1      109
 U11       Soldier-Balista      2      49
 B101      Stable1              1      -1 
 U19       Boat-War1            2      45
@@ -104,33 +95,26 @@ U11       Soldier-Balista      2      49
 T83       Man                  1      109      1
 U338      Soldier-Camel        2      101
 U11       Soldier-Balista      2      49
-U83       Man                  1      109 
-R7      Trireme                1      45 
-R110    Craftmanship           1      84
+U83       Man                  2      109 
 U338      Soldier-Camel        2      101
-U17       Boat-Transport1      1      45
-R51     Metal_Working          1      103 
 R106    Ballistics             1      82 
-U11       Soldier-Balista      2      49
+U17       Boat-Transport1      1      45
+U83       Man                  2      109
 U19       Boat-War1            2      45
-U83       Man                  1      109
+U83       Man                  2      109
 U360      Fire-Galley          2      45
 U338      Soldier-Camel        2      101
-R37     Alchemy                1      82    
+R34	    Nobility		       1      82 
 U360      Fire-Galley          2      45
 B50       Farm                 2      -1 
 U360      Fire-Galley          2      45
+R37     Alchemy                1      82  
 U338      Soldier-Camel        2      101
 B109      Town_Center1         1      -1
+R32     Artisanship            1      84 
 U360      Fire-Galley          2      45 
 U338      Soldier-Camel        2      101
-R27     Helepolis              1      49
-R34	    Nobility		       1      82
- 
-
-// Post-Iron Age
-// Contains extra upgrades & build items for a late Iron Age game
-// --------------------------------------------------------------------
+R46     Tool_Working           1      103
 U19       Boat-War1            5      45
 U338      Soldier-Camel        5      101 
 U360      Fire-Galley          5      45
@@ -138,19 +122,17 @@ R35     Engineering            1      82
 B49       Siege_Workshop       1      -1
 R8      Heavy_Transport        1      45 
 B101      Stable1              1      -1 
+R110    Craftmanship           1      84
 B45       Dock_1               1      -1  
 U338      Soldier-Camel        5      101 
-B79       Watch_Tower          2      -1 
+R51     Metal_Working          1      103 
 U360      Fire-Galley          6      45
 R31     Plow                   1      84   
-R15     Guard_Tower            1      68   
 U360      Fire-Galley          6      45   
 U338      Soldier-Camel        5      101   
 U19       Boat-War1            5      45
 B49       Siege_Workshop       1      -1
 U338      Soldier-Camel        10     101
-B79       Watch_Tower          2      -1 
-R2      Catapult_Tower         1      68  
 B101      Stable1              1      -1 
 U19       Boat-War1            10     45
 U338      Soldier-Camel        15     101
@@ -160,7 +142,6 @@ U11       Soldier-Balista      16     49
 U19       Boat-War1            14     45
 U338      Soldier-Camel        10     101
 U11       Soldier-Balista      16     49
-B79       Watch_Tower          2      -1 
 U338      Soldier-Camel        11     101
 
 //END

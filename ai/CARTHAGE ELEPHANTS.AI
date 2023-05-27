@@ -39,15 +39,15 @@ B50       Farm                 2      -1
 U83       Man                  1      109
 
 C102    Bronze_Age             1      109 
+R42     Leather_Armor_Mounted  1      103
 B101      Stable1              1      -1 
 T83       Man                  2      109      1
+R108    Gold_Mining            1      84     
 B87       Range1               1      -1 
 T37       Soldier-Cavalry1     2      101      1
-R42     Leather_Armor_Mounted  1      103
 U83       Man                  1      109
 T37       Soldier-Cavalry1     2      101      1
 B49       Siege_Workshop       1      -1
-R108    Gold_Mining            1      84     
 T83       Man                  2      109      1
 T37       Soldier-Cavalry1     2      101      1
 B50       Farm                 2      -1
@@ -55,7 +55,7 @@ R81     Domestication          1      84
 T83       Man                  2      109      1
 B50       Farm                 2      -1
 U83       Man                  2      109
-R45     Scale_Armor_-_Cavalry  1      103 
+R41     Leather_Armor_-_Archer 1      103 
 R28     Wheel                  1      84
 U83       Man                  2      109
 B50       Farm                 2      -1
@@ -63,9 +63,8 @@ T83       Man                  2      109      1
 B82       Government_Center    1      -1
 
 C103    Iron_Age               1      109
+R45     Scale_Armor_-_Cavalry  1      103 
 R30     Coinage                1      84  
-R41     Leather_Armor_-_Archer 1      103 
-R32     Artisanship            1      84 
 B109      Town_Center1         1      -1
 T83       Man                  2      109      1
 U46       Soldier-Elephant     2      101
@@ -78,42 +77,43 @@ U46       Soldier-Elephant     2      101
 U83       Man                  2      109 
 R106    Ballistics             1      82 
 B101      Stable1              1      -1 
+R31     Plow                   1      84 
 U25       Soldier-El_Archer    2      87
 U83       Man                  2      109
 R44     Scale_Armor_-_Archers  1      103   
-R125    Armored-Elephant       1      101
 B50       Farm                 2      -1 
 U25       Soldier-El_Archer    2      87
 U46       Soldier-Elephant     2      101
 U25       Soldier-El_Archer    2      87
+R32     Artisanship            1      84 
 U46       Soldier-Elephant     2      101
-R37     Alchemy                1      82    
 U25       Soldier-El_Archer    2      87
 B109      Town_Center1         1      -1
 U25       Soldier-El_Archer    2      87
 B49       Siege_Workshop       1      -1
 U25       Soldier-El_Archer    5      87
 U46       Soldier-Elephant     5      101
-R31     Plow                   1      84 
+R37     Alchemy                1      82    
 U11       Soldier-Balista      5      49  
 U46       Soldier-Elephant     5      101
 B87       Range1               1      -1  
 U46       Soldier-Elephant     5      101
 U25       Soldier-El_Archer    5      87
-R110    Craftmanship           1      84
 B101      Stable1              1      -1   
 U25       Soldier-El_Archer    5      87
+R80     Irrigation             1      84  
 U46       Soldier-Elephant     6      101
 U25       Soldier-El_Archer    5      87
 B104      Temple1              1      -1 
 U46       Soldier-Elephant     6      101 
-R80     Irrigation             1      84  
+R110    Craftmanship           1      84
 U46       Soldier-Elephant     10     101
 B101      Stable1              1      -1 
 U25       Soldier-El_Archer    6      87
-R35     Engineering            1      82  
+R125    Armored-Elephant       1      101
 U46       Soldier-Elephant     7      101  
 U11       Soldier-Balista      10     49
+R35     Engineering            1      82  
 U25       Soldier-El_Archer    8      87
 U46       Soldier-Elephant     10     101
 U11       Soldier-Balista      15     49 

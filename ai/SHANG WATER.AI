@@ -1,78 +1,145 @@
-//Shang Water.ai
-//6 war galleys, 10 fire galleys, 4 camels, 2 catapults, 6 ballistas
-//retrains: 6 improved bowmen
-//20-6 villagers
+// SHANG WATER.AI
 //
-//UPatch HD 1.1: fixed missing/redundant objects, fixed positions & wrong values
-//2 Catapult Triremes replaced with Fire Galleys
- 
-B109      Town_Center1         1      -1     
-U83       Man                  12      109    
-B12       Barracks1            1      -1     
-B45       Dock_1               1      -1     
-U83       Man                  8      109
+// Strategy: Bronze/Iron Age warship attack
+// 
+// 70 fire galleys, 54 catapults, 107 horse archers
+// Retrains 2 warships, 8 chariot archers
+// 50 villagers; 14 farms; 4 fishing ships
+//
+// By gestremd
 
-C101    Tool_Age               1      109    
+
+// Stone Age
+// --------------------------------------------------------------------
+B109      Town_Center1         1      -1
+U83       Man                  7      109   
+B12       Barracks1            1      -1    
+U83       Man                  7      109     
+B45       Dock_1               1      -1  
+U13       Boat-Fishing1        2      45
+C101    Tool_Age               1      109 
+
+// Tool Age
+// --------------------------------------------------------------------
+B45       Dock_1               1      -1  
+U83       Man                  2      109
+B84       Market1              1      -1
+T83       Man                  2      109      1 
+U13       Boat-Fishing1        2      45
+B87       Range1               1      -1 
+R16     Watch_Tower            1      68 
+B50       Farm                 2      -1 
+T83       Man                  2      109      1 
+B50       Farm                 2      -1 
+B79       Watch_Tower          1      -1
+T83       Man                  2      109      1 
+B50       Farm                 2      -1 
+U83       Man                  2      109
+C102    Bronze_Age             1      109
+R107    Wood_Working           1      84  
+
+// Bronze Age
+// --------------------------------------------------------------------
 B45       Dock_1               1      -1 
-B84       Market1              1      -1     
-U19       Boat-War1            2      45     
-B87       Range1               1      -1     
-T83       Man                  2      109    2
-B50       Farm                 2      -1     
-U19       Boat-War1            2      45     
-R16     Watch_Tower            1      68     
+R109    Stone_Mining           1      84  
+T83       Man                  2      109      1
+R28     Wheel                  1      84   
+B49       Siege_Workshop       1      -1
+T19       Boat-War1            1      45       1
+R41     Leather_Armor_-_Archer 1      103  
+U83       Man                  1      109
+T41       Soldier-Chariot2     2      87       1
+T83       Man                  2      109      1
+T19       Boat-War1            1      45       1
+U83       Man                  1      109
+R44     Scale_Armor_-_Archers  1      103
+U17       Boat-Transport1      1      45
+B82       Government_Center    1      -1
+R5      Medium_War_Ship        1      45
+B50       Farm                 2      -1
+T41       Soldier-Chariot2     2      87       0
+U13       Boat-Fishing1        2      45
+R81     Domestication          1      84  
+T41       Soldier-Chariot2     2      87       1
+T83       Man                  2      109      1
+B50       Farm                 2      -1
+T83       Man                  2      109      1
+T41       Soldier-Chariot2     2      87       0
+U83       Man                  1      109
+B50       Farm                 2      -1
+U83       Man                  1      109
+R34     Nobility               1      82  
+C103    Iron_Age               1      109
+R12     Sentry_Tower           1      68
+R32     Artisanship            1      84  
+
+// Iron Age
+// --------------------------------------------------------------------
+B109      Town_Center1         1      -1
+U39       Soldier-Cavalry3_Arc 2      87
+B45       Dock_1               1      -1  
+T83       Man                  2      109      1
+B49       Siege_Workshop       1      -1   
+U83       Man                  1      109
+R54     Catapult               1      49 
+B87       Range1               1      -1 
+R49     Chain_Mail_-_Archers   1      103
+R106    Ballistics             1      82 
+U35       Soldier-Catapult1    2      49
+U360      Fire-Galley          2      45
+T83       Man                  2      109      1
+U35       Soldier-Catapult1    2      49
+T83       Man                  1      109      1
+U39       Soldier-Cavalry3_Arc 2      87
+U35       Soldier-Catapult1    2      49
+U83       Man                  1      109 
+U39       Soldier-Cavalry3_Arc 2      87
+U17       Boat-Transport1      1      45
+U35       Soldier-Catapult1    2      49
+U360      Fire-Galley          2      45
+U83       Man                  1      109
+U360      Fire-Galley          2      45
+U39       Soldier-Cavalry3_Arc 2      87
+U360      Fire-Galley          2      45
+R110    Craftmanship           1      84     
+B50       Farm                 2      -1 
+R38     Heavy_Horse_Archer     1      87  
+U360      Fire-Galley          2      45
+U39       Soldier-Cavalry3_Arc 2      87
+B109      Town_Center1         1      -1
+U360      Fire-Galley          2      45 
+U39       Soldier-Cavalry3_Arc 2      87
+
+// Post-Iron Age
+// Contains extra upgrades & build items for a late Iron Age game
+// --------------------------------------------------------------------
+U360      Fire-Galley          5      45
+U39       Soldier-Cavalry3_Arc 5      87 
+U360      Fire-Galley          5      45
+U35       Soldier-Catapult1    5      49  
+U360      Fire-Galley          5      45
+B87       Range1               1      -1 
+R8      Heavy_Transport        1      45 
+B45       Dock_1               1      -1  
+U39       Soldier-Cavalry3_Arc 5      87   
 B79       Watch_Tower          2      -1 
-U19       Boat-War1            2      45         
-T83       Man                  2      109    2
-R42	  Leather_Armor_Archer   1      103     
-B79       Watch_Tower          1      -1     
-R107    Wood_Working           1      84     
-R81     Domestication          1      84     
-B50       Farm                 2      -1     
+U360      Fire-Galley          5      45
+R31     Plow                   1      84   
+U360      Fire-Galley          5      45   
+U39       Soldier-Cavalry3_Arc 5      87   
+U360      Fire-Galley          5      45
+U39       Soldier-Cavalry3_Arc 10     87
+B79       Watch_Tower          2      -1 
+U360      Fire-Galley          10     45
+U39       Soldier-Cavalry3_Arc 15     87 
+U35       Soldier-Catapult1    15     49 
+B49       Siege_Workshop       1      -1
+U39       Soldier-Cavalry3_Arc 15     87
+U35       Soldier-Catapult1    10     49 
+U360      Fire-Galley          18     45
+U39       Soldier-Cavalry3_Arc 10     87
+U35       Soldier-Catapult1    16     49
+B79       Watch_Tower          2      -1 
+U39       Soldier-Cavalry3_Arc 22     87
 
-C102    Bronze_Age             1      109    
-B82       Government_Center    1      -1     
-R46     Tool_Working           1      103    
-R56     Improved_bow           1      87     
-R32     Artisanship            1      84             
-T5        Soldier-Archer2      2      87     3
-R4      Fishing_Ship           1      45     
-R12     Sentry_Tower           1      68     
-B101      Stable1              1      -1       
-R42     Leather_Armor_Mounted  1      103    
-B49       Siege_Workshop       1      -1     
-U35       Soldier-Catapult1    1      49     
-T5        Soldier-Archer2      2      87     3
-B45       Dock_1               1      -1     
-U338      Soldier-Camel        2      101
-T83       Man                  2      109    2
-R5      Medium_War_Ship        1      45     
-B79       Watch_Tower          2      -1     
-U338      Soldier-Camel        2      101
-R28     Wheel                  1      84     
-T5        Soldier-Archer2      2      87     3
-U35       Soldier-Catapult1    1      49     
-
-C103    Iron_Age               1      109         
-U360      Fire-Galley          2      45             
-U11       Soldier-Balista      2      49 
-R34	    Nobility		       1      82
-U360      Fire-Galley          2      45       
-B49       Siege_Workshop       1      -1     
-U360      Fire-Galley          2      45             
-B50       Farm                 2      -1     
-U11       Soldier-Balista      2      49                   
-U360      Fire-Galley          2      45             
-U11       Soldier-Balista      2      49          
-R110    Craftmanship           1      84
-B49       Siege_Workshop       1      -1     
-U360      Fire-Galley          2      45             
-R51     Metal_Working          1      103    
-R27     Helepolis              1      49     
-
-B276      Wonder               1      -1     
-
-//End
-
-
-
+//END
