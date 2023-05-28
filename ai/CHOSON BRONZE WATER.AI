@@ -12,7 +12,7 @@
 // Revision 1 [UPatch HD 1.1]: fixed missing/redundant objects, fixed positions & wrong values; removed 
 // short sword and axe
 //
-// Revision 2 [UPatch HD 1.2, 05/21/2023]: Complete rework of AI to support 250 population limit;  
+// Revision 2 [UPatch HD 1.2, 05/28/2023]: Complete rework of AI to support 250 population limit;  
 // fixed storage pit techs; added axemen retrains
 // --------------------------------------------------------------------------------------------------
 //
