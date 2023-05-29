@@ -2,7 +2,7 @@
 //
 // Iron Age attack
 //
-// Military: 84 Scythe Chariots, 57 Triremes, 22 Juggernaughts, 62 Priests
+// Military: 84 Scythe Chariots, 57 Triremes, 22 Juggernaughts, 62 Priests, 2 Heavy Transports
 // Economy : 50-30 Villagers, 14 Farms; 6 Fishing Boats
 // Defenses: N/A
 // Retrains: N/A
@@ -45,6 +45,7 @@ B50       Farm                 2      -1
 U83       Man                  2      109
 
 C102    Bronze_Age             1      109
+R5      Medium_War_Ship        1      45
 B45       Dock_1               1      -1  
 R42     Leather_Armor_Mounted  1      103
 U83       Man                  2      109
@@ -52,10 +53,10 @@ C28     Wheel                  1      84
 T83       Man                  2      109      1
 B104      Temple1              1      -1
 T83       Man                  2      109      1
+U17       Boat-Transport1      1      45
 U40       Soldier-Chariot1     2      101
 T125      Priest               2      104
 B50       Farm                 2      -1
-R5      Medium_War_Ship        1      45
 U40       Soldier-Chariot1     2      101
 R81     Domestication          1      84
 T13       Boat-Fishing1        2      45       1
@@ -107,6 +108,7 @@ U250      Boat-War4            2      45
 R32     Artisanship            1      84 
 B50       Farm                 2      -1 
 U125      Priest               2      104 
+U17       Boat-Transport1      1      45
 B101      Stable1              1      -1 
 B45       Dock_1               1      -1  
 U40       Soldier-Chariot1     2      101
@@ -127,8 +129,9 @@ R19     Monotheism             1      104
 U250      Boat-War4            2      45  
 U125      Priest               5      104  
 R31     Plow                   1      84  
-U250      Boat-War4           2      45  
+U250      Boat-War4            2      45  
 U40       Soldier-Chariot1     10     101
+R8      Heavy_Transport        1      45 
 U125      Priest               10     104 
 R35     Engineering            1      82
 R25     Juggernaught           1      45  

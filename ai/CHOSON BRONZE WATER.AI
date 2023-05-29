@@ -2,8 +2,8 @@
 //
 // Bronze Age attack
 // 
-// Military: 165 Long Swordsmen, 75 Triremes, 43 Priests
-// Economy : 50-30 Villagers, 14 Farms; 6 Fishing Boats
+// Military: 165 Long Swordsmen, 75 Triremes, 43 Priests, 2 Heavy Transports
+// Economy : 50-30 Villagers, 10 Farms; 6 Fishing Boats
 // Defenses: N/A
 // Retrains: 4 axemen
 //
@@ -63,22 +63,21 @@ R81     Domestication          1      84
 T13       Boat-Fishing1        2      45       2
 U125      Priest               2      104
 R5      Medium_War_Ship        1      45
+B82       Government_Center    1      -1
 U75       Soldier-Inf3         2      12 
 U83       Man                  1      109
-B50       Farm                 2      -1
+B50       Farm                 1      -1
 U19       Boat-War1            2      49
 U75       Soldier-Inf3         2      12 
 T83       Man                  2      109      1
 U19       Boat-War1            2      49
 R121    Logistics              1      82  
-B50       Farm                 2      -1
 U83       Man                  2      109
 U75       Soldier-Inf3         2      12 
 U83       Man                  1      109
 U19       Boat-War1            2      49
 R28     Wheel                  1      84
-B50       Farm                 2      -1
-B82       Government_Center    1      -1
+B50       Farm                 1      -1
 T83       Man                  2      109      1
 U75       Soldier-Inf3         2      12 
 U83       Man                  1      109
@@ -105,13 +104,12 @@ U83       Man                  1      109
 R20     Fanaticism             1      104 
 R66     Long_Sword             1      12  
 R106    Ballistics             1      82   
-R147    Metal_Working          1      103
+R146    Tool_Working           1      103 
 U75       Soldier-Inf3         2      12
 U83       Man                  2      109
 R22     Astrology              1      104
 U75       Soldier-Inf3         2      12   
 B50       Farm                 2      -1 
-R146    Tool_Working           1      103 
 U125      Priest               2      104
 U75       Soldier-Inf3         2      12
 R32     Artisanship            1      84 
@@ -121,7 +119,7 @@ U125      Priest               2      104
 U75       Soldier-Inf3         2      12
 B45       Dock_1               1      -1 
 B109      Town_Center1         1      -1
-R80     Irrigation             1      84 
+R147    Metal_Working          1      103
 U75       Soldier-Inf3         2      12
 B104      Temple1              1      -1 
 B12       Barracks1            1      -1    
@@ -150,6 +148,7 @@ U19       Boat-War1            10     49
 U75       Soldier-Inf3         15     12 
 U19       Boat-War1            10     49
 U75       Soldier-Inf3         15     12
+R80     Irrigation             1      84 
 U19       Boat-War1            12     49
 U75       Soldier-Inf3         15     12
 B12       Barracks1            1      -1  

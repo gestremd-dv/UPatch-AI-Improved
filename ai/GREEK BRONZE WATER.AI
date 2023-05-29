@@ -1,16 +1,16 @@
 // GREEK BRONZE WATER.AI
 //
-// Iron Age attack
+// Bronze Age attack
 //
-// Military: 70 Phalanx, 75 Heavy Catapults, 83 Helepolis'
-// Economy : 50-30 Villagers, 14 Farms
+// Military: 80 Phalanx, 55 Triremes, 20 Catapult Triremes, 61 Catapults, 2 Heavy Transports
+// Economy : 50-30 Villagers, 10 Farms, 6 Fishing Boats
 // Defenses: N/A
-// Retrains: 2 Slingers
+// Retrains: N/A
 //
 // Revision History:
 // --------------------------------------------------------------------------------------------------
 // Revision 1 [UPatch HD 1.2, 05/22/2023]: Complete rework of AI to support 250 population limit;  
-// Dropped clubmen retrains
+// Dropped clubmen retrains;
 // --------------------------------------------------------------------------------------------------
 //
 // Rework by gestremd; Original by Ensemble Studios
@@ -20,115 +20,125 @@ B109      Town_Center1         1      -1
 U83       Man                  7      109   
 B12       Barracks1            1      -1    
 U83       Man                  7      109  
+B45       Dock_1               1      -1 
+T13       Boat-Fishing1        2      45       1
    
 C101    Tool_Age               1      109 
+B45       Dock_1               1      -1 
 U83       Man                  2      109
 B84       Market1              1      -1
-T347      Soldier-Slinger      1      12       1
 R107    Wood_Working           1      84  
 T83       Man                  2      109      1 
+T13       Boat-Fishing1        2      45       1
 B101      Stable1              1      -1   
 U83       Man                  2      109
 B50       Farm                 2      -1 
 T83       Man                  2      109      1 
 R108    Gold_Mining            1      84   
-T347      Soldier-Slinger      1      12       1
 B50       Farm                 2      -1 
 T83       Man                  2      109      1 
 B50       Farm                 2      -1 
 U83       Man                  2      109
 
 C102    Bronze_Age             1      109
-R109    Stone_Mining           1      84  
+B45       Dock_1               1      -1 
+R5      Medium_War_Ship        1      45 
 T83       Man                  2      109      1
 B87       Range1               1      -1 
 R40     Leather_Armor_-_Soldie 1      103
+U19       Boat-War1            2      45  
 B49       Siege_Workshop       1      -1
 U83       Man                  2      109
+U17       Boat-Transport1      1      45 
 T83       Man                  2      109      1
-U19       Boat-War1            2      49  
+U19       Boat-War1            2      45  
 B0        Academy              1      -1 
-B50       Farm                 2      -1
+B50       Farm                 1      -1
+T13       Boat-Fishing1        2      45       1
 U93       Soldier-Phal1        2      0 
+U19       Boat-War1            2      45  
 R81     Domestication          1      84
 T83       Man                  2      109      1
-B50       Farm                 2      -1
-U19       Boat-War1            2      49 
+U19       Boat-War1            2      45 
 U83       Man                  2      109
 U93       Soldier-Phal1        2      0 
 U83       Man                  1      109
 R28     Wheel                  1      84
-U19       Boat-War1            2      49  
-B50       Farm                 2      -1
+U19       Boat-War1            2      45  
+B50       Farm                 1      -1
 T83       Man                  2      109      1
 R47     Bronze_Shield          1      103  
 
 C103    Iron_Age               1      109
-R54     Heavy_Catapult         1      49
+R7      Trireme                1      45 
 B82       Government_Center    1      -1
 R43     Scale_Armor_-_Soldiers 1      103
+B45       Dock_1               1      -1 
 R30     Coinage                1      84 
 R46     Tool_Working           1      103
 B109      Town_Center1         1      -1
 T83       Man                  2      109      1
 B0        Academy              1      -1 
-U11       Soldier-Balista      2      49
+U35       Soldier-Catapult1    2      49
 U83       Man                  1      109
 R73     Phalanx                1      0   
 T83       Man                  2      109      1
-U19       Boat-War1            2      49
+U19       Boat-War1            2      45
 T83       Man                  2      109      1
-U11       Soldier-Balista      2      49 
+U35       Soldier-Catapult1    2      49 
 R48     Chain_Mail_-_Soldiers  1      103
-U19       Boat-War1            2      49 
+U19       Boat-War1            2      45 
 U83       Man                  2      109
 R113    Aristocracy            1      82 
+R54     Heavy_Catapult         1      49  
+R156    Trireme_With_Catapult  1      45
 U93       Soldier-Phal1        2      0 
-U11       Soldier-Balista      2      49
 B49       Siege_Workshop       1      -1 
-U11       Soldier-Balista      4      49 
+U35       Soldier-Catapult1    4      49 
 R106    Ballistics             1      82 
-U19       Boat-War1            2      49
+U250      Boat-War4            2      45
 U83       Man                  2      109
-U19       Boat-War1            2      49
+U19       Boat-War1            2      45
 U93       Soldier-Phal1        2      0 
-U19       Boat-War1            5      49
+U250      Boat-War4            5      45
+B45       Dock_1               1      -1 
 B50       Farm                 2      -1 
-U11       Soldier-Balista      5      49 
+U35       Soldier-Catapult1    5      49 
 B49       Siege_Workshop       1      -1
 R32     Artisanship            1      84 
+U17       Boat-Transport1      1      45 
 U93       Soldier-Phal1        2      0 
-U19       Boat-War1            2      49
+U19       Boat-War1            2      45
 B109      Town_Center1         1      -1
 R37     Alchemy                1      82    
-U19       Boat-War1            4      49 
+U250      Boat-War4            4      45 
 R110    Craftmanship           1      84
-U93       Soldier-Phal1        5      0 
 B49       Siege_Workshop       1      -1 
-U11       Soldier-Balista      2      49 
-R111    Siegecraft             1      84
-R36     Massive_Catapult       1      49 
+U93       Soldier-Phal1        5      0 
+U35       Soldier-Catapult1    2      49 
+R8      Heavy_Transport        1      45
 B0        Academy              1      -1 
-U19       Boat-War1            4      49
+U250      Boat-War4            4      45
 R51     Metal_Working          1      103
-U11       Soldier-Balista      5      49  
+U35       Soldier-Catapult1    5      49  
 B0        Academy              1      -1 
-U19       Boat-War1            2      49  
+U250      Boat-War4            2      45  
 R35     Engineering            1      82 
 R27     Helepolis              1      49   
 U93       Soldier-Phal1        10     0 
-U11       Soldier-Balista      10     49 
+U35       Soldier-Catapult1    10     49 
 B49       Siege_Workshop       1      -1 
-U19       Boat-War1            2      49
+U250      Boat-War4            3      45
 U93       Soldier-Phal1        10     0 
-U11       Soldier-Balista      10     49 
+U35       Soldier-Catapult1    10     49 
 B0        Academy              1      -1 
-U11       Soldier-Balista      13     49
+U35       Soldier-Catapult1    13     49
 U93       Soldier-Phal1        15     0 
-U11       Soldier-Balista      10     49 
+U35       Soldier-Catapult1    10     49 
 U93       Soldier-Phal1        10     0 
-U11       Soldier-Balista      18     49 
+U35       Soldier-Catapult1    10     49 
 U93       Soldier-Phal1        10     0 
-U19       Boat-War1            42     49  
+U19       Boat-War1            37     45  
+U93       Soldier-Phal1        10     0 
 
 //END

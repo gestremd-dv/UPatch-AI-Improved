@@ -1,7 +1,27 @@
-10 warships in bronze if using bronze water strat or AI only has one water strat for civ
+75 Ships total for Water strats
 
 
-5 warships on retrain in bronze if using iron water strat
+For Bronze Water:
+	10 ships in bronze age
+	Rest in the iron age
+	75 warships total
+	~280-285 population (to make up for retrains)
+	10 Farms
+	6 Fishing Boats on limited retrain - 2 in stone, tool and bronze (no iron)
+	5 Docks - 1 in stone, tool and bronze; 2 in iron
+	2 Heavy Transports (1 in bronze, 1 in mid Iron)
+	
+	
 
 
-75 warships total
+	
+For Iron Water or AI with only 1 water strat:
+	5 ships in bronze age; on limited retrain
+	Rest in the iron age
+	80 warships total incl. retrains
+	~285-290+ population (to make up for retrains)
+	10 Farms
+	6 Fishing Boats on limited retrain - 2 in stone, tool and bronze (no iron)
+	5 Docks - 1 in stone, tool and bronze; 2 in iron
+	2 Heavy Transports (1 in bronze, 1 in mid Iron)
+	

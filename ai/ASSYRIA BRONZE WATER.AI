@@ -2,10 +2,10 @@
 //
 // Bronze Age attack
 // 
-// Military: 51 Triremes, 23 Fire Galleys, 88 Horse Archers, 54 Ballistas
-// Economy : 50-30 Villagers, 14 Farms, 6 Fishing Boats
+// Military: 52 Triremes, 23 Fire Galleys, 88 Horse Archers, 54 Ballistas, 2 Heavy Transports
+// Economy : 50-30 Villagers, 10 Farms, 6 Fishing Boats
 // Defenses: N/A
-// Retrains: 6 Chariot Archers
+// Retrains: 4 Chariot Archers, 2 Camel Riders
 //
 // Revision History:
 // --------------------------------------------------------------------------------------------------
@@ -26,7 +26,7 @@ U83       Man                  7      109
 B12       Barracks1            1      -1    
 U83       Man                  7      109     
 B45       Dock_1               1      -1  
-T13       Boat-Fishing1        2      45       2
+T13       Boat-Fishing1        2      45       1
 
 C101    Tool_Age               1      109 
 B45       Dock_1               1      -1  
@@ -34,7 +34,7 @@ U83       Man                  2      109
 B84       Market1              1      -1
 T83       Man                  2      109      1 
 R107    Wood_Working           1      84 
-T13       Boat-Fishing1        2      45       2
+T13       Boat-Fishing1        2      45       1
 B87       Range1               1      -1  
 B50       Farm                 2      -1 
 T83       Man                  2      109      1 
@@ -45,6 +45,7 @@ U83       Man                  2      109
 
 C102    Bronze_Age             1      109
 R41     Leather_Armor_-_Archer 1      103 
+R5      Medium_War_Ship        1      45
 B45       Dock_1               1      -1  
 C28     Wheel                  1      84
 B101      Stable1              1      -1
@@ -58,10 +59,8 @@ U19       Boat-War1            2      45
 T83       Man                  2      109      1
 U19       Boat-War1            2      45
 U83       Man                  1      109
-R5      Medium_War_Ship        1      45
-R44     Scale_Armor_-_Archers  1      103 
 B49       Siege_Workshop       1      -1
-T13       Boat-Fishing1        2      45       2
+T13       Boat-Fishing1        2      45       1
 B50       Farm                 2      -1
 U19       Boat-War1            2      45
 T83       Man                  2      109      1
@@ -69,7 +68,6 @@ U17       Boat-Transport1      1      45
 U83       Man                  2      109
 R81     Domestication          1      84
 U83       Man                  2      109
-U19       Boat-War1            2      45
 U19       Boat-War1            2      45
 T83       Man                  2      109      1
 B82       Government_Center    1      -1
@@ -92,8 +90,8 @@ T83       Man                  2      109      1
 U11       Soldier-Balista      2      49
 T83       Man                  2      109      1
 U39       Soldier-Cavalry3_Arc 2      87
+U19       Boat-War1            2      45
 U11       Soldier-Balista      2      49
-B79       Watch_Tower          1      -1
 U83       Man                  1      109 
 U39       Soldier-Cavalry3_Arc 2      87
 U17       Boat-Transport1      1      45
@@ -136,7 +134,7 @@ U11       Soldier-Balista      15     49
 B49       Siege_Workshop       1      -1
 U39       Soldier-Cavalry3_Arc 15     87
 U11       Soldier-Balista      10     49 
-U19       Boat-War1            15     45
+U19       Boat-War1            16     45
 U39       Soldier-Cavalry3_Arc 10     87
 U11       Soldier-Balista      16     49
 U39       Soldier-Cavalry3_Arc 16     87
