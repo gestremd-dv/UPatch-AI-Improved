@@ -1,86 +1,146 @@
-//Shang Clubmen  
-//Stone or Tool Age attack
-//16 Cavalry, 4 ballista, 4 Priests
-//retrains: 8 axemen, 4 slingers
-//12 villagers
-//Version 1.0: August 20th, 1997
-//Revision 1: 6/13/98: Age X-pack; added leather armor for the inf, moved 
-//toolworking a bit later; replaced cats w/ballistae; added some slingers to the 
-//clubman parade; added a second barracks;
-//Revision 2: 6/25/1998: removed farms 
+// SHANG CLUBMEN.AI
 //
-//By Ensemble Studios
- 
-B109      Town_Center1         1      -1           
-U83       Man                  12      109          
-B12       Barracks1            1      -1           
-T73       Soldier-Inf1         6      12        1
+// A Stone/Tool age attack variant of 'SHANG CAVALRY.AI'
+//
+// Military: 100 Heavy Cavalry, 58 Priests, 70 Ballistas
+// Economy : 50-30 Villagers, 14 Farms
+// Defenses: N/A
+// Retrains: 10 Axemen, 2 Slingers
+//
+// Revision History:
+// --------------------------------------------------------------------------------------------------
+// Revision 1 [06/13/1998]: Age X-pack; added leather armor for the inf, moved toolworking a bit later;
+// replaced cats w/ballistae; added some slingers to the clubman parade; added a second barracks;
+//
+// Revision 2 [06/25/1998]: removed farms
+//
+// Revision 3 [UPatch HD 1.2, 05/30/2023]: Complete rework of AI to support 250 population limit; 
+// Traded 2 Slingers for clubmen; Delayed a number of early Villagers for clubmen/slinger room; Uses
+// same strat as 'SHANG CAVALRY.AI' with changes: removed Cataphracts, ditched catapults for ballistas;
+// Removed towers & upgrades (temporary);
+// --------------------------------------------------------------------------------------------------
+//
+// Rework by gestremd; Original by Ensemble Studios
 
+
+B109      Town_Center1         1      -1
+U83       Man                  10     109   
+B12       Barracks1            1      -1    
+T73       Soldier-Inf1         6      12       0
+     
 C101    Tool_Age               1      109
-B12       Barracks1            1      -1           
-R40     Leather_Infantry       1      103
-T347      Soldier-Slinger      2      12        2
-R63     Axe                    1      12            
-B84       Market1              1      -1  
-T73       Soldier-Inf1         2      12        2    
-R46     Tool_Working           1      103          
-T347      Soldier-Slinger      2      12        2
-U83       Man                  4      109          
-B101      Stable1              1      -1       
-U83       Man                  2      109          
-B87       Range1               1      -1     
-R81     Domestication          1      84     
-B50       Farm                 2      -1     
+B12       Barracks1            1      -1 
+T347      Soldier-Slinger      1      12       1
+U83       Man                  2      109
+B84       Market1              1      -1
+T83       Man                  2      109      1 
+T73       Soldier-Inf1         2      12       0
+R107    Wood_Working           1      84  
+B101      Stable1              1      -1   
+T347      Soldier-Slinger      1      12       1
+B50       Farm                 2      -1 
+T83       Man                  2      109      1 
+T73       Soldier-Inf1         2      12       0
+B50       Farm                 2      -1 
+T83       Man                  2      109      1 
+R108    Gold_Mining            1      84   
+B50       Farm                 2      -1 
+U83       Man                  2      109
 
-C102    Bronze_Age             1      109          
-B101      Stable1              1      -1           
-R28     Wheel                  1      84           
-U37       Soldier-Cavalry1     2      101        
-R16     Watch_Tower            1      68           
-B79       Watch_Tower          1      -1       
-U37       Soldier-Cavalry1     2      101          
-T83       Man                  2      109         2 
-U37       Soldier-Cavalry1     2      101        
-B50       Farm                 2      -1     
-B79       Watch_Tower          1      -1       
-U37       Soldier-Cavalry1     2      101        
-T83       Man                  2      109         2
-B49       Siege_Workshop       1      -1           
-U37       Soldier-Cavalry1     1      101        
-R12     Sentry_Tower           1      68       
-R31     Plow                   1      84       
-B50       Farm                 2      -1     
-T83       Man                  2      109         2
-U37       Soldier-Cavalry1     1      101        
-B79       Watch_Tower          1      -1       
-U37       Soldier-Cavalry1     2      101        
-R51     Metal_Working          1      103          
-U37       Soldier-Cavalry1     2      101        
-B104      Temple1              1      -1
+C102    Bronze_Age             1      109
+R42     Leather_Armor_Mounted  1      103
+T83       Man                  2      109      1
+B87       Range1               1      -1 
 U37       Soldier-Cavalry1     2      101
-R42     Leather_Armor_Mounted  1      103 
-U125      Priest               1      104
-R45     Scale_Armor_-_Cavalry  1      103    
-B101      Stable1              1      -1                 
-B82       Government_Center    1      -1           
+U83       Man                  2      109
+B104      Temple1              1      -1
+T83       Man                  2      109      1
+U37       Soldier-Cavalry1     2      101
+U125      Priest               2      104
+B50       Farm                 2      -1
+U83       Man                  2      109
+U37       Soldier-Cavalry1     2      101
+T83       Man                  2      109      1
+R81     Domestication          1      84
+U37       Soldier-Cavalry1     2      101
+B50       Farm                 2      -1
+U83       Man                  2      109
+U125      Priest               2      104
+U37       Soldier-Cavalry1     2      101
+U83       Man                  1      109
+B82       Government_Center    1      -1
+B50       Farm                 2      -1
+R28     Wheel                  1      84
+T83       Man                  2      109      1
+U37       Soldier-Cavalry1     2      101
+R34     Nobility               1      82
 
-C103    Iron_Age               1      109    
-B49       Siege_Workshop       1      -1           
-U11       Soldier-Ballista     2      49
-R24     Polytheism             1      104    
-R71     Heavy_Cavalry          1      101
-U11       Soldier-Ballista     2      49
-R18     Afterlife              1      104    
-U125      Priest               1      104
-R34     Nobility               1      82     
-R52     Metallurgy             1      103    
-R50     Chain_Mail_-_Cavalry   1      103    
-U125      Priest               1      104
-R78     Cataphracts            1      101    
-U125      Priest               1      104
-R15     Guard_Tower            1      68     
+C103    Iron_Age               1      109
+R71     Heavy_Cavalry          1      101 
+B109      Town_Center1         1      -1
+R45     Scale_Armor_-_Cavalry  1      103
+T83       Man                  2      109      1
+R30     Coinage                1      84 
+U83       Man                  1      109
+R21     Mysticism              1      104 
+B49       Siege_Workshop       1      -1
+R46     Tool_Working           1      103
+U125      Priest               2      104
+T83       Man                  2      109      1
+R24     Polytheism             1      104
+B101      Stable1              1      -1  
+T83       Man                  2      109      1
+R22     Astrology              1      104
+U11       Soldier-Ballista     2      49 
+R20     Fanaticism             1      104 
+U83       Man                  2      109
+U125      Priest               2      104
+B104      Temple1              1      -1
+U83       Man                  2      109
+U11       Soldier-Ballista     2      49 
+U125      Priest               2      104
+U83       Man                  2      109
+U125      Priest               2      104
+U11       Soldier-Ballista     2      49 
+U83       Man                  2      109
+R50     Chain_Mail_-_Cavalry   1      103 
+B50       Farm                 2      -1 
+B101      Stable1              1      -1 
+U125      Priest               2      104 
+U37       Soldier-Cavalry1     2      101
+U125      Priest               2      104 
+B109      Town_Center1         1      -1
+R18     Afterlife              1      104
+U11       Soldier-Ballista     2      49 
+U125      Priest               2      104
+U11       Soldier-Ballista     2      49   
+U37       Soldier-Cavalry1     5      101 
+B104      Temple1              1      -1
+R31     Plow                   1      84  
+U37       Soldier-Cavalry1     15     101 
+U125      Priest               2      104
+B101      Stable1              1      -1 
+R51     Metal_Working          1      103
+U11       Soldier-Ballista     5      49  
+U125      Priest               2      104  
+R32     Artisanship            1      84 
+B49       Siege_Workshop       1      -1
+U37       Soldier-Cavalry1     10     101
+R19     Monotheism             1      104
+U11       Soldier-Ballista     10     49 
+B104      Temple1              1      -1
+U37       Soldier-Cavalry1     10     101
+B101      Stable1              1      -1  
+U11       Soldier-Ballista     10     49 
+U125      Priest               10     104
+U37       Soldier-Cavalry1     15     101
+U11       Soldier-Ballista     10     49 
+U125      Priest               15     104
+U37       Soldier-Cavalry1     15     101 
+R52     Metallurgy             1      103  
+U11       Soldier-Ballista     10     49 
+U125      Priest               11     104
+U11       Soldier-Ballista     15     49 
+U37       Soldier-Cavalry1     16     101
 
-B276      Wonder               1      -1     
-
-//End
-
+//END

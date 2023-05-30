@@ -70,7 +70,6 @@ U37       Soldier-Cavalry1     2      101
 R34     Nobility               1      82
 
 C103    Iron_Age               1      109
-R71     Heavy_Cavalry          1      101 
 B109      Town_Center1         1      -1
 R45     Scale_Armor_-_Cavalry  1      103
 T83       Man                  2      109      1
@@ -78,6 +77,7 @@ R30     Coinage                1      84
 U83       Man                  1      109
 R21     Mysticism              1      104 
 B49       Siege_Workshop       1      -1
+R71     Heavy_Cavalry          1      101 
 R46     Tool_Working           1      103
 U125      Priest               2      104
 T83       Man                  2      109      1

@@ -2,14 +2,14 @@
 //
 // Bronze Age attack
 //
-// Military: 80 Phalanx, 55 Triremes, 20 Catapult Triremes, 61 Catapults, 2 Heavy Transports
+// Military: 80 Phalanx, 55 Triremes, 20 Catapult Triremes, 73 Catapults, 2 Heavy Transports
 // Economy : 50-30 Villagers, 10 Farms, 6 Fishing Boats
 // Defenses: N/A
 // Retrains: N/A
 //
 // Revision History:
 // --------------------------------------------------------------------------------------------------
-// Revision 1 [UPatch HD 1.2, 05/22/2023]: Complete rework of AI to support 250 population limit;  
+// Revision 1 [UPatch HD 1.2, 05/30/2023]: Complete rework of AI to support 250 population limit;  
 // Dropped clubmen retrains;
 // --------------------------------------------------------------------------------------------------
 //
@@ -124,7 +124,6 @@ U35       Soldier-Catapult1    5      49
 B0        Academy              1      -1 
 U250      Boat-War4            2      45  
 R35     Engineering            1      82 
-R27     Helepolis              1      49   
 U93       Soldier-Phal1        10     0 
 U35       Soldier-Catapult1    10     49 
 B49       Siege_Workshop       1      -1 

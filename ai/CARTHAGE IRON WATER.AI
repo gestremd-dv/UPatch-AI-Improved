@@ -11,7 +11,7 @@
 // --------------------------------------------------------------------------------------------------
 // Revision 1 [UPatch HD 1.1]: Fixed missing/redundant objects, fixed positions & wrong values
 //
-// Revision 2 [UPatch HD 1.2, 05/14/2023]: Complete rework of AI to support 250 population limit;  
+// Revision 2 [UPatch HD 1.2, 05/30/2023]: Complete rework of AI to support 250 population limit;  
 // Reduced number of scout ships and made into retrains; Removed Trireme upgrade; 
 // --------------------------------------------------------------------------------------------------
 //

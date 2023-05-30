@@ -13,7 +13,7 @@
 //
 // Revision 2 [UPatch HD 1.1]: Fixed missing/redundant objects, fixed positions & wrong values
 //
-// Revision 3 [UPatch HD 1.2, 05/16/2023]: Complete rework of AI to support 250 population limit; 
+// Revision 3 [UPatch HD 1.2, 05/30/2023]: Complete rework of AI to support 250 population limit; 
 // Dumped cavalry in favour of camels (utilizing new civ bonus); Removed fishing ship upgrade;
 // Dropped all towers & their upgrades (for now); 
 // --------------------------------------------------------------------------------------------------

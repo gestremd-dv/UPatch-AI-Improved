@@ -1,91 +1,155 @@
-//Yamato Heavy Cavalry  
-//16 Heavy Cavalry, 9 horse archers, 3 Priests
-//retrains: 2 slingers
-//14-10 villagers
-//Version 1.0: August 20th, 1997
-//Revision 1: 6/13/98: Age X-Pack changes; added cataphract upgrade; replaced
-//catapults with war elephants & armored elephants; increased number of bronze
-//cavalry to make up for loss of cats; moved up nobility; removed engineering;
-//Revision 2: 6/25/1998: removed farms; removed elephants & replaced with 
-//horse archers; added horse archer upgrades & ranges; removed cataphract,
-//exchanged clubmen for slingers
+// YAMATO HEAVY CAVALRY.AI
 //
-//UPatch HD 1.1: fixed missing/redundant objects, fixed positions & wrong values
+// Bronze Age attack
 //
- 
-B109      Town_Center1         1      -1           
-U83       Man                  12      109          
-B12       Barracks1            1      -1           
+// Military: 120 Heavy Cavalry, 38 Priests, 72 Horse Archers
+// Economy : 50-30 Villagers, 14 Farms
+// Defenses: N/A
+// Retrains: N/A
+//
+// Revision History:
+// --------------------------------------------------------------------------------------------------
+// Revision 1 [06/13/1998]: Age X-Pack changes; added cataphract upgrade; replaced catapults with war
+// elephants & armored elephants; increased number of bronze cavalry to make up for loss of cats; moved
+// up nobility; removed engineering;
+//
+//
+// Revision 2 [06/25/1998]: removed farms; removed elephants & replaced with horse archers; added horse
+// archer upgrades & ranges; removed cataphract, exchanged clubmen for slingers
+//
+// Revision 3 [UPatch HD 1.1]: fixed missing/redundant objects, fixed positions & wrong values
+//
+// Revision 3 [UPatch HD 1.2, 05/27/2023]: Complete rework of AI to support 250 population limit; 
+// Dropped all towers & their upgrades (for now); Dropped slinger retrains;
+// --------------------------------------------------------------------------------------------------
+//
+// Rework by gestremd; Original by Ensemble Studios
 
-C101    Tool_Age               1      109       
-B84       Market1              1      -1           
-T83       Man                  2      109       2   
-R16     Watch_Tower            1      68           
-T83       Man                  2      109       2   
-T347      Soldier-Slinger      2      12        2
-R81     Domestication          1      84     
-B79       Watch_Tower          1      -1       
-B50       Farm                 2      -1     
-B101      Stable1              1      -1       
-U83       Man                  2      109          
-B87       Range1               1      -1     
-R107    Wood_Working           1      84     
-B50       Farm                 2      -1     
 
-C102    Bronze_Age             1      109          
-R28     Wheel                  1      84           
-B101      Stable1              1      -1           
-B79       Watch_Tower          1      -1       
-T83       Man                  2      109         2 
-U37       Soldier-Cavalry1     2      101        
-B79       Watch_Tower          1      -1       
-T83       Man                  2      109         2
-B82       Government_Center    1      -1           
-U37       Soldier-Cavalry1     2      101        
-R34     Nobility               1      82     
-B50       Farm                 2      -1     
-R12     Sentry_Tower           1      68       
-R31     Plow                   1      84       
-B50       Farm                 2      -1     
-T83       Man                  2      109         2
-U37       Soldier-Cavalry1     2      101        
-B79       Watch_Tower          1      -1       
-R46     Tool_Working           1      103          
-U37       Soldier-Cavalry1     2      101        
-R51     Metal_Working          1      103          
-U37       Soldier-Cavalry1     2      101        
-B104      Temple1              1      -1
+B109      Town_Center1         1      -1
+U83       Man                  7      109   
+B12       Barracks1            1      -1    
+U83       Man                  7      109
+     
+C101    Tool_Age               1      109  
+U83       Man                  2      109
+B84       Market1              1      -1
+T83       Man                  2      109      1 
+R107    Wood_Working           1      84  
+B101      Stable1              1      -1   
+U83       Man                  2      109
+B50       Farm                 2      -1 
+T83       Man                  2      109      1 
+B50       Farm                 2      -1 
+T83       Man                  2      109      1 
+R108    Gold_Mining            1      84   
+B50       Farm                 2      -1 
+U83       Man                  2      109
+
+C102    Bronze_Age             1      109
+R42     Leather_Armor_Mounted  1      103
+T83       Man                  2      109      1
+B87       Range1               1      -1 
 U37       Soldier-Cavalry1     2      101
-R42     Leather_Armor_Mounted  1      103 
-U37       Soldier-Cavalry1     2      101                     
-U125      Priest               1      104
-U37       Soldier-Cavalry1     2      101         
-R45     Scale_Armor_-_Cavalry  1      103    
-B101      Stable1              1      -1                 
-R32     Artisanship            1      84     
+U83       Man                  2      109
+B104      Temple1              1      -1
+T83       Man                  2      109      1
+U37       Soldier-Cavalry1     2      101
+U125      Priest               2      104
+B50       Farm                 2      -1
+U37       Soldier-Cavalry1     2      101
+T83       Man                  2      109      1
+R81     Domestication          1      84
+U37       Soldier-Cavalry1     2      101
+B50       Farm                 2      -1
+U83       Man                  2      109
+R41     Leather_Armor_-_Archer 1      103
+U125      Priest               2      104
+U37       Soldier-Cavalry1     2      101
+U83       Man                  1      109
+B82       Government_Center    1      -1
+B50       Farm                 2      -1
+R28     Wheel                  1      84
+T83       Man                  2      109      1
+U37       Soldier-Cavalry1     2      101
+R34     Nobility               1      82
 
-C103    Iron_Age               1      109    
-R24     Polytheism             1      104    
-B87       Range1               1      -1     
-U39       Soldier-Cavalry3_Arc 3      87     
-R41     Leather_Armor_-_Archer 1      103    
-R71     Heavy_Cavalry          1      101
-R18     Afterlife              1      104    
-U125      Priest               1      104
-B87       Range1               1      -1     
-U39       Soldier-Cavalry3_Arc 3      87     
-R44     Scale_Armor_-_Archers  1      103    
-R106    Ballistics             1      82     
-R37     Alchemy                1      82     
-B101      Stable1              1      -1                 
-R52     Metallurgy             1      103    
-B87       Range1               1      -1     
-U39       Soldier-Cavalry3_Arc 3      87     
-R50     Chain_Mail_-_Cavalry   1      103    
-R110    Craftmanship           1      84     
-R49     Chain_Mail_-_Archers   1      103    
-U125      Priest               1      104
+C103    Iron_Age               1      109
+R71     Heavy_Cavalry          1      101 
+B109      Town_Center1         1      -1
+R45     Scale_Armor_-_Cavalry  1      103
+T83       Man                  2      109      1
+R30     Coinage                1      84 
+U83       Man                  1      109
+U37       Soldier-Cavalry1     2      101
+B87       Range1               1      -1 
+U37       Soldier-Cavalry1     2      101
+R46     Tool_Working           1      103
+U125      Priest               2      104
+U37       Soldier-Cavalry1     2      101
+R32     Artisanship            1      84 
+T83       Man                  2      109      1
+R24     Polytheism             1      104
+B101      Stable1              1      -1  
+T83       Man                  2      109      1
+U37       Soldier-Cavalry1     2      101
+U39       Soldier-Cavalry3_Arc 2      87 
+B104      Temple1              1      -1
+U83       Man                  2      109
+U37       Soldier-Cavalry1     2      101
+U125      Priest               2      104
+B87       Range1               1      -1 
+R44     Scale_Armor_-_Archers  1      103 
+U37       Soldier-Cavalry1     2      101
+R18     Afterlife              1      104
+U39       Soldier-Cavalry3_Arc 2      87 
+U125      Priest               2      104
+U37       Soldier-Cavalry1     2      101
+U83       Man                  2      109
+U125      Priest               2      104
+U37       Soldier-Cavalry1     2      101
+U39       Soldier-Cavalry3_Arc 2      87 
+R50     Chain_Mail_-_Cavalry   1      103 
+B50       Farm                 2      -1 
+U37       Soldier-Cavalry1     2      101
+U39       Soldier-Cavalry3_Arc 2      87
+B101      Stable1              1      -1 
+R51     Metal_Working          1      103
+U37       Soldier-Cavalry1     2      101
+U125      Priest               2      104
+R37     Alchemy                1      82    
+U37       Soldier-Cavalry1     2      101
+U125      Priest               2      104 
+B109      Town_Center1         1      -1
+U39       Soldier-Cavalry3_Arc 2      87 
+U125      Priest               2      104
+U37       Soldier-Cavalry1     5      101 
+U39       Soldier-Cavalry3_Arc 2      87   
+B87       Range1               1      -1 
+R31     Plow                   1      84  
+U37       Soldier-Cavalry1     5      101 
+U125      Priest               2      104
+B101      Stable1              1      -1 
+U37       Soldier-Cavalry1     5      101 
+U125      Priest               2      104  
+R52     Metallurgy             1      103
+U39       Soldier-Cavalry3_Arc 5      87  
+U37       Soldier-Cavalry1     5      101 
+B87       Range1               1      -1 
+U125      Priest               2      104  
+U37       Soldier-Cavalry1     10     101
+U39       Soldier-Cavalry3_Arc 10     87 
+B104      Temple1              1      -1
+U37       Soldier-Cavalry1     10     101
+B101      Stable1              1      -1  
+U39       Soldier-Cavalry3_Arc 10     87 
+U37       Soldier-Cavalry1     15     101
+R49     Chain_Mail_-_Archers   1      103 
+U39       Soldier-Cavalry3_Arc 10     87 
+U125      Priest               14     104
+U39       Soldier-Cavalry3_Arc 10     87 
+U37       Soldier-Cavalry1     15     101 
+U39       Soldier-Cavalry3_Arc 15     87 
+U37       Soldier-Cavalry1     16     101
 
-B276      Wonder               1      -1     
-//End
-
+//END

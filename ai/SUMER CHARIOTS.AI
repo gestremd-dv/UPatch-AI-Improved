@@ -1,20 +1,18 @@
-// EGYPT WATER.AI
+// SUMER CHARIOTS.AI
 //
-// Iron Age attack
+// Bronze Age attack
 //
-// Military: 84 Scythe Chariots, 57 Triremes, 22 Juggernaughts, 62 Priests, 2 Heavy Transports
-// Economy : 50-30 Villagers, 14 Farms; 6 Fishing Boats
+// Military: 104 Scythe Chariots, 90 Chariot Archers, 40 Priests
+// Economy : 50-30 Villagers, 14 Farms
 // Defenses: N/A
-// Retrains: N/A
+// Retrains: 4 Slingers
 //
 // Revision History:
 // --------------------------------------------------------------------------------------------------
-// Revision 1 [8/11/1998]: Made it get to bronze faster
-//
-// Revision 2 [UPatch HD 1.1]: Fixed missing/redundant objects, fixed positions & wrong values
-//
-// Revision 3 [UPatch HD 1.2, 05/30/2023]: Complete rework of AI to support 250 population limit;  
-// Added Chain Mail, Alchemy, Engineering upgrades;
+// Revision 1 [UPatch HD 1.2, 05/30/2023]: Complete rework of AI to support 255 population limit;  
+// Corrected spelling of strategy filename ('Sumer' is the correct spelling, not 'Sumeria'); Re-uses
+// 'EGYPT CHARIOTS.AI' but reworked to support Sumerians; Dumped horse archers from original strat
+// for chariot archers (present from 'SUMER CATAPULTS.AI' which were replaced with horse archers)
 // --------------------------------------------------------------------------------------------------
 //
 // Rework by gestremd; Original by Ensemble Studios
@@ -24,17 +22,13 @@ B109      Town_Center1         1      -1
 U83       Man                  7      109   
 B12       Barracks1            1      -1    
 U83       Man                  7      109 
-B45       Dock_1               1      -1  
-T13       Boat-Fishing1        2      45       1
     
 C101    Tool_Age               1      109 
-B45       Dock_1               1      -1  
 U83       Man                  2      109
 B84       Market1              1      -1
 T83       Man                  2      109      1 
 B101      Stable1              1      -1   
 R107    Wood_Working           1      84  
-T13       Boat-Fishing1        2      45       1
 U83       Man                  2      109
 B50       Farm                 2      -1 
 T83       Man                  2      109      1 
@@ -45,110 +39,102 @@ B50       Farm                 2      -1
 U83       Man                  2      109
 
 C102    Bronze_Age             1      109
-R5      Medium_War_Ship        1      45
-B45       Dock_1               1      -1  
 R42     Leather_Armor_Mounted  1      103
-U83       Man                  2      109
 C28     Wheel                  1      84
 T83       Man                  2      109      1
+B87       Range1               1      -1 
+U83       Man                  2      109
 B104      Temple1              1      -1
 T83       Man                  2      109      1
-U17       Boat-Transport1      1      45
 U40       Soldier-Chariot1     2      101
 T125      Priest               2      104
 B50       Farm                 2      -1
 U40       Soldier-Chariot1     2      101
 R81     Domestication          1      84
-T13       Boat-Fishing1        2      45       1
 T83       Man                  2      109      1
 B50       Farm                 2      -1
-U19       Boat-War1            2      45
+U41       Soldier-Chariot2     2      87
 U83       Man                  2      109
 T125      Priest               2      104
 U40       Soldier-Chariot1     2      101
+R41     Leather_Armor_-_Archer 1      103
 B82       Government_Center    1      -1
 U83       Man                  1      109
 B50       Farm                 2      -1
-U19       Boat-War1            2      45
+U41       Soldier-Chariot2     2      87
 T83       Man                  2      109      1
 U40       Soldier-Chariot1     2      101
 R34     Nobility               1      82
 
 C103    Iron_Age               1      109
-R7      Trireme                1      45 
 R45     Scale_Armor_-_Cavalry  1      103
-B45       Dock_1               1      -1  
 R21     Mysticism              1      104
+U40       Soldier-Chariot1     2      101
 B109      Town_Center1         1      -1
-R24     Polytheism             1      104
-U83       Man                  1      109
-U19       Boat-War1            2      45
 T83       Man                  2      109      1
-R20     Fanaticism             1      104 
+B87       Range1               1      -1 
+U83       Man                  1      109
+U40       Soldier-Chariot1     2      101
+U41       Soldier-Chariot2     2      87
+R24     Polytheism             1      104
 T83       Man                  2      109      1
 B101      Stable1              1      -1  
 T83       Man                  2      109      1
+U40       Soldier-Chariot1     2      101
 R50     Chain_Mail_-_Cavalry   1      103 
-R9      Trireme_with_Catapult  1      45 
 U125      Priest               2      104 
 R106    Ballistics             1      82 
 U83       Man                  2      109
-R22     Astrology              1      104
 U40       Soldier-Chariot1     2      101
-R46     Tool_Working           1      103
-U250      Boat-War4            2      45
+R51     Metal_Working          1      103
+U41       Soldier-Chariot2     2      87
 B104      Temple1              1      -1
 U125      Priest               2      104 
-U19       Boat-War1            2      45
+U41       Soldier-Chariot2     2      87
+R44     Scale_Armor_-_Archers  1      103 
 U83       Man                  2      109
-R18     Afterlife              1      104
-R51     Metal_Working          1      103
 U40       Soldier-Chariot1     2      101
-U250      Boat-War4            2      45
+U41       Soldier-Chariot2     2      87
 R32     Artisanship            1      84 
 B50       Farm                 2      -1 
-U125      Priest               2      104 
-U17       Boat-Transport1      1      45
+R49     Chain_Mail_-_Archers   1      103
 B101      Stable1              1      -1 
-B45       Dock_1               1      -1  
+R46     Tool_Working           1      103
 U40       Soldier-Chariot1     2      101
-U250      Boat-War4            2      45
+U41       Soldier-Chariot2     2      87
 R126    Scythe_Chariot         1      101 
-U19       Boat-War1            2      45 
+U41       Soldier-Chariot2     2      87 
 B109      Town_Center1         1      -1
 U125      Priest               2      104 
-U250      Boat-War4            2      45
+U41       Soldier-Chariot2     2      87
 R52     Metalurgy              1      103 
-U125      Priest               5      104   
 U40       Soldier-Chariot1     5      101 
 B104      Temple1              1      -1
 R37     Alchemy                1      82    
-U250      Boat-War4            2      45
+U41       Soldier-Chariot2     2      87
 B101      Stable1              1      -1 
-R19     Monotheism             1      104 
-U250      Boat-War4            2      45  
+U41       Soldier-Chariot2     2      87  
+U40       Soldier-Chariot1     2      101
 U125      Priest               5      104  
 R31     Plow                   1      84  
-U250      Boat-War4            2      45  
+U41       Soldier-Chariot2     5      87 
+U40       Soldier-Chariot1     2      101
+B87       Range1               1      -1 
+U41       Soldier-Chariot2     2      87  
 U40       Soldier-Chariot1     10     101
-R8      Heavy_Transport        1      45 
-U125      Priest               10     104 
-R35     Engineering            1      82
-R25     Juggernaught           1      45  
 B104      Temple1              1      -1
 R110    Craftmanship           1      84
 U40       Soldier-Chariot1     10     101
 B101      Stable1              1      -1  
 U125      Priest               10     104 
-U250      Boat-War4            8      45
+U41       Soldier-Chariot2     10     87
 U40       Soldier-Chariot1     15     101
-U125      Priest               10     104 
 R80     Irrigation             1      84
-U19       Boat-War1            15     45
+U41       Soldier-Chariot2     15     87
 U40       Soldier-Chariot1     15     101
-U19       Boat-War1            10     45  
-U125      Priest               10     104 
-U19       Boat-War1            22     45
-U40       Soldier-Chariot1     15     101
+U41       Soldier-Chariot2     10     87  
+U125      Priest               15     104 
+U41       Soldier-Chariot2     26     87
+U40       Soldier-Chariot1     25     101
 
 //END

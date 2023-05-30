@@ -9,7 +9,7 @@
 //
 // Revision History:
 // --------------------------------------------------------------------------------------------------
-// Revision 1 [UPatch HD 1.2, 05/22/2023]: Complete rework of AI to support 250 population limit;  
+// Revision 1 [UPatch HD 1.2, 05/30/2023]: Complete rework of AI to support 250 population limit;  
 // Re-used 'GREEK IRON WATER.AI' and reworked it as necessary to suit Macedonians - traded illegal
 // fire galleys for triremes but reduced the number in order to increase catapult trireme count;
 // --------------------------------------------------------------------------------------------------
