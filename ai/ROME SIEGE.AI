@@ -2,7 +2,7 @@
 //
 // Iron Age attack
 //
-// Military: 70 Phalanx, 88 Heavy Catapults, 70 Helepolis'
+// Military: 70 Phalanx, 88 Catapults, 70 Helepolis'
 // Economy : 50-30 Villagers, 14 Farms
 // Defenses: 20 Sentry Towers
 // Retrains: 6 Chariots
@@ -113,11 +113,9 @@ R110    Craftmanship           1      84
 U93       Soldier-Phal1        5      0 
 B49       Siege_Workshop       1      -1 
 U11       Soldier-Balista      2      49 
-R111    Siegecraft             1      84
 B0        Academy              1      -1 
 U35       Soldier-Catapult1    3      49
 R51     Metal_Working          1      103
-R36     Massive_Catapult       1      49 
 U11       Soldier-Balista      5      49  
 B0        Academy              1      -1 
 U35       Soldier-Catapult1    2      49  

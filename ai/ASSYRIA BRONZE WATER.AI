@@ -93,6 +93,7 @@ U39       Soldier-Cavalry3_Arc 2      87
 U19       Boat-War1            2      45
 U11       Soldier-Balista      2      49
 U83       Man                  1      109 
+B49       Siege_Workshop       1      -1
 U39       Soldier-Cavalry3_Arc 2      87
 U17       Boat-Transport1      1      45
 R106    Ballistics             1      82 
@@ -131,7 +132,6 @@ U19       Boat-War1            10     45
 U39       Soldier-Cavalry3_Arc 10     87 
 R35     Engineering            1      82 
 U11       Soldier-Balista      15     49 
-B49       Siege_Workshop       1      -1
 U39       Soldier-Cavalry3_Arc 15     87
 U11       Soldier-Balista      10     49 
 U19       Boat-War1            16     45

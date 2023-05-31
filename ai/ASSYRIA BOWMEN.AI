@@ -108,11 +108,13 @@ U35       Soldier-Catapult1    2      49
 U83       Man                  1      109
 U39       Soldier-Cavalry3_Arc 2      87
 U11       Soldier-Balista      2      49
+B49       Siege_Workshop       1      -1
 U39       Soldier-Cavalry3_Arc 2      87
 B50       Farm                 2      -1 
 U35       Soldier-Catapult1    2      49
 U39       Soldier-Cavalry3_Arc 2      87
 U11       Soldier-Balista      2      49
+B87       Range1               1      -1 
 R37     Alchemy                1      82    
 B109      Town_Center1         1      -1
 U39       Soldier-Cavalry3_Arc 2      87
@@ -139,10 +141,8 @@ U11       Soldier-Balista      10     49
 U39       Soldier-Cavalry3_Arc 10     87
 U11       Soldier-Balista      10     49   
 U39       Soldier-Cavalry3_Arc 10     87 
-B49       Siege_Workshop       1      -1
 U11       Soldier-Balista      10     49
-U39       Soldier-Cavalry3_Arc 10     87
-B87       Range1               1      -1  
+U39       Soldier-Cavalry3_Arc 10     87 
 U11       Soldier-Balista      12     49
 U39       Soldier-Cavalry3_Arc 10     87
 U39       Soldier-Cavalry3_Arc 15     87

@@ -107,6 +107,7 @@ U35       Soldier-Catapult1    2      49
 U125      Priest               2      104
 R22     Astrology              1      104
 U39       Soldier-Cavalry3_Arc 2      87
+B87       Range1               1      -1 
 U75       Soldier-Inf3         2      12
 U35       Soldier-Catapult1    2      49
 U125      Priest               2      104 
@@ -150,7 +151,6 @@ U39       Soldier-Cavalry3_Arc 15     87
 B49       Siege_Workshop       1      -1
 U75       Soldier-Inf3         15     12
 U35       Soldier-Catapult1    12     49
-B87       Range1               1      -1  
 U75       Soldier-Inf3         16     12
 U125      Priest               10     104
 B49       Siege_Workshop       1      -1

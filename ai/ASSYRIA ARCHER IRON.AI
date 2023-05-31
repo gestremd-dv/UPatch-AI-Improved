@@ -91,6 +91,7 @@ R22     Astrology              1      104
 U39       Soldier-Cavalry3_Arc 2      87
 U83       Man                  2      109
 R45     Scale_Armor_-_Cavalry  1      103 
+B87       Range1               1      -1 
 B50       Farm                 2      -1 
 U37       Soldier-Cavalry1     2      101
 U39       Soldier-Cavalry3_Arc 2      87
@@ -101,6 +102,7 @@ U39       Soldier-Cavalry3_Arc 2      87
 R37     Alchemy                1      82    
 B49       Siege_Workshop       1      -1
 U37       Soldier-Cavalry1     2      101
+B101      Stable1              1      -1 
 U125      Priest               2      104 
 R54     Catapult               1      49    
 U39       Soldier-Cavalry3_Arc 2      87
@@ -115,7 +117,6 @@ R18     Afterlife              1      104
 B87       Range1               1      -1  
 U39       Soldier-Cavalry3_Arc 5      87
 R50     Chain_Mail_-_Cavalry   1      103 
-B101      Stable1              1      -1   
 U125      Priest               5      104
 R52     Metalurgy              1      103 
 U37       Soldier-Cavalry1     6      101
@@ -131,16 +132,15 @@ U39       Soldier-Cavalry3_Arc 6      87
 B101      Stable1              1      -1   
 U35       Soldier-Catapult1    5      49
 U39       Soldier-Cavalry3_Arc 8      87
+B49       Siege_Workshop       1      -1
 U37       Soldier-Cavalry1     10     101
 U125      Priest               10     104
 U35       Soldier-Catapult1    10     49 
 U39       Soldier-Cavalry3_Arc 15     87 
 U125      Priest               10     104
 U39       Soldier-Cavalry3_Arc 15     87
-B49       Siege_Workshop       1      -1
 U37       Soldier-Cavalry1     12     101
 U35       Soldier-Catapult1    10     49
-B87       Range1               1      -1  
 U39       Soldier-Cavalry3_Arc 15     87
 U125      Priest               10     104
 U37       Soldier-Cavalry1     10     101

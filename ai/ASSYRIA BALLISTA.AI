@@ -31,9 +31,9 @@
 B109      Town_Center1         1      -1
 U83       Man                  7      109   
 B12       Barracks1            1      -1    
-U83       Man                  7      109     
+U83       Man                  7      109 
+    
 C101    Tool_Age               1      109  
-
 U83       Man                  2      109
 B84       Market1              1      -1
 T83       Man                  2      109      1 
@@ -90,6 +90,7 @@ U39       Soldier-Cavalry3_Arc 2      87
 U11       Soldier-Balista      2      49
 U83       Man                  2      109 
 U39       Soldier-Cavalry3_Arc 2      87
+B87       Range1               1      -1 
 U11       Soldier-Balista      2      49
 U83       Man                  2      109
 U39       Soldier-Cavalry3_Arc 2      87
@@ -127,8 +128,7 @@ U11       Soldier-Balista      15     49
 B49       Siege_Workshop       1      -1
 U39       Soldier-Cavalry3_Arc 15     87
 U11       Soldier-Balista      10     49
-U39       Soldier-Cavalry3_Arc 8      87   
-B87       Range1               1      -1  
+U39       Soldier-Cavalry3_Arc 8      87    
 U11       Soldier-Balista      15     49 
 U39       Soldier-Cavalry3_Arc 10     87
 U11       Soldier-Balista      17     49
