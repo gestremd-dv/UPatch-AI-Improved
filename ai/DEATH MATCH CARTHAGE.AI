@@ -1,21 +1,29 @@
 // DEATH MATCH CARTHAGE.AI
 //
-// Trains War Elephants, Ballistas, Phalanx, Elephant Archers and Priests
-// 35 Villagers; 25 after retrains
-// 
-// 20 Soldiers deployed in ~15 minutes
+// Iron Age attack
 //
-// by gestremd
+// Military: 110 Armored Elephants, 95 Helepolis', 95 Centurions, 85 Elephant Archers, 15 Priests
+// Economy : 35-25 Villagers
+// Defenses: N/A
+// Retrains: N/A
+//
+// Revision History:
+// --------------------------------------------------------------------------------------------------
+// Revision 1 [UPatch HD 1.1]: fixed missing/redundant objects, fixed positions & wrong values
+//
+// Revision 2 [UPatch HD 1.2, 06/03/2023]: Complete rework of AI to support 250+ population limit;  
+// Added Centurions, Elephant Archers & Priests;
+// --------------------------------------------------------------------------------------------------
+//
+// Rework by gestremd; Original by Ensemble Studios
 
-// Stone Age
-//  ---------------------------------------------
+
+//Quick, Threaded Research to the Iron Age
 B109      Town_Center1         1      -1           
 T83       Man                  5      109      1       
 B12       Barracks1            1      -1   
-C101    Tool_Age               1      109      
 
-// Tool Age
-//  ---------------------------------------------
+C101    Tool_Age               1      109      
 B84       Market1              1      -1 
 R16     Watch_Tower            1      68
 B101      Stable               1      -1 
@@ -28,13 +36,11 @@ B87       Range1               1      -1
 R41     Leather_Armor_Archers  1      103   
 R109    Stone_Mining           1      84 
 R42     Leather_Armor_Cavalry  1      103 
+
 C102    Bronze_Age             1      109 
 B101      Stable               1      -1 
 B87       Range1               1      -1 
 B101      Stable               1      -1
-
-// Bronze Age
-//  ---------------------------------------------
 R12     Sentry_Tower           1      68 
 R43     Scale_Armor_Infantry   1      103 
 B104      Temple               1      -1
@@ -44,72 +50,71 @@ B101      Stable               1      -1
 R45     Scale-Armor-Cav        1      103
 R32     Artisanship            1      84
 B82       Government_Center    1      -1
+
 C103    Iron_Age               1      109
-B0        Academy              1      -1
+B49       Siege_Workshop       1      -1
 R21     Mysticism              1      104
+U46       Soldier-Elephant     2      101
 R51     Metalworking           1      103
+B0        Academy              1      -1
 R112    Architecture           1      82 
+U93       Soldier-Phal1        3      0
 R47     Bronze_Shield          1      103  
 R24     Polytheism             1      104
-
-// Iron Age
-//  ---------------------------------------------
+U46       Soldier-Elephant     3      101 
 B109      Town_Center1         2      -1 
 C117    Iron_Shield            1      103
 R113    Aristocracy            1      82
 B0        Academy              1      -1
+U25       Soldier-Ele-Archer   3      87
 R73     Phalanx                1      0 
-B49       Siege_Workshop       1      -1
 B101      Stable               1      -1
+U11       Soldier-Balista      5      49  
 R125    Armored_Elephants      1      101
 B104      Temple               1      -1
+U46       Soldier-Elephant     2      101 
 B109      Town_Center1         2      -1 
+U125      Priest               5      104 
 B87       Range1               1      -1 
 R110    Craftmanship           1      84 
+U25       Soldier-Ele-Archer   3      87
 B104      Temple               1      -1
 R106    Ballistics             1      82 
 T83       Man                  5      109      1
+U46       Soldier-Elephant     3      101 
 R18     Afterlife              1      104
 B0        Academy              1      -1
 R35     Engineering            1      82 
-U46       Soldier-Elephant     2      101
-U93       Soldier-Phal1        3      0
-U46       Soldier-Elephant     3      101 
+U93       Soldier-Phal1        5      0
 R27     Helepolis              1      49
 B101      Stable               1      -1
 R37     Alchemy                1      82
+U46       Soldier-Elephant     5      101 
 U125      Priest               5      104 
 B0        Academy              1      -1
 B49       Siege_Workshop       1      -1 
+U93       Soldier-Phal1        5      0
 B0        Academy              1      -1
 R79     Centurion              1      0  
-U46       Soldier-Elephant     2      101 
 B49       Siege_Workshop       1      -1
-U46       Soldier-Elephant     3      101 
-U11       Soldier-Balista      5      49  
 U93       Soldier-Phal1        2      0
 B49       Siege_Workshop       1      -1
-U25       Soldier-Ele-Archer   3      87
 R15     Guard_Tower            1      68
 B49       Siege_Workshop       1      -1
 U83       Man                  5      109
 U11       Soldier-Balista      5      49 
-U93       Soldier-Phal1        5      0
 R122    Tower_Shield           1      103 
 B49       Siege_Workshop       1      -1
 B50       Farm                 2      -1 
 U25       Soldier-Ele-Archer   3      87
 U125      Priest               5      104 
 U83       Man                  5      109
-U46       Soldier-Elephant     5      101 
 U11       Soldier-Balista      5      49  
 U93       Soldier-Phal1        5      0
-U25       Soldier-Ele-Archer   3      87
 U83       Man                  5      109
 U46       Soldier-Elephant     5      101 
 B49       Siege_Workshop       2      -1
 U11       Soldier-Balista      5      49 
-U93       Soldier-Phal1        5      0
 U25       Soldier-Ele-Archer   3      87
 U83       Man                  5      109
 B109      Town_Center1         1      -1 
@@ -118,7 +123,7 @@ U46       Soldier-Elephant     5      101
 U11       Soldier-Balista      5      49 
 U93       Soldier-Phal1        5      0
 U25       Soldier-Ele-Archer   3      87
-U125      Priest               5      104 
+
 U46       Soldier-Elephant     5      101 
 U11       Soldier-Balista      5      49 
 U93       Soldier-Phal1        5      0

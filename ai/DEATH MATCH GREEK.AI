@@ -1,37 +1,44 @@
 // DEATH MATCH GREEK.AI
 //
-// Trains Phalanx, Cavalry, Ballistas, Catapults and Priests
-// 35 Villagers; 25 after retrains
-// 
-// 20 Soldiers deployed in ~15 minutes
+// Iron Age attack
 //
-// by gestremd
+// Military: 90 Helepolis', 90 Heavy Catapults, 200 Centurions, 15 Priests
+// Economy : 35-25 Villagers
+// Defenses: N/A
+// Retrains: 30 Heavy Cavalry
+//
+// Revision History:
+// --------------------------------------------------------------------------------------------------
+// Revision 1 [06/23/1998]: X-Pack changes; moved up important upgrades and research items; removed 
+// boats; increased numbers of units; removed writing; added medicine; reduced priests
+//
+// Revision 2 [UPatch HD 1.2, 06/03/2023]: Complete rework of AI to support 250+ population limit;  
+// Added Helepolis, Heavy Cavalry (retrains);
+// --------------------------------------------------------------------------------------------------
+//
+// Rework by gestremd; Original by Ensemble Studios
 
-// Stone Age
-//  ---------------------------------------------
+
+//Quick, Threaded Research to the Iron Age
 B109      Town_Center1         1      -1           
 T83       Man                  5      109      1      
 B12       Barracks1            1      -1   
-C101    Tool_Age               1      109        
 
-// Tool Age
-//  ---------------------------------------------
+C101    Tool_Age               1      109        
 R16     Watch_Tower            1      68
-B101      Stable               1      -1 
+B84       Market1              1      -1 
 R107    Woodworking            1      84 
 T83       Man                  5      109      1      
 R46     Toolworking            1      103 
-B84       Market1              1      -1 
+B101      Stable               1      -1 
 R81     Domestication          1      84
 R40     Leather_Armor_Infantry 1      103      
 B87       Range1               1      -1   
 R109    Stone_Mining           1      84 
 R42     Leather_Armor_Cavalry  1      103 
+
 C102    Bronze_Age             1      109 
 B101      Stable               1      -1 
-
-// Bronze Age
-//  ---------------------------------------------
 R12     Sentry_Tower           1      68 
 R43     Scale_Armor_Infantry   1      103 
 B104      Temple               1      -1 
@@ -40,109 +47,114 @@ B101      Stable               1      -1
 R45     Scale-Armor-Cav        1      103
 R32     Artisanship            1      84
 B82       Government_Center    1      -1
+
 C103    Iron_Age               1      109
-R22     Astrology              1      104
-R34     Nobility               1      82
+B49       Siege_Workshop       1      -1 
+R71     Heavy_Cavalry          1      101
 B0        Academy              1      -1
+R22     Astrology              1      104
+U93       Soldier-Phal1        3      0
+R34     Nobility               1      82
 R21     Mysticism              1      104
+U11       Soldier-Balista      2      49
 R51     Metalworking           1      103
+B0        Academy              1      -1 
 R112    Architecture           1      82 
+B104      Temple               1      -1
+U93       Soldier-Phal1        2      0
 R47     Bronze_Shield          1      103  
 R24     Polytheism             1      104
-
-// Iron Age
-//  ---------------------------------------------
 B109      Town_Center1         2      -1   
+T37       Soldier-Cavalry      2      101      2 
 R113    Aristocracy            1      82
 B0        Academy              1      -1
+T37       Soldier-Cavalry      3      101      2 
 R73     Phalanx                1      0 
 B49       Siege_Workshop       1      -1
 B101      Stable               1      -1
-R71     Heavy_Cavalry          1      101
+U35       Soldier-Catapult1    3      49  
+T37       Soldier-Cavalry      2      101      2 
 B0        Academy              1      -1
-U93       Soldier-Phal1        3      0
 R54     Catapult               1      49
-B104      Temple               1      -1
-B49       Siege_Workshop       1      -1 
 B109      Town_Center1         2      -1 
-U11       Soldier-Balista      2      49
+T37       Soldier-Cavalry      2      101 
 B0        Academy              1      -1
-U93       Soldier-Phal1        2      0
-B49       Siege_Workshop       1      -1  
-B0        Academy              1      -1 
 U11       Soldier-Balista      3      49 
+T37       Soldier-Cavalry      3      101      2 
+B49       Siege_Workshop       1      -1  
 R110    Craftmanship           1      84 
 U93       Soldier-Phal1        3      0
+T37       Soldier-Cavalry      3      101      2 
 T83       Man                  5      109      1
 B104      Temple               1      -1
 R18     Afterlife              1      104 
 U93       Soldier-Phal1        2      0
 R106    Ballistics             1      82 
+T37       Soldier-Cavalry      5      101      2 
 R111    Siegecraft             1      84
 R36     Heavy_Catapult         1      49
 B0        Academy              1      -1
 U11       Soldier-Balista      2      49 
 R35     Engineering            1      82 
+T37       Soldier-Cavalry      5      101      2
 U93       Soldier-Phal1        3      0
 B49       Siege_Workshop       1      -1
 B0        Academy              1      -1
 U35       Soldier-Catapult1    2      49 
 R27     Helepolis              1      49
 B101      Stable               1      -1
+U11       Soldier-Balista      3      49 
+U93       Soldier-Phal1        2      0
 R37     Alchemy                1      82
 U125      Priest               5      104 
+T37       Soldier-Cavalry      5      101      2   
+U93       Soldier-Phal1        2      0   
 B0        Academy              1      -1
 R79     Centurion              1      0  
-U37       Soldier-Cavalry      2      101 
 B49       Siege_Workshop       1      -1
-U37       Soldier-Cavalry      3      101 
-U35       Soldier-Catapult1    3      49  
 U93       Soldier-Phal1        2      0
 R15     Guard_Tower            1      68
 B49       Siege_Workshop       1      -1
 R20     Fanaticism             1      104
+U93       Soldier-Phal1        2      0
 R117    Iron_Shield            1      103
 U83       Man                  5      109
 B50       Farm                 2      -1 
-U11       Soldier-Balista      3      49 
 U93       Soldier-Phal1        5      0
 R48     Chain_Mail_Infantry    1      103   
+U35       Soldier-Catapult1    5      49  
 U125      Priest               5      104 
 U83       Man                  5      109
-U37       Soldier-Cavalry      5      101 
-U35       Soldier-Catapult1    5      49  
 U93       Soldier-Phal1        5      0
 R50     Chain_Mail_Cavalry     1      103 
 U83       Man                  5      109
-U37       Soldier-Cavalry      5      101 
+U93       Soldier-Phal1        2      0
 B49       Siege_Workshop       2      -1
 U93       Soldier-Phal1        3      0
 U11       Soldier-Balista      5      49 
 R2      Ballista-Tower         1      68
 U93       Soldier-Phal1        5      0
 U83       Man                  5      109
+U93       Soldier-Phal1        2      0
+U35       Soldier-Catapult1    5      49
 B109      Town_Center1         1      -1 
-U37       Soldier-Cavalry      5      101 
 U125      Priest               5      104 
 U35       Soldier-Catapult1    5      49 
-U93       Soldier-Phal1        5      0
 R122    Tower_Shield           1      103 
 R119    Medicine               1      104 
 U93       Soldier-Phal1        2      0
 U11       Soldier-Balista      5      49 
 B79       Watch_Tower          10     -1
-U93       Soldier-Phal1        5      0
-U37       Soldier-Cavalry      5      101 
-U35       Soldier-Catapult1    5      49
+U93       Soldier-Phal1        10     0
 B79       Watch_Tower          10     -1
-U93       Soldier-Phal1        5      0 
-B50       Farm                 2      -1 
-U93       Soldier-Phal1        35     0 
-U37       Soldier-Cavalry      10     101 
+U93       Soldier-Phal1        10     0 
 U11       Soldier-Balista      25     49 
+B50       Farm                 2      -1 
+U93       Soldier-Phal1        10     0
 U35       Soldier-Catapult1    25     49
-U93       Soldier-Phal1        90     0 
+U93       Soldier-Phal1        35     0 
 U11       Soldier-Balista      45     49 
 U35       Soldier-Catapult1    45     49
+U93       Soldier-Phal1        90     0 
 
 //END

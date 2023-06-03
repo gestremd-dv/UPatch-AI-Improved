@@ -1,9 +1,11 @@
 // DEATH MATCH ASSYRIA.AI
 //
-// 95 ballistas, 15 catapults, 90 cavalry, 125 horse archers, 85 priests
-// 35 villagers
-// 
-// 20 Soldiers deployed in 15 minutes
+// Iron Age attack
+//
+// Military: 95 ballistas, 15 catapults, 90 cavalry, 125 horse archers, 85 priests
+// Economy : 35-25 Villagers
+// Defenses: N/A
+// Retrains: N/A
 //
 // Revision History:
 // --------------------------------------------------------------------------------------------------
@@ -18,15 +20,13 @@
 //
 // Rework by gestremd; Original by Ensemble Studios
 
-// Stone Age
-//  ---------------------------------------------
+
+//Quick, Threaded Research to the Iron Age
 B109      Town_Center1         1      -1           
 T83       Man                  5      109      1       
 B12       Barracks1            1      -1   
-C101    Tool_Age               1      109     
 
-// Tool Age
-//  ---------------------------------------------
+C101    Tool_Age               1      109     
 B101      Stable               1      -1 
 R16     Watch_Tower            1      68
 B84       Market1              1      -1      
@@ -34,78 +34,76 @@ T83       Man                  5      109      1
 R107    Woodworking            1      84 
 R46     Toolworking            1      103 
 B87       Range1               1      -1 
-R81     Domestication          1      84
 R41     Leather_Armor_Archers  1      103   
-R109    Stone_Mining           1      84 
+R81     Domestication          1      84
 R42     Leather_Armor_Cavalry  1      103 
+R109    Stone_Mining           1      84 
+
 C102    Bronze_Age             1      109 
 B87       Range1               1      -1 
-B101      Stable               1      -1 
-B87       Range1               1      -1 
-
-// Bronze Age
-//  ---------------------------------------------
 R12     Sentry_Tower           1      68 
-B104      Temple               1      -1
+B101      Stable               1      -1 
 R44     Scale_Armor_Archers    1      103 
 B87       Range1               1      -1 
 R28     Wheel                  1      84
+B104      Temple               1      -1
 R45     Scale-Armor-Cav        1      103
+B87       Range1               1      -1 
 R32     Artisanship            1      84
-R21     Mysticism              1      104
 B82       Government_Center    1      -1
-C103    Iron_Age               1      109
-R22     Astrology              1      104
-R51     Metalworking           1      103
-R24     Polytheism             1      104
+R21     Mysticism              1      104
 
-// Iron Age
-//  ---------------------------------------------
-B109      Town_Center1         2      -1 
+C103    Iron_Age               1      109
 B49       Siege_Workshop       1      -1
+R22     Astrology              1      104
+U39       Soldier-Cavalry3_Arc 2      87 
+R51     Metalworking           1      103
+B109      Town_Center1         2      -1 
+R24     Polytheism             1      104
+U39       Soldier-Cavalry3_Arc 3      87 
 R50     Chain_Mail-Cavalry     1      103 
 B104      Temple               1      -1
+U37       Soldier-Cavalry1     3      101
 B101      Stable               1      -1
-B49       Siege_Workshop       1      -1
+U11       Soldier-Balista      5      49
 R49     Chain_Mail-Archer      1      103 
-B87       Range1               1      -1 
-R37     Alchemy                1      82
-B109      Town_Center1         2      -1 
+B49       Siege_Workshop       1      -1
 R71     Heavy_Cavalry          1      101
 B87       Range1               1      -1 
+R37     Alchemy                1      82
+U35       Soldier-Catapult1    3      49
+B109      Town_Center1         2      -1 
+R20     Fanaticism             1      104
 U39       Soldier-Cavalry3_Arc 2      87 
 B49       Siege_Workshop       1      -1 
-R110    Craftmanship           1      84 
-R27     Helepolis              1      49
-B104      Temple               1      -1
-B87       Range1               1      -1
-R106    Ballistics             1      82 
-T83       Man                  5      109      1
-B49       Siege_Workshop       1      -1
+R52     Metallurgy             1      103 
 U39       Soldier-Cavalry3_Arc 2      87 
+R78     Cataphracts            1      101
 B87       Range1               1      -1 
-R18     Afterlife              1      104
+R110    Craftmanship           1      84 
+B104      Temple               1      -1
+R19     Monotheism             1      104
+R27     Helepolis              1      49
+B87       Range1               1      -1
+U37       Soldier-Cavalry1     3      101
+R106    Ballistics             1      82 
+R111    Siegecraft             1      84
+B87       Range1               1      -1 
+R36     Heavy_Catapult         1      49 
+T83       Man                  5      109      1
+U125      Priest               5      104 
+B49       Siege_Workshop       1      -1
 B49       Siege_Workshop       1      -1
 U11       Soldier-Balista      2      49 
-R19     Monotheism             1      104
-U39       Soldier-Cavalry3_Arc 3      87 
-U37       Soldier-Cavalry1     3      101
+R18     Afterlife              1      104
 R54     Catapult               1      49
-U39       Soldier-Cavalry3_Arc 2      87 
 R35     Engineering            1      82 
 B49       Siege_Workshop       1      -1
-U35       Soldier-Catapult1    3      49
 U39       Soldier-Cavalry3_Arc 3      87 
-R52     Metallurgy             1      103 
 B101      Stable               1      -1
 U11       Soldier-Balista      3      49
-R78     Cataphracts            1      101
 B104      Temple               1      -1
-U125      Priest               5      104 
 U11       Soldier-Balista      2      49
-R111    Siegecraft             1      84
-U37       Soldier-Cavalry1     3      101
-R36     Heavy_Catapult         1      49 
 U125      Priest               5      104 
 U39       Soldier-Cavalry3_Arc 3      87 
 B104      Temple               1      -1
@@ -114,14 +112,13 @@ R15     Guard_Tower            1      68
 B50       Farm                 2      -1 
 B49       Siege_Workshop       1      -1
 U39       Soldier-Cavalry3_Arc 5      87 
-R20     Fanaticism             1      104
 U83       Man                  5      109
 U11       Soldier-Balista      3      49 
 U125      Priest               5      104 
 U39       Soldier-Cavalry3_Arc 3      87 
 U83       Man                  5      109 
+R2      Ballista_Tower         1      68
 U125      Priest               5      104 
-U11       Soldier-Balista      5      49
 U39       Soldier-Cavalry3_Arc 2      87 
 B109      Town_Center1         1      -1 
 U35       Soldier-Catapult1    5      49
@@ -145,6 +142,5 @@ U39       Soldier-Cavalry3_Arc 45     87
 U125      Priest               45     104 
 U37       Soldier-Cavalry1     45     101
 U11       Soldier-Balista      45     49
-R2      Ballista_Tower         1      68
 
 //END

@@ -1,0 +1,135 @@
+// DEATH MATCH ASSYRIA.AI
+//
+// Iron Age attack
+// 
+// Military: Horse Archers, Cataphracts, Helepolis', Priests
+// Economy : 50-30 Villagers, 14 Farms
+// Defenses: N/A
+// Retrains: 6 Bowmen, 4 Camel Riders
+//
+// Revision History:
+// --------------------------------------------------------------------------------------------------
+// Revision 1 [6/22/1998]: moved up various upgrades; removed illegal units; added
+// ballista towers
+//
+// Revision 2 [UPatch HD 1.1]: fixed missing/redundant objects, fixed positions & wrong values
+//
+// Revision 3 [UPatch HD 1.2, 05/31/2023]: Complete rework of AI to support 250 population limit;  
+// Started with only horse archers and villagers to test AI speed during a normal game;
+// --------------------------------------------------------------------------------------------------
+//
+// Rework by gestremd; Original by Ensemble Studios
+
+
+B109      Town_Center1         1      -1           
+U83       Man                  3      109      
+B12       Barracks1            1      -1   
+U83       Man                  2      109
+
+C101    Tool_Age               1      109     
+B101      Stable               1      -1 
+U83       Man                  1      109 
+R16     Watch_Tower            1      68
+U83       Man                  1      109        
+B84       Market1              1      -1      
+U83       Man                  1      109 
+B87       Range1               1      -1 
+R107    Woodworking            1      84 
+R41     Leather_Armor_Archers  1      103   
+U83       Man                  1      109 
+R46     Toolworking            1      103 
+U83       Man                  1      109 
+R42     Leather_Armor_Cavalry  1      103 
+
+C102    Bronze_Age             1      109 
+B101      Stable               1      -1 
+R51     Metalworking           1      103
+B87       Range1               1      -1 
+R12     Sentry_Tower           1      68 
+B104      Temple               1      -1
+R44     Scale_Armor_Archers    1      103 
+B82       Government_Center    1      -1
+R28     Wheel                  1      84
+R45     Scale-Armor-Cav        1      103
+R32     Artisanship            1      84
+
+C103    Iron_Age               1      109
+C71     Heavy_Cavalry          1      101
+B101      Stable               1      -1 
+R49     Chain_Mail-Archer      1      103 
+B87       Range1               1      -1 
+R24     Polytheism             1      104
+U39       Soldier-Cavalry3_Arc 2      87
+R15     Guard_Tower            1      68
+U39       Soldier-Cavalry3_Arc 2      87
+R50     Chain_Mail-Cavalry     1      103 
+B109      Town_Center1         1      -1
+U39       Soldier-Cavalry3_Arc 2      87
+R21     Mysticism              1      104
+U39       Soldier-Cavalry3_Arc 2      87
+R52     Metallurgy             1      103 
+U83       Man                  2      109 
+R78     Cataphracts            1      101
+U39       Soldier-Cavalry3_Arc 2      87
+U83       Man                  2      109 
+U39       Soldier-Cavalry3_Arc 2      87
+U83       Man                  2      109 
+R20     Fanaticism             1      104
+U39       Soldier-Cavalry3_Arc 2      87
+U83       Man                  2      109 
+B87       Range1               1      -1 
+R106    Ballistics             1      82 
+U39       Soldier-Cavalry3_Arc 2      87
+U83       Man                  2      109 
+U39       Soldier-Cavalry3_Arc 2      87
+U83       Man                  2      109 
+U39       Soldier-Cavalry3_Arc 2      87
+B109      Town_Center1         1      -1
+U39       Soldier-Cavalry3_Arc 2      87
+U83       Man                  2      109 
+U39       Soldier-Cavalry3_Arc 2      87
+B87       Range1               1      -1 
+U83       Man                  2      109 
+U39       Soldier-Cavalry3_Arc 2      87
+U83       Man                  2      109 
+U39       Soldier-Cavalry3_Arc 2      87
+U83       Man                  2      109 
+U39       Soldier-Cavalry3_Arc 2      87
+U83       Man                  2      109 
+U39       Soldier-Cavalry3_Arc 2      87
+R110    Craftmanship           1      84 
+U39       Soldier-Cavalry3_Arc 2      87
+U83       Man                  2      109 
+U39       Soldier-Cavalry3_Arc 2      87
+U83       Man                  2      109
+U39       Soldier-Cavalry3_Arc 2      87 
+U83       Man                  2      109
+U39       Soldier-Cavalry3_Arc 2      87 
+U83       Man                  2      109
+U39       Soldier-Cavalry3_Arc 2      87 
+U83       Man                  2      109
+U39       Soldier-Cavalry3_Arc 2      87 
+U83       Man                  2      109
+U39       Soldier-Cavalry3_Arc 2      87 
+U83       Man                  2      109
+U39       Soldier-Cavalry3_Arc 2      87 
+U83       Man                  2      109
+U39       Soldier-Cavalry3_Arc 2      87 
+U83       Man                  2      109 
+U39       Soldier-Cavalry3_Arc 2      87
+B109      Town_Center1         1      -1
+U39       Soldier-Cavalry3_Arc 2      87
+
+
+
+
+
+
+
+
+
+
+
+
+
+

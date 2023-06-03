@@ -1,95 +1,103 @@
 // DEATH MATCH MINOA.AI
 //
-// Trains Foot Archers, Phalanx, Ballistas, Catapults and Swordsmen
-// 35 Villagers; 25 after retrains
-// 
-// 20 Soldiers deployed in ~15 minutes
+// Iron Age attack
 //
-// by gestremd
+// Military: 120 Composite Bowmen, 100 Helepolis', 90 Heavy Catapults, 80 Centurions
+// Economy : 35-25 Villagers
+// Defenses: N/A
+// Retrains: 20 Long Swordsmen
+//
+// Revision History:
+// --------------------------------------------------------------------------------------------------
+// Revision 1 [06/23/1998]: X-Pack changes; remove all ships; added foot archers with relevant upgrades; 
+// remove writing & irrelevant upgrades. Moved engineering to iron age (where it's legal); moved up 
+// alchemy & ballistics; removed catapults; forced craftsmanship to be researched before ballistas are
+// built; added improved bow & composite bow
+//
+// Revision 2 [UPatch HD 1.2, 06/03/2023]: Complete rework of AI to support 250+ population limit;  
+// Added back catapults; Added Centurions,  Long Swordsmen (retrains);
+// --------------------------------------------------------------------------------------------------
+//
+// Rework by gestremd; Original by Ensemble Studios
 
-// Stone Age
-//  ---------------------------------------------
+
+//Quick, Threaded Research to the Iron Age
 B109      Town_Center1         1      -1           
 T83       Man                  5      109      1       
 B12       Barracks1            1      -1   
+
 C101    Tool_Age               1      109 
 B12       Barracks1            1      -1       
-
-// Tool Age
-//  ---------------------------------------------
 R16     Watch_Tower            1      68
-B101      Stable               1      -1 
+B84       Market1              1      -1 
 R107    Woodworking            1      84 
 T83       Man                  5      109      1      
 R46     Toolworking            1      103 
-B84       Market1              1      -1 
+B101      Stable               1      -1 
 R81     Domestication          1      84
 R40     Leather_Armor_Infantry 1      103      
 B87       Range1               1      -1   
 R109    Stone_Mining           1      84 
 R41     Leather-Armor-Archers  1      103 
+
 C102    Bronze_Age             1      109 
 B87       Range1               2      -1 
-
-// Bronze Age
-//  ---------------------------------------------
 R12     Sentry_Tower           1      68 
+R56     Improved-Bow           1      87
 R43     Scale_Armor_Infantry   1      103 
 B0        Academy              1      -1
 R28     Wheel                  1      84
 R44     Scale-Armor-Archers    1      103
 R32     Artisanship            1      84
 B82       Government_Center    1      -1
-R56     Composite-Bow          1      87
-C103    Iron_Age               1      109
-R65     Broad_Sword            1      12
-R51     Metalworking           1      103
-R121    Logistics              1      82  
-R47     Bronze_Shield          1      103
-R112    Architecture           1      82 
 
-// Iron Age
-//  ---------------------------------------------
-R57     Longbow                1      87
+C103    Iron_Age               1      109
+B49       Siege_Workshop       1      -1 
+R65     Broad_Sword            1      12
+U5        Soldier-Archer2      3      87
+R51     Metalworking           1      103
+T75       Soldier-Inf3         5      12       1
+R112    Architecture           1      82 
+R47     Bronze_Shield          1      103
+R57     Composite-Bow          1      87
 B109      Town_Center1         2      -1 
+U5        Soldier-Archer2      2      87
 B12       Barracks1            1      -1 
 R66     Long_Sword             1      12  
 R113    Aristocracy            1      82
 B0        Academy              1      -1
+T75       Soldier-Inf3         5      12       1
 R73     Phalanx                1      0 
 B49       Siege_Workshop       1      -1
 B87       Range1               1      -1 
-B0        Academy              1      -1
-U5        Soldier-Archer2      3      87
-R54     Catapult               1      49
-B87       Range1               1      -1 
-U75       Infantry3            5      12
-B49       Siege_Workshop       1      -1 
-B109      Town_Center1         2      -1 
-R52     Metallurgy             1      103 
 U11       Soldier-Balista      2      49
 B0        Academy              1      -1
-U5        Soldier-Archer2      2      87
-B49       Siege_Workshop       1      -1
-B12       Barracks1            1      -1   
-U75       Infantry3            5      12
+R54     Catapult               1      49
 B87       Range1               1      -1 
 U11       Soldier-Balista      3      49 
-R110    Craftmanship           1      84 
-T83       Man                  5      109      1
+B109      Town_Center1         2      -1 
+R52     Metallurgy             1      103 
 U5        Soldier-Archer2      3      87
+T75       Soldier-Inf3         5      12       1
+R121    Logistics              1      82  
+B0        Academy              1      -1
+U5        Soldier-Archer2      3      87
+B49       Siege_Workshop       1      -1
+R110    Craftmanship           1      84 
 B87       Range1               1      -1 
+U93       Soldier-Phal1        3      0 
+B12       Barracks1            1      -1   
+T83       Man                  5      109      1
 U5        Soldier-Archer2      2      87
+B87       Range1               1      -1 
 R106    Ballistics             1      82 
-U75       Infantry3            5      12
 R111    Siegecraft             1      84
 R36     Heavy_Catapult         1      49
 B87       Range1               1      -1 
 U11       Soldier-Balista      2      49 
 R35     Engineering            1      82 
-U5        Soldier-Archer2      3      87
 B49       Siege_Workshop       1      -1
-U75       Infantry3            5      12
+T75       Soldier-Inf3         5      12       1
 B0        Academy              1      -1
 U35       Soldier-Catapult1    2      49 
 R27     Helepolis              1      49
@@ -100,7 +108,6 @@ R79     Centurion              1      0
 B50       Farm                 2      -1 
 U93       Soldier-Phal1        2      0 
 B49       Siege_Workshop       1      -1
-U93       Soldier-Phal1        3      0 
 U35       Soldier-Catapult1    3      49  
 U5        Soldier-Archer2      2      87
 B49       Siege_Workshop       1      -1

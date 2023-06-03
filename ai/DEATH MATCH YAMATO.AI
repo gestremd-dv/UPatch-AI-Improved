@@ -1,40 +1,48 @@
 // DEATH MATCH YAMATO.AI
 //
-// Trains Priests, Cavalry, Horse Archers, Phalanx and Catapults
-// 35 Villagers; 25 after retrains
-// 
-// 20 Soldiers deployed in ~15 minutes
+// Iron Age attack
 //
-// by gestremd 
+// Military: 15 Priests, 130 Cataphracts, 130 Heavy Horse Archers, 115 Centurions, 10 Stone Throwers
+// Economy : 35-25 Villagers
+// Defenses: N/A
+// Retrains: N/A
+//
+// Revision History:
+// --------------------------------------------------------------------------------------------------
+// Revision 1 [6/23/1998]: X-Pack revisions; dumped weak catapults & priests; removed all ships; added cav 
+// archers & cav archer upgrades; removed engineering & writing;
+//
+// Revision 2 [UPatch HD 1.2, 06/02/2023]: Complete rework of AI to support 250+ population limit;  
+// Added Centurions /w appropriate upgrades; added back priests, stone throwers, Engineering (late Iron);
+// Made Heavy Cavalry critical;
+// --------------------------------------------------------------------------------------------------
+//
+// Rework by gestremd; Original by Ensemble Studios
 
-// Stone Age
-//  ---------------------------------------------
+
+//Quick, Threaded Research to the Iron Age
 B109      Town_Center1         1      -1           
 T83       Man                  5      109      1         
-B12       Barracks1            1      -1   
+B12       Barracks1            1      -1  
+ 
 C101    Tool_Age               1      109   
-
-// Tool Age
-//  ---------------------------------------------
 R16     Watch_Tower            1      68
-B101      Stable               1      -1 
+B84       Market1              1      -1 
 R107    Woodworking            1      84 
 T83       Man                  5      109      1       
 R46     Toolworking            1      103 
-B84       Market1              1      -1 
+B101      Stable               1      -1 
 R40     Leather_Armor_-_Soldie 1      103
 R81     Domestication          1      84
 B87       Range1               1      -1 
 R41     Leather_Armor_Archers  1      103   
 R109    Stone_Mining           1      84 
 R42     Leather_Armor_Cavalry  1      103 
+
 C102    Bronze_Age             1      109 
 B101      Stable               1      -1 
 B87       Range1               1      -1 
 B101      Stable               1      -1
-
-// Bronze Age
-//  ---------------------------------------------
 R12     Sentry_Tower           1      68 
 R43     Scale_Armor_-_Soldiers 1      103
 B104      Temple               1      -1
@@ -44,21 +52,19 @@ B101      Stable               1      -1
 R45     Scale-Armor-Cav        1      103
 R32     Artisanship            1      84
 B82       Government_Center    1      -1
+
 C103    Iron_Age               1      109
 R34     Nobility               1      82
-B49       Siege_Workshop       1      -1 
 R51     Metalworking           1      103
+B49       Siege_Workshop       1      -1 
 R47     Bronze-Shield          1      103 
 R112    Architecture           1      82 
 R24     Polytheism             1      104
-
-// Iron Age
-//  ---------------------------------------------
 B109      Town_Center1         2      -1 
 B104      Temple               1      -1
 U35       Soldier-Catapult1    2      49
+C71     Heavy_Cavalry          1      101
 B101      Stable               1      -1
-R71     Heavy_Cavalry          1      101
 U37       Soldier-Cavalry1     3      101 
 R52     Metallurgy             1      103 
 B109      Town_Center1         2      -1 
@@ -74,46 +80,45 @@ U39       Soldier-Cav3-Arc     3      87
 R110    Craftmanship           1      84 
 B0        Academy              1      -1
 U37       Soldier-Cavalry1     2      101 
-R49     Chain_Mail_Archers     1      103 
 B87       Range1               1      -1 
-R38     Heavy_Horse_Archer     1      87   
-R78     Cataphract             1      101 
 T83       Man                  5      109      1
 U39       Soldier-Cav3-Arc     3      87
 B0        Academy              1      -1
+R49     Chain_Mail_Archers     1      103 
+R38     Heavy_Horse_Archer     1      87   
 U35       Soldier-Catapult1    1      49
 B87       Range1               1      -1 
-R18     Afterlife              1      104
-R37     Alchemy                1      82
 U39       Soldier-Cav3-Arc     2      87
 B101      Stable               1      -1
 B0        Academy              1      -1
+R78     Cataphract             1      101 
 U93       Soldier-Phal1        3      0 
 B87       Range1               1      -1 
-R50     Chain_Mail_Cavalry     1      103  
+R18     Afterlife              1      104
 B101      Stable               1      -1
 U39       Soldier-Cav3-Arc     3      87
 U37       Soldier-Cavalry1     3      101 
 B87       Range1               1      -1 
-R79     Centurion              1      0
-R35     Engineering            1      82
+R37     Alchemy                1      82
 U93       Soldier-Phal1        2      0
-R48     Chain_Mail_-_Soldiers  1      103 
 U39       Soldier-Cav3-Arc     2      87
 U37       Soldier-Cavalry1     2      101 
+R50     Chain_Mail_Cavalry     1      103  
 U125      Priest               5      104 
 U35       Soldier-Catapult1    2      49
 B50       Farm                 2      -1 
 U37       Soldier-Cavalry1     3      101 
+R79     Centurion              1      0
 U39       Soldier-Cav3-Arc     3      87
 U93       Soldier-Phal1        3      0
+R35     Engineering            1      82
 U35       Soldier-Catapult1    1      49
 U83       Man                  5      109
 U37       Soldier-Cavalry1     2      101
-R117    Iron_Shield            1      103
 U125      Priest               5      104 
 U93       Soldier-Phal1        2      0
 U35       Soldier-Catapult1    1      49
+R48     Chain_Mail_-_Soldiers  1      103 
 U83       Man                  5      109
 U37       Soldier-Cavalry1     5      101 
 B109      Town_Center1         1      -1 
@@ -121,6 +126,7 @@ U39       Soldier-Cav3-Arc     3      87
 U83       Man                  5      109
 U93       Soldier-Phal1        2      0 
 U37       Soldier-Cavalry1     5      101 
+R117    Iron_Shield            1      103
 U39       Soldier-Cav3-Arc     3      87
 U83       Man                  5      109 
 U35       Soldier-Catapult1    1      49

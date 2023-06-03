@@ -1,40 +1,46 @@
 // DEATH MATCH MACEDON.AI
 //
-// Trains Phalanx, War Elephants, Catapults, Horse Archers and Cavalry
-// 35 Villagers; 25 after retrains
-// 
-// 20 Soldiers deployed in ~15 minutes
+// Iron Age attack
 //
-// by gestremd
+// Military: 93 Centurions, 93 Armored Elephants, 73 Heavy Horse Archers, 73 Cataphracts, 68 Catapults
+// Economy : 35-25 Villagers
+// Defenses: N/A
+// Retrains: N/A
+//
+// Revision History:
+// --------------------------------------------------------------------------------------------------
+// Revision 1 [UPatch HD 1.1]: fixed missing/redundant objects, fixed positions & wrong values
+//
+// Revision 2 [UPatch HD 1.2, 06/03/2023]: Complete rework of AI to support 250+ population limit;  
+// Added Catapults, Cataphracts & Armored Elephants;
+// --------------------------------------------------------------------------------------------------
+//
+// Rework by gestremd; Original by Ensemble Studios
 
-// Stone Age
-//  ---------------------------------------------
+
+//Quick, Threaded Research to the Iron Age
 B109      Town_Center1         1      -1           
 T83       Man                  5      109      1      
 B12       Barracks1            1      -1   
-C101    Tool_Age               1      109      
 
-// Tool Age
-//  ---------------------------------------------
+C101    Tool_Age               1      109      
 R16     Watch_Tower            1      68
-B101      Stable               1      -1 
+B84       Market1              1      -1 
 R107    Woodworking            1      84 
 T83       Man                  5      109      1       
 R46     Toolworking            1      103 
-B84       Market1              1      -1 
+B101      Stable               1      -1 
 R81     Domestication          1      84
 R40     Leather_Armor_Infantry 1      103      
 B87       Range1               1      -1
 R41     Leather_Armor_Archers  1      103   
 R109    Stone_Mining           1      84 
 R42     Leather_Armor_Cavalry  1      103 
+
 C102    Bronze_Age             1      109 
 B101      Stable               1      -1 
 B87       Range1               1      -1
 B101      Stable               1      -1 
-
-// Bronze Age
-//  ---------------------------------------------
 R12     Sentry_Tower           1      68 
 R43     Scale_Armor_Infantry   1      103 
 B0        Academy              1      -1
@@ -43,68 +49,65 @@ R28     Wheel                  1      84
 R45     Scale-Armor-Cav        1      103
 R32     Artisanship            1      84
 B82       Government_Center    1      -1
-C103    Iron_Age               1      109
-R51     Metalworking           1      103
-R112    Architecture           1      82
-R47     Bronze_Shield          1      103 
 
-// Iron Age
-//  ---------------------------------------------
+C103    Iron_Age               1      109
+B49       Siege_Workshop       1      -1
+R51     Metalworking           1      103
+U93       Soldier-Phal1        2      0
+R112    Architecture           1      82
+R125    Armored_Elephants      1      101
+R47     Bronze_Shield          1      103 
+U35       Soldier-Catapult1    2      49
 B109      Town_Center1         2      -1 
 C117    Iron_Shield            1      103
 R113    Aristocracy            1      82
+U39       Soldier-Cav-Archer   2      87
 R73     Phalanx                1      0
-B101      Stable               1      -1
 B0        Academy              1      -1
-R125    Armored_Elephants      1      101
-R71     Heavy_Cavalry          1      101
-B49       Siege_Workshop       1      -1
+U46       Soldier-Elephant     2      101 
+B101      Stable               1      -1
 R37     Alchemy                1      82
+U93       Soldier-Phal1        2      0
+R71     Heavy_Cavalry          1      101
 B109      Town_Center1         2      -1 
 B101      Stable               1      -1 
+U93       Soldier-Phal1        3      0
 B0        Academy              1      -1 
 B49       Siege_Workshop       1      -1
+U37       Soldier-Cavalry1     2      101
 B87       Range1               1      -1
 R48     Chain_Mail_Infantry    1      103
+U39       Soldier-Cav-Archer   3      87
 B0        Academy              1      -1
-U93       Soldier-Phal1        2      0
 R106    Ballistics             1      82 
+U35       Soldier-Catapult1    3      49
 B49       Siege_Workshop       1      -1 
+U46       Soldier-Elephant     3      101 
 B0        Academy              1      -1
 B87       Range1               1      -1
+U46       Soldier-Elephant     2      101
 R54     Catapult               1      49
 R79     Centurion              1      0  
-U93       Soldier-Phal1        2      0
+U37       Soldier-Cavalry1     3      101
 T83       Man                  5      109      1
+U93       Soldier-Phal1        2      0
 B101      Stable               1      -1
-U35       Soldier-Catapult1    2      49
 R49     Chain-Mail-Archer      1      103
+U93       Soldier-Phal1        3      0
+B0        Academy              1      -1
 R38     Heavy_Horse_Archer     1      87
-B49       Siege_Workshop       1      -1
 U46       Soldier-Elephant     2      101 
+B49       Siege_Workshop       1      -1
 B0        Academy              1      -1
 R52     Metallurgy             1      103
+B87       Range1               1      -1
 R78     Cataphract             1      101
 U93       Soldier-Phal1        3      0
-R35     Engineering            1      82
 B0        Academy              1      -1
-U93       Soldier-Phal1        3      0
-B87       Range1               1      -1
-U39       Soldier-Cav-Archer   2      87
-B0        Academy              1      -1
-U46       Soldier-Elephant     3      101 
 R50     Chain_Mail_-_Cavalry   1      103
-U37       Soldier-Cavalry1     2      101
-U93       Soldier-Phal1        2      0
-U46       Soldier-Elephant     2      101 
-U35       Soldier-Catapult1    3      49
-U39       Soldier-Cav-Archer   3      87
 U46       Soldier-Elephant     3      101  
 B50       Farm                 2      -1 
-U93       Soldier-Phal1        3      0
-U37       Soldier-Cavalry1     3      101
 U93       Soldier-Phal1        2      0
-U46       Soldier-Elephant     2      101
 R15     Guard_Tower            1      68
 U83       Man                  5      109
 U93       Soldier-Phal1        3      0

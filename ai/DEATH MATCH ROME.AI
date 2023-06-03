@@ -1,40 +1,46 @@
 // DEATH MATCH ROME.AI
 //
-// Trains Swordsmen, Ballistas, Catapults, Chariots, Priests and Phalanx
-// 35 Villagers; 25 after retrains
-// 
-// 20 Soldiers deployed in ~15 minutes
+// Iron Age attack
 //
-// by gestremd
+// Military: 202 Legions, 71 Helepolis', 61 Heavy Catapults, 76 Scythe Chariots, 66 Centurions, 20 Priests
+// Economy : 35-25 Villagers
+// Defenses: N/A
+// Retrains: N/A
+//
+// Revision History:
+// --------------------------------------------------------------------------------------------------
+// Revision 1 [UPatch HD 1.1]: Fixed missing/redundant objects, fixed positions & wrong values
+//
+// Revision 2 [UPatch HD 1.2, 06/02/2023]: Complete rework of AI to support 250+ population limit;  
+// Added Scythe Chariots, Centurions, Priests;
+// --------------------------------------------------------------------------------------------------
+//
+// Rework by gestremd; Original by Ensemble Studios
 
-// Stone Age
-//  ---------------------------------------------
+
+//Quick, Threaded Research to the Iron Age
 B109      Town_Center1         1      -1           
 T83       Man                  5      109      1       
 B12       Barracks1            1      -1   
+
 C101    Tool_Age               1      109 
 B12       Barracks1            1      -1      
-
-// Tool Age
-//  ---------------------------------------------
 R16     Watch_Tower            1      68
-B101      Stable               1      -1 
+B84       Market1              1      -1 
 R107    Woodworking            1      84 
 T83       Man                  5      109      1      
 R46     Toolworking            1      103 
-B84       Market1              1      -1 
+B101      Stable               1      -1 
 R81     Domestication          1      84
 R40     Leather_Armor_Infantry 1      103      
 B87       Range1               1      -1  
 R109    Stone_Mining           1      84 
 R42     Leather_Armor_Cavalry  1      103 
+
 C102    Bronze_Age             1      109 
 B12       Barracks1            1      -1 
 B101      Stable               1      -1
 B12       Barracks1            1      -1
-
-// Bronze Age
-//  ---------------------------------------------
 R12     Sentry_Tower           1      68 
 R43     Scale_Armor_Infantry   1      103 
 B104      Temple               1      -1
@@ -42,28 +48,25 @@ R28     Wheel                  1      84
 R45     Scale-Armor-Cav        1      103
 R32     Artisanship            1      84
 B82       Government_Center    1      -1
+
 C103    Iron_Age               1      109
 R34     Nobility               1      82
 R65     Broad_Sword            1      12
 R51     Metalworking           1      103
 R112    Architecture           1      82 
-U75       Infantry3            5      12
+C66     Long_Sword             1      12
 R21     Mysticism              1      104
 R121    Logistics              1      82  
+U75       Infantry3            5      12
 R47     Bronze_Shield          1      103
 R24     Polytheism             1      104
-
-// Iron Age
-//  ---------------------------------------------
 B109      Town_Center1         2      -1 
-R66     Long_Sword             1      12
+R126    Scythe_Chariot         1      101
 B12       Barracks1            1      -1
 B49       Siege_Workshop       1      -1
-R35     Engineering            1      82
 B104      Temple               1      -1
 B12       Barracks1            1      -1
 B109      Town_Center1         2      -1 
-R126    Scythe_Chariot         1      101
 U75       Infantry3            5      12
 B0        Academy              1      -1
 R73     Phalanx                1      0  
@@ -87,6 +90,7 @@ U75       Infantry3            5      12
 R52     Metallurgy             1      103 
 B101      Stable               1      -1
 U93       Soldier-Phal1        3      0
+R35     Engineering            1      82
 B104      Temple               1      -1
 U11       Soldier-Balista      3      49 
 U75       Infantry3            5      12 
