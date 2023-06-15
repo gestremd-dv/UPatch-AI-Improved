@@ -60,14 +60,14 @@ B49       Siege_Workshop       1      -1
 R47     Bronze-Shield          1      103 
 R112    Architecture           1      82 
 R24     Polytheism             1      104
-B109      Town_Center1         2      -1 
+B109      Town_Center1         1      -1 
 B104      Temple               1      -1
 U35       Soldier-Catapult1    2      49
 C71     Heavy_Cavalry          1      101
 B101      Stable               1      -1
 U37       Soldier-Cavalry1     3      101 
 R52     Metallurgy             1      103 
-B109      Town_Center1         2      -1 
+B109      Town_Center1         1      -1 
 R106    Ballistics             1      82 
 B49       Siege_Workshop       1      -1 
 B0        Academy              1      -1

@@ -58,7 +58,7 @@ R112    Architecture           1      82
 R125    Armored_Elephants      1      101
 R47     Bronze_Shield          1      103 
 U35       Soldier-Catapult1    2      49
-B109      Town_Center1         2      -1 
+B109      Town_Center1         1      -1 
 C117    Iron_Shield            1      103
 R113    Aristocracy            1      82
 U39       Soldier-Cav-Archer   2      87
@@ -69,7 +69,7 @@ B101      Stable               1      -1
 R37     Alchemy                1      82
 U93       Soldier-Phal1        2      0
 R71     Heavy_Cavalry          1      101
-B109      Town_Center1         2      -1 
+B109      Town_Center1         1      -1 
 B101      Stable               1      -1 
 U93       Soldier-Phal1        3      0
 B0        Academy              1      -1 

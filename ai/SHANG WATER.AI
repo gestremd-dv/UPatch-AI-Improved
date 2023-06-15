@@ -2,7 +2,7 @@
 //
 // Iron Age attack
 // 
-// Military: 75 Fire Galleys, 100 Cataphracts, 51 Helepolis', 2 Heavy Transports
+// Military: 75 Fire Galleys, 100 Cataphracts, 51 Ballistas, 2 Heavy Transports
 // Economy : 50-30 Villagers, 10 Farms, 6 Fishing Boats
 // Defenses: N/A
 // Retrains: 6 Camel Riders, 5 War Galleys
@@ -115,7 +115,6 @@ U35       Soldier-Catapult1    2      49
 B45       Dock_1               1      -1
 U37       Soldier-Cavalry1     2      101
 R110    Craftmanship           1      84  
-R27     Helepolis              1      49 
 B50       Farm                 2      -1 
 R51     Metal_Working          1      103 
 U37       Soldier-Cavalry1     2      101

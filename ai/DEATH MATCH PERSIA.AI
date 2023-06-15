@@ -75,7 +75,7 @@ R65     Broad_Sword            1      12
 B101      Stable               1      -1
 U39       Soldier-Cav3-Arc     3      87
 R24     Polytheism             1      104
-B109      Town_Center1         2      -1 
+B109      Town_Center1         1      -1 
 R66     Long_Sword             1      12
 U35       Soldier-Catapult1    2      49
 B12       Barracks1            1      -1
@@ -84,7 +84,7 @@ B104      Temple               1      -1
 U46       Soldier-Elephant     3      101
 B101      Stable               1      -1
 R125    Armored_Elephant       1      101 
-B109      Town_Center1         2      -1 
+B109      Town_Center1         1      -1 
 U75       Soldier-Inf3         5      12
 B87       Range1               1      -1 
 R50     Chain_Mail_Cavalry     1      103 

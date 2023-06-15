@@ -53,7 +53,7 @@ B82       Government_Center    1      -1
 
 C103    Iron_Age               1      109
 R34     Nobility               1      82
-B109      Town_Center1         2      -1 
+B109      Town_Center1         1      -1 
 C126    Scythe_Chariot         1      101
 R22     Astrology              1      104
 B101      Stable               1      -1
@@ -66,7 +66,7 @@ R24     Polytheism             1      104
 B104      Temple               1      -1
 U125      Priest               2      104 
 R71     Heavy_Cavalry          1      101
-B109      Town_Center1         2      -1 
+B109      Town_Center1         1      -1 
 U11       Soldier-Balista      2      49
 B104      Temple               1      -1
 B87       Range1               1      -1 

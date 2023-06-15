@@ -15,7 +15,7 @@
 // built; added improved bow & composite bow
 //
 // Revision 2 [UPatch HD 1.2, 06/03/2023]: Complete rework of AI to support 250+ population limit;  
-// Added back catapults; Added Centurions,  Long Swordsmen (retrains);
+// Added back catapults; Added Centurions, Long Swordsmen (retrains);
 // --------------------------------------------------------------------------------------------------
 //
 // Rework by gestremd; Original by Ensemble Studios
@@ -60,7 +60,7 @@ T75       Soldier-Inf3         5      12       1
 R112    Architecture           1      82 
 R47     Bronze_Shield          1      103
 R57     Composite-Bow          1      87
-B109      Town_Center1         2      -1 
+B109      Town_Center1         1      -1 
 U5        Soldier-Archer2      2      87
 B12       Barracks1            1      -1 
 R66     Long_Sword             1      12  
@@ -75,7 +75,7 @@ B0        Academy              1      -1
 R54     Catapult               1      49
 B87       Range1               1      -1 
 U11       Soldier-Balista      3      49 
-B109      Town_Center1         2      -1 
+B109      Town_Center1         1      -1 
 R52     Metallurgy             1      103 
 U5        Soldier-Archer2      3      87
 T75       Soldier-Inf3         5      12       1

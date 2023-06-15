@@ -62,7 +62,7 @@ U93       Soldier-Phal1        3      0
 R47     Bronze_Shield          1      103  
 R24     Polytheism             1      104
 U46       Soldier-Elephant     3      101 
-B109      Town_Center1         2      -1 
+B109      Town_Center1         1      -1 
 C117    Iron_Shield            1      103
 R113    Aristocracy            1      82
 B0        Academy              1      -1
@@ -73,7 +73,7 @@ U11       Soldier-Balista      5      49
 R125    Armored_Elephants      1      101
 B104      Temple               1      -1
 U46       Soldier-Elephant     2      101 
-B109      Town_Center1         2      -1 
+B109      Town_Center1         1      -1 
 U125      Priest               5      104 
 B87       Range1               1      -1 
 R110    Craftmanship           1      84 

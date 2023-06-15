@@ -64,7 +64,7 @@ B104      Temple               1      -1
 U93       Soldier-Phal1        2      0
 R47     Bronze_Shield          1      103  
 R24     Polytheism             1      104
-B109      Town_Center1         2      -1   
+B109      Town_Center1         1      -1   
 T37       Soldier-Cavalry      2      101      2 
 R113    Aristocracy            1      82
 B0        Academy              1      -1
@@ -76,7 +76,7 @@ U35       Soldier-Catapult1    3      49
 T37       Soldier-Cavalry      2      101      2 
 B0        Academy              1      -1
 R54     Catapult               1      49
-B109      Town_Center1         2      -1 
+B109      Town_Center1         1      -1 
 T37       Soldier-Cavalry      2      101 
 B0        Academy              1      -1
 U11       Soldier-Balista      3      49 

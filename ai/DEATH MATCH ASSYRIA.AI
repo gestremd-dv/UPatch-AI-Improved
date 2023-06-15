@@ -2,7 +2,7 @@
 //
 // Iron Age attack
 //
-// Military: 95 ballistas, 15 catapults, 90 cavalry, 125 horse archers, 85 priests
+// Military: 95 Helepolis', 60 Heavy Catapults, 90 Cataphracts, 125 Horse Archers, 40 Priests
 // Economy : 35-25 Villagers
 // Defenses: N/A
 // Retrains: N/A
@@ -58,7 +58,7 @@ B49       Siege_Workshop       1      -1
 R22     Astrology              1      104
 U39       Soldier-Cavalry3_Arc 2      87 
 R51     Metalworking           1      103
-B109      Town_Center1         2      -1 
+B109      Town_Center1         1      -1 
 R24     Polytheism             1      104
 U39       Soldier-Cavalry3_Arc 3      87 
 R50     Chain_Mail-Cavalry     1      103 
@@ -72,7 +72,7 @@ R71     Heavy_Cavalry          1      101
 B87       Range1               1      -1 
 R37     Alchemy                1      82
 U35       Soldier-Catapult1    3      49
-B109      Town_Center1         2      -1 
+B109      Town_Center1         1      -1 
 R20     Fanaticism             1      104
 U39       Soldier-Cavalry3_Arc 2      87 
 B49       Siege_Workshop       1      -1 
@@ -91,8 +91,8 @@ R111    Siegecraft             1      84
 B87       Range1               1      -1 
 R36     Heavy_Catapult         1      49 
 T83       Man                  5      109      1
-U125      Priest               5      104 
 B49       Siege_Workshop       1      -1
+U125      Priest               5      104 
 B49       Siege_Workshop       1      -1
 U11       Soldier-Balista      2      49 
 R18     Afterlife              1      104
@@ -139,7 +139,7 @@ U37       Soldier-Cavalry1     30     101
 U11       Soldier-Balista      30     49
 U39       Soldier-Cavalry3_Arc 25     87 
 U39       Soldier-Cavalry3_Arc 45     87 
-U125      Priest               45     104 
+U35       Soldier-Catapult1    45     49 
 U37       Soldier-Cavalry1     45     101
 U11       Soldier-Balista      45     49
 

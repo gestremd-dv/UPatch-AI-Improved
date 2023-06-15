@@ -64,12 +64,12 @@ U125      Priest               3      104
 R112    Architecture           1      82 
 U25       Soldier-Ele-Archer   3      87
 R24     Polytheism             1      104
-B109      Town_Center1         2      -1 
+B109      Town_Center1         1      -1 
 U40       Soldier-Chariot1     2      101
 R21     Mysticism              1      104
 B101      Stable               1      -1
 U25       Soldier-Ele-Archer   3      87
-B109      Town_Center1         2      -1 
+B109      Town_Center1         1      -1 
 R126    Scythe_Chariot         1      101
 B104      Temple               1      -1
 B87       Range1               1      -1 

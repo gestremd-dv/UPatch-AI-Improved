@@ -65,7 +65,7 @@ R121    Logistics              1      82
 R155    Bronze_Shield          1      103
 U75       Soldier-Inf3         5      12
 R24     Polytheism             1      104
-B109      Town_Center1         2      -1 
+B109      Town_Center1         1      -1 
 R66     Long_Sword             1      12
 B12       Barracks1            1      -1
 B49       Siege_Workshop       1      -1
@@ -73,7 +73,7 @@ U75       Soldier-Inf3         5      12
 B104      Temple               1      -1
 U11       Soldier-Balista      3      49 
 B12       Barracks1            1      -1
-B109      Town_Center1         2      -1 
+B109      Town_Center1         1      -1 
 U75       Soldier-Inf3         5      12
 R71     Heavy_Cavalry          1      101
 B87       Range1               1      -1 

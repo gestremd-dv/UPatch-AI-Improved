@@ -60,13 +60,13 @@ R121    Logistics              1      82
 U75       Infantry3            5      12
 R47     Bronze_Shield          1      103
 R24     Polytheism             1      104
-B109      Town_Center1         2      -1 
+B109      Town_Center1         1      -1 
 R126    Scythe_Chariot         1      101
 B12       Barracks1            1      -1
 B49       Siege_Workshop       1      -1
 B104      Temple               1      -1
 B12       Barracks1            1      -1
-B109      Town_Center1         2      -1 
+B109      Town_Center1         1      -1 
 U75       Infantry3            5      12
 B0        Academy              1      -1
 R73     Phalanx                1      0  

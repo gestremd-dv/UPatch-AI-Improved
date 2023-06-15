@@ -49,6 +49,7 @@ R41     Leather_Armor_-_Archer 1      103
 U19       Boat-War1            1      45  
 U83       Man                  2      109
 U17       Boat-Transport1      1      45 
+B82       Government_Center    1      -1
 T83       Man                  2      109      1
 U19       Boat-War1            1      45  
 B50       Farm                 1      -1
@@ -59,6 +60,7 @@ R81     Domestication          1      84
 T83       Man                  2      109      1
 U19       Boat-War1            1      45       1 
 U83       Man                  2      109
+B104      Temple1              1      -1
 U37       Soldier-Cavalry1     2      101 
 U83       Man                  1      109
 R28     Wheel                  1      84
@@ -68,7 +70,6 @@ T83       Man                  2      109      1
 
 C103    Iron_Age               1      109
 R7      Trireme                1      45 
-B82       Government_Center    1      -1
 R44     Scale_Armor_-_Archers  1      103
 R9      Trireme_with_Catapult  1      45 
 B45       Dock_1               1      -1 

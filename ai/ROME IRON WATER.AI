@@ -50,6 +50,7 @@ U19       Boat-War1            1      45       1
 U83       Man                  2      109
 U17       Boat-Transport1      1      45 
 U40       Soldier-Chariot1     2      101 
+B49       Siege_Workshop       1      -1
 T83       Man                  2      109      1
 U19       Boat-War1            1      45       1  
 B50       Farm                 1      -1
@@ -66,7 +67,6 @@ U83       Man                  1      109
 U19       Boat-War1            1      45       1  
 B50       Farm                 1      -1
 T83       Man                  2      109      1
-R34     Nobility               1      82 
 
 C103    Iron_Age               1      109
 R7      Trireme                1      45 
@@ -74,7 +74,6 @@ R45     Scale_Armor_-_Cavalry  1      103
 B45       Dock_1               1      -1 
 R30     Coinage                1      84 
 R46     Tool_Working           1      103
-B49       Siege_Workshop       1      -1
 R9      Trireme_with_Catapult  1      45  
 B109      Town_Center1         1      -1
 T83       Man                  2      109      1
@@ -89,6 +88,7 @@ U11       Soldier-Balista      2      49
 U250      Boat-War4            2      45 
 U83       Man                  2      109
 U40       Soldier-Chariot1     2      101 
+R34     Nobility               1      82 
 B49       Siege_Workshop       1      -1 
 U250      Boat-War4            2      45
 U11       Soldier-Balista      4      49 
@@ -110,7 +110,6 @@ R32     Artisanship            1      84
 U17       Boat-Transport1      1      45 
 U40       Soldier-Chariot1     2      101 
 U250      Boat-War4            2      45
-R35     Engineering            1      82  
 B109      Town_Center1         1      -1
 U40       Soldier-Chariot1     5      101
 U19       Boat-War1            4      45 
@@ -125,7 +124,6 @@ U19       Boat-War1            4      45
 R51     Metal_Working          1      103
 U11       Soldier-Balista      5      49  
 U40       Soldier-Chariot1     5      101 
-R27     Helepolis              1      49
 B101      Stable1              1      -1  
 U19       Boat-War1            2      45  
 U40       Soldier-Chariot1     10     101 
@@ -133,10 +131,12 @@ U11       Soldier-Balista      10     49
 R52     Metalurgy              1      103 
 B49       Siege_Workshop       1      -1 
 U19       Boat-War1            3      45
-U40       Soldier-Chariot1     10     101 
 U11       Soldier-Balista      10     49 
+U40       Soldier-Chariot1     10     101 
+R27     Helepolis              1      49
 B101      Stable1              1      -1  
 U11       Soldier-Balista      13     49
+R35     Engineering            1      82  
 U40       Soldier-Chariot1     15     101 
 U11       Soldier-Balista      10     49 
 U40       Soldier-Chariot1     10     101 

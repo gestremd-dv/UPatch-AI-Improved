@@ -67,7 +67,7 @@ R121    Logistics              1      82
 R65     Broad_Sword            1      12
 U125      Priest               5      104 
 U40       Soldier-Chariot1     2      101 
-B109      Town_Center1         2      -1 
+B109      Town_Center1         1      -1 
 R24     Polytheism             1      104
 B49       Siege_Workshop       1      -1
 R66     Long_Sword             1      12
@@ -78,7 +78,7 @@ B104      Temple               1      -1
 R140    Craftmanship           1      84 
 U125      Priest               5      104 
 U35       Soldier-Catapult1    5      49  
-B109      Town_Center1         2      -1 
+B109      Town_Center1         1      -1 
 R106    Ballistics             1      82 
 U125      Priest               5      104 
 B104      Temple               1      -1

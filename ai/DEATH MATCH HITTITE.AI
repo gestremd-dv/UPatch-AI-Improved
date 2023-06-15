@@ -61,7 +61,7 @@ R51     Metalworking           1      103
 U39       Soldier-Cav-Archer   2      87
 R34     Nobility               1      82
 R47     Bronze_Shield          1      103  
-B109      Town_Center1         2      -1 
+B109      Town_Center1         1      -1 
 U40       Soldier-Chariot1     2      101
 R117    Iron_Shield            1      103
 B101      Stable               1      -1
@@ -75,7 +75,7 @@ U39       Soldier-Cav-Archer   3      87
 R37     Alchemy                1      82
 B49       Siege_Workshop       1      -1
 U39       Soldier-Cav-Archer   3      87
-B109      Town_Center1         2      -1 
+B109      Town_Center1         1      -1 
 R49     Chain-Mail-Archer      1      103
 B87       Range1               1      -1 
 U46       Soldier-Elephant     2      101
