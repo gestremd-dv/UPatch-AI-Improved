@@ -25,15 +25,11 @@
 // Rework by gestremd; Original by Ensemble Studios
 
 
-// Stone Age
-// --------------------------------------------------------------------
 B109      Town_Center1         1      -1
 U83       Man                  8      109   
 B12       Barracks1            1      -1    
 U83       Man                  7      109     
 
-// Tool Age
-// --------------------------------------------------------------------
 C101    Tool_Age               1      109  
 U83       Man                  2      109
 B87       Range1               1      -1  
@@ -49,8 +45,6 @@ B50       Farm                 2      -1
 R108    Gold_Mining            1      84 
 U83       Man                  2      109
 
-// Bronze Age
-// --------------------------------------------------------------------
 C102    Bronze_Age             1      109
 R56     Improved_bow           1      87 
 B101      Stable1              1      -1 
@@ -78,8 +72,6 @@ T83       Man                  2      109      1
 B82       Government_Center    1      -1
 U83       Man                  1      109
 
-// Iron Age
-// --------------------------------------------------------------------
 C103    Iron_Age               1      109
 R57     Composit-bow           1      87 
 R30     Coinage                1      84 

@@ -43,11 +43,12 @@ U83       Man                  2      109
 
 C102    Bronze_Age             1      109
 R12     Sentry_Tower           1      68
-R109    Stone_Mining           1      84  
+R28     Wheel                  1      84
 T83       Man                  2      109      1
 B87       Range1               1      -1 
 R40     Leather_Armor_-_Soldie 1      103
 B79       Watch_Tower          1      -1
+R109    Stone_Mining           1      84  
 B49       Siege_Workshop       1      -1
 U83       Man                  2      109
 T83       Man                  2      109      1

@@ -99,6 +99,7 @@ R8      Heavy_Transport        1      45
 U83       Man                  2      109 
 U360      Fire-Galley          2      45
 U37       Soldier-Cavalry1     2      101
+R106    Ballistics             1      82
 U35       Soldier-Catapult1    2      49
 U83       Man                  2      109
 B101      Stable1              1      -1

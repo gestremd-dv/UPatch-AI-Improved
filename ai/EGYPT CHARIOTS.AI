@@ -81,6 +81,7 @@ B109      Town_Center1         1      -1
 R24     Polytheism             1      104
 T83       Man                  2      109      1
 B87       Range1               1      -1 
+R46     Tool_Working           1      103
 U83       Man                  1      109
 U41       Soldier-Chariot2     2      87
 T83       Man                  2      109      1
